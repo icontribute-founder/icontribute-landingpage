@@ -1,0 +1,29 @@
+.main-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.iphone_png {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+}
+
+.main-info h1 {
+  font-size: 64px;
+  font-weight: 600;
+  width: 698px;
+  margin: 50px 0;
+}
+.main-info p {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  color: #133a4b;
+  width: 523px;
+  margin: 50px 0;
+}
+
+.appstore {
+  padding: 0;
+}

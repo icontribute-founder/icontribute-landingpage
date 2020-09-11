@@ -1,0 +1,42 @@
+.demoblock-container {
+  text-align: center;
+}
+.demoblock-header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #133a4b;
+}
+.demoblock-disc {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.demostep-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.partners-container {
+  text-align: center;
+}
+.partners-header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+.partners-disc {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.placeholder {
+  width: 1000px;
+  height: 300px;
+}

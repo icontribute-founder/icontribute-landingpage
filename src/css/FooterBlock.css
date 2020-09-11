@@ -1,0 +1,56 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  height: 467px;
+}
+.footer-header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  color: #133a4b;
+  margin: 60px;
+}
+.footer-header h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.footer-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-list,
+.footer-list2 {
+  list-style: none;
+  margin: 60px;
+  padding: 0;
+}
+
+.footer-list li a,
+.footer-list2 li a {
+  padding: 0;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  color: #292929;
+}
+
+.footer-appstore-container {
+  margin-left: 60px;
+}
+.footer-appstore {
+  padding: 0;
+}
+.footer-appstore img {
+  width: 150px;
+  height: 47px;
+}
+footer {
+  text-align: center;
+}

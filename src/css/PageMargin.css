@@ -1,0 +1,28 @@
+a:hover {
+  cursor: pointer;
+}
+
+.main-container,
+.photoblock-container,
+.demoblock-container,
+.partners-container,
+.getintouch-container,
+.globe-container,
+.watermark-text-container,
+.footer-container,
+.teamblock-container {
+  margin-top: 100px;
+}
+
+.photoblock-container {
+  margin-top: 200px;
+}
+
+.site-margin {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#problem {
+  height: 103px;
+}

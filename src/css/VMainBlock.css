@@ -1,0 +1,10 @@
+.main-container-v {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  margin-top: 100px;
+}
+
+.photo-block-box {
+  display: inline-block;
+}
