@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import iphone from "../../images/iphone/Component 1.png";
+import iphone1 from "../../images/iphone/iphone1.png";
+import iphone2 from "../../images/iphone/iphone2.png";
 import notification from "../../images/Frame 213.png";
 import apple from "../../images/1 25.png";
 import google from "../../images/1 26.png";
@@ -30,7 +31,7 @@ const HowItWorksContainer = (props) => {
           </a>
         </div>
         <div className="howitworks-iphone">
-          <img src={iphone}></img>
+          <img src={iphone1}></img>
         </div>
       </div>
 
@@ -40,7 +41,7 @@ const HowItWorksContainer = (props) => {
       </div>
       <div className="howitworks-step-right">
         <div className="howitworks-iphone">
-          <img src={iphone}></img>
+          <img src={iphone2}></img>
         </div>
         <div className="howitworks-step-text-right">
           <h1>Sign Up as an Organization</h1>
@@ -63,7 +64,7 @@ const HowItWorksContainer = (props) => {
           </h2>
         </div>
         <div className="howitworks-iphone">
-          <img src={iphone}></img>
+          <img src={iphone2}></img>
         </div>
       </div>
       <div className="step-center">
