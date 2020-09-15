@@ -1,10 +1,77 @@
 .main-container-v {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 620px 700px;
   position: relative;
   margin-top: 100px;
 }
 
 .photo-block-box {
   display: inline-block;
+}
+
+.photoblock-scroll-wrapper {
+  /* width: 500px; */
+}
+
+.photoblock-scroll {
+  /* background-color: #a9a9a9; */
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 520px;
+  /* width: 520px; */
+
+  /* padding: 30px 0; */
+}
+
+.test .photo-block-box {
+  margin-left: 60px;
+  width: 630px;
+}
+.test .photo-block {
+  width: 628px;
+  height: 512px;
+  padding: 0;
+  position: relative;
+  box-shadow: 0px 4px 30px rgba(233, 233, 233, 0.51);
+}
+.test .photo-block .photo-infoblock {
+  margin: 0 40px;
+  margin-bottom: 30px;
+  width: 548px;
+  position: absolute;
+  bottom: 0;
+}
+
+.test .photo-block .photo-distance {
+  margin-top: 0;
+}
+.test .photo-block .photo-block-photo {
+  margin-top: 40px;
+}
+.test .photo-block h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #026896;
+}
+.test .photo-block h2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+.test .photo-block h3 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+.test .photo-block h1,
+.test .photo-block h2,
+.test .photo-block h3 {
+  margin: 10px 0;
 }
