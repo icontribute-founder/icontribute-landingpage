@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../images/image 10.png";
-import img2 from "../images/image 5.png";
-import img3 from "../images/image 9.png";
-import img4 from "../images/image 12.png";
+import sponsor1 from "../images/sponsors/able2.png";
+import sponsor2 from "../images/sponsors/bethany_hope_center.png";
+import sponsor3 from "../images/sponsors/bridges_of_canada.png";
+import sponsor4 from "../images/sponsors/calvary_baptist_church.png";
+import sponsor5 from "../images/sponsors/coaoc.png";
+import sponsor6 from "../images/sponsors/collaborative_justice_program.png";
+import sponsor7 from "../images/sponsors/max.png";
+import sponsor8 from "../images/sponsors/ottawa_community_immigrant_services_organization.png";
+import sponsor9 from "../images/sponsors/OttawaDragonBoatFestival.jpg";
+import sponsor10 from "../images/sponsors/wocrc.png";
+
 import "../css/DemoBlock.css";
 
 const PartnersBlock = (props) => {
@@ -11,10 +18,13 @@ const PartnersBlock = (props) => {
       <h2 className="partners-header">Partners</h2>
       <p className="partners-disc">Find what your passionate about</p>
       <div className="placeholder">
-        <img src={img1} />
-        <img src={img2} />
-        <img src={img3} />
-        <img src={img4} />
+        <img src={sponsor1} />
+        <img src={sponsor2} />
+        <img src={sponsor3} />
+        <img src={sponsor5} />
+        <img src={sponsor6} />
+        <img src={sponsor7} />
+        <img src={sponsor8} />
       </div>
       <a className="hollow-yellow">LEARN MORE</a>
     </div>

@@ -36,7 +36,14 @@
   font-size: 24px;
   line-height: 29px;
 }
+
 .placeholder {
-  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   height: 300px;
+}
+.placeholder img {
+  height: 55px;
+  margin: auto;
 }
