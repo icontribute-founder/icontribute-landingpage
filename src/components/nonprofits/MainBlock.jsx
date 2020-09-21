@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../css/MainBlock.css";
 import PhotoBlock from "../PhotoBlock";
 import test from "../../images/photoblock/momkid.png";
+import test2 from "../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png";
 
 const MainBlock = (props) => {
   const [photo, setPhoto] = useState({

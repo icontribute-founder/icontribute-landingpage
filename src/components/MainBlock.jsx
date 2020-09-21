@@ -13,10 +13,18 @@ const MainBlock = (props) => {
           We are making it easy to find, manage, and connect to volunteer
           opportunities for both students and organizations.
         </p>
-        <a className="appstore">
+        <a
+          href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
+          target="_blank"
+          className="appstore"
+        >
           <img src={apple} />
         </a>
-        <a className="appstore">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.icontribute"
+          target="_blank"
+          className="appstore"
+        >
           <img src={google} />
         </a>
       </div>

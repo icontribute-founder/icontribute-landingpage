@@ -22,6 +22,9 @@ a:hover {
   width: 90%;
   margin: 0 auto;
 }
+.connect-container {
+  margin-top: 200px;
+}
 
 #problem {
   height: 103px;

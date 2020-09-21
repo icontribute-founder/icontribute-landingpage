@@ -17,7 +17,7 @@ const MainBlock = (props) => {
       distance: "15 km",
     },
     {
-      photo: test4,
+      photo: test2,
       title: "Daycare Helper",
       location: "Ottawa Daycare Center",
       date: "Every Sunday in 2021",
@@ -31,7 +31,7 @@ const MainBlock = (props) => {
       distance: "100",
     },
     {
-      photo: test4,
+      photo: test2,
       title: "test",
       location: "test location",
       date: "test date",
@@ -46,10 +46,18 @@ const MainBlock = (props) => {
           It is easy to get started with us here. After creating an account with
           us, you will be able to browse from a variety of volunteer events.
         </p>
-        <a className="appstore">
+        <a
+          href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
+          target="_blank"
+          className="appstore"
+        >
           <img src={apple} />
         </a>
-        <a className="appstore">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.icontribute"
+          target="_blank"
+          className="appstore"
+        >
           <img src={google} />
         </a>
       </div>

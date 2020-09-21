@@ -6,7 +6,9 @@ const PhotoBlock = (props) => {
   return (
     <div className="photo-block-box">
       <div className="photo-block">
-        <img className="photo-block-photo" src={props.photo} />
+        <div className="photo-wrapper">
+          <img className="photo-block-photo" src={props.photo} />
+        </div>
         <div className="photo-infoblock">
           <h1 className="photo-title">
             {props.title}

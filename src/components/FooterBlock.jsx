@@ -12,10 +12,18 @@ const FooterBlock = (props) => {
             iContribute <h2>We rise by lifting others</h2>
           </h1>
           <div className="footer-appstore-container">
-            <a className="footer-appstore">
+            <a
+              href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
+              target="_blank"
+              className="footer-appstore"
+            >
               <img src={apple} />
             </a>
-            <a className="footer-appstore">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.icontribute"
+              className="footer-appstore"
+              target="_blank"
+            >
               <img src={google} />
             </a>
           </div>
@@ -48,7 +56,12 @@ const FooterBlock = (props) => {
               <a>PRIVACY POLICY</a>
             </li>
             <li>
-              <a>FOLLOW US</a>
+              <a
+                href="https://www.linkedin.com/company/icontribute/"
+                target="_blank"
+              >
+                FOLLOW US
+              </a>
             </li>
           </ul>
         </div>
