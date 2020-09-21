@@ -22,6 +22,7 @@
   position: relative;
   box-shadow: 0px 4px 30px rgba(233, 233, 233, 0.51);
 }
+
 .nonprofit-photoblock .photo-block .photo-infoblock {
   margin: 0 40px;
   margin-bottom: 30px;
@@ -184,3 +185,9 @@
   width: 542px;
   height: 298px;
 } */
+.howitworks-photoblock-wrapper {
+  margin-left: 64px;
+}
+.howitworks-photoblock-wrapper .sphoto-block-box {
+  margin-bottom: 40px;
+}

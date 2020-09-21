@@ -25,7 +25,10 @@
 }
 .navbar-logo h1 {
   margin: 0;
-  font-size: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
   color: #026896;
 }
 .navbar-logo h2 {

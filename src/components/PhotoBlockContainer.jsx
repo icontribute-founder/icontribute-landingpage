@@ -6,21 +6,7 @@ import test2 from "../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png";
 const PhotoBlockContainer = (props) => {
   const [photo, setPhoto] = useState([
     {
-      photo: test,
-      title: "test",
-      location: "test location",
-      date: "test date",
-      distance: "100",
-    },
-    {
       photo: test2,
-      title: "test",
-      location: "test location",
-      date: "test date",
-      distance: "100",
-    },
-    {
-      photo: test,
       title: "test",
       location: "test location",
       date: "test date",
@@ -29,7 +15,7 @@ const PhotoBlockContainer = (props) => {
   ]);
   return (
     <div className="photoblock-container">
-      <div>
+      <div className="mainblock-photo">
         {photo.map((block, blockId) => {
           return (
             <PhotoBlock

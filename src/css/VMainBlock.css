@@ -14,15 +14,11 @@
 }
 
 .photoblock-scroll {
-  /* background-color: #a9a9a9; */
   overflow: hidden;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   height: 520px;
-  /* width: 520px; */
-
-  /* padding: 30px 0; */
 }
 
 .test .photo-block-box {
@@ -42,6 +38,9 @@
   width: 548px;
   position: absolute;
   bottom: 0;
+}
+.test .photo-block .photo-block-photo {
+  height: 298px;
 }
 
 .test .photo-block .photo-distance {
