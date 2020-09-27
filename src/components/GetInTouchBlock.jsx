@@ -8,7 +8,9 @@ const GetInTouchBlock = (props) => {
       <img src={chatBubble}></img>
       <h1>GET IN TOUCH WITH US</h1>
       <h2>Feel Free to reach out to us. We are happy to help</h2>
-      <a className="hollow-yellow">CONTACT</a>
+      <a href="icontribute.founder@gmail.com" className="hollow-yellow">
+        CONTACT
+      </a>
     </div>
   );
 };

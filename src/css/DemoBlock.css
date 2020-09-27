@@ -13,6 +13,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
+  margin-bottom: 50px;
 }
 
 .demostep-container {
@@ -36,14 +37,33 @@
   font-size: 24px;
   line-height: 29px;
 }
-
 .placeholder {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  height: 300px;
+  margin-bottom: 50px;
 }
+.small-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.demostep-disc {
+  padding: 0 60px;
+}
+
 .placeholder img {
-  height: 55px;
+  width: 100%;
   margin: auto;
+}
+.small-logos img {
+  width: 70%;
+}
+#demostep-mouse {
+  position: relative;
+}
+#mouse-icon {
+  position: absolute;
+  left: 37%;
+  top: -35px;
+}
+#demostep-header-mouse {
+  margin-top: 127.3px;
 }

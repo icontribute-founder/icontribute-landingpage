@@ -26,18 +26,20 @@ const DemoBlock = (props) => {
             Give us a few details about yourself or your organization.
           </p>
         </div>
-        <div className="demostep">
-          <img id="problem" src={mouse}></img>
-          <h3 className="demostep-header">SIGN UP</h3>
+        <div id="demostep-mouse" className="demostep">
+          <img id="mouse-icon" src={mouse}></img>
+          <h3 id="demostep-header-mouse" className="demostep-header">
+            EXPLORE
+          </h3>
           <p className="demostep-disc">
-            Give us a few details about yourself or your organization.
+            Volunteers browse and apply to events created by organizations.
           </p>
         </div>
         <div className="demostep">
           <img src={phone}></img>
-          <h3 className="demostep-header">SIGN UP</h3>
+          <h3 className="demostep-header">CONNECT</h3>
           <p className="demostep-disc">
-            Give us a few details about yourself or your organization.
+            We connect the both of you on your behalf.{" "}
           </p>
         </div>
       </div>

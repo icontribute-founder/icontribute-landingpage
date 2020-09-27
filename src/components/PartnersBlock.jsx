@@ -16,15 +16,20 @@ const PartnersBlock = (props) => {
   return (
     <div className="partners-container">
       <h2 className="partners-header">Partners</h2>
-      <p className="partners-disc">Find what your passionate about</p>
+      <p className="partners-disc">
+        Organizations we are currently working with.
+      </p>
       <div className="placeholder">
-        <img src={sponsor1} />
-        <img src={sponsor2} />
-        <img src={sponsor3} />
-        <img src={sponsor5} />
-        <img src={sponsor6} />
-        <img src={sponsor7} />
-        <img src={sponsor8} />
+        <img id="sp2" src={sponsor2} />
+        <img id="sp3" src={sponsor3} />
+        <img id="sp4" src={sponsor5} />
+
+        <div className="small-logos">
+          <img id="sp1" src={sponsor1} />
+          <img id="sp5" src={sponsor6} />
+          <img id="sp6" src={sponsor7} />
+          <img id="sp7" src={sponsor8} />
+        </div>
       </div>
       <a className="hollow-yellow">LEARN MORE</a>
     </div>

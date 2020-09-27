@@ -50,7 +50,9 @@ const FooterBlock = (props) => {
               <a href="/ourteam">OUT TEAM</a>
             </li>
             <li>
-              <a>TERMS & CONDITIONS</a>
+              <a href="../terms/Privacy-Policy-Good-Draft.pdf" download>
+                TERMS & CONDITIONS
+              </a>
             </li>
             <li>
               <a>PRIVACY POLICY</a>

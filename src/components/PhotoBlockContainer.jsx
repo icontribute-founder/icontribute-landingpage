@@ -7,10 +7,10 @@ const PhotoBlockContainer = (props) => {
   const [photo, setPhoto] = useState([
     {
       photo: test2,
-      title: "test",
-      location: "test location",
-      date: "test date",
-      distance: "100",
+      title: "Fundraiser",
+      location: "Ottawa Community",
+      date: "Sat Jun 12, 2020",
+      distance: "10 km",
     },
   ]);
   return (
