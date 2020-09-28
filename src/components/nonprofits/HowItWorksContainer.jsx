@@ -43,10 +43,18 @@ const HowItWorksContainer = (props) => {
             Download iContribute app for your mobile device. It works with iOS
             and Android.
           </h2>
-          <a className="appstore">
+          <a
+            href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
+            target="_blank"
+            className="appstore"
+          >
             <img src={apple} />
           </a>
-          <a className="appstore">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.icontribute"
+            target="_blank"
+            className="appstore"
+          >
             <img src={google} />
           </a>
         </div>

@@ -4,6 +4,7 @@ import test from "../../images/anna-earl-cTtE2FlIRoU-unsplash 1.png";
 import test2 from "../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png";
 import apple from "../../images/1 25.png";
 import google from "../../images/1 26.png";
+import kidmom from "../../images/kidmom.png";
 import test4 from "../../images/photoblock/momkid.png";
 import "../../css/VMainBlock.css";
 
@@ -18,24 +19,24 @@ const MainBlock = (props) => {
     },
     {
       photo: test2,
+      title: "Community Cleaning",
+      location: "Ottawa Community",
+      date: "Every Saturday in 2021",
+      distance: "10 km",
+    },
+    {
+      photo: test,
+      title: "Student Volunteer",
+      location: "Ottawa Community",
+      date: "Sat Jun 16, 2020",
+      distance: "10.1 km",
+    },
+    {
+      photo: kidmom,
       title: "Daycare Helper",
       location: "Ottawa Daycare Center",
       date: "Every Sunday in 2021",
       distance: "8 km",
-    },
-    {
-      photo: test4,
-      title: "test",
-      location: "test location",
-      date: "test date",
-      distance: "100",
-    },
-    {
-      photo: test2,
-      title: "test",
-      location: "test location",
-      date: "test date",
-      distance: "100",
     },
   ]);
   return (

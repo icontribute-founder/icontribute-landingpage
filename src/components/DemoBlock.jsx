@@ -4,6 +4,8 @@ import placeholder from "../images/heart colour 1.png";
 import pencil from "../images/icons/pencil.png";
 import phone from "../images/icons/phoneIcon.png";
 import mouse from "../images/icons/mouse.png";
+import gif from "../images/sponsors/iContributeGif.gif";
+import blueFiller from "../images/iphone/Screen Shot 2020-09-28 at 8.55.57 AM.png";
 import "../css/DemoBlock.css";
 
 const DemoBlock = (props) => {
@@ -15,7 +17,9 @@ const DemoBlock = (props) => {
         We connect people who are looking for local volunteer opportunities to
         nonprofits who are actively recruiting
       </p>
-      <img src={iPhone}></img>
+      <img className="icontrib-phone" src={iPhone}></img>
+      <img className="icontrib-gif" src={gif} />
+      <img className="icontrib-filler" src={blueFiller} />
       <h2>Simple steps to get you up and running</h2>
       <p className="demoblock-disc">This is how it works</p>
       <div className="demostep-container">

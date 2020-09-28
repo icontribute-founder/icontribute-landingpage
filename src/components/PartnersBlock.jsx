@@ -9,6 +9,8 @@ import sponsor7 from "../images/sponsors/max.png";
 import sponsor8 from "../images/sponsors/ottawa_community_immigrant_services_organization.png";
 import sponsor9 from "../images/sponsors/OttawaDragonBoatFestival.jpg";
 import sponsor10 from "../images/sponsors/wocrc.png";
+import foodbank from "../images/sponsors/ottawafoodbank.png";
+import oDragonBoat from "../images/sponsors/OttawaDragonBoatFestival.jpg";
 
 import "../css/DemoBlock.css";
 
@@ -23,6 +25,8 @@ const PartnersBlock = (props) => {
         <img id="sp2" src={sponsor2} />
         <img id="sp3" src={sponsor3} />
         <img id="sp4" src={sponsor5} />
+        <img id="sp8" src={foodbank} />
+        <img id="sp9" src={oDragonBoat} />
 
         <div className="small-logos">
           <img id="sp1" src={sponsor1} />

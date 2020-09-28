@@ -12,6 +12,7 @@ import umang from "../../images/team/umang.png";
 import samuel from "../../images/team/samuel.png";
 import ella from "../../images/team/ella.png";
 import alicia from "../../images/team/alicia.png";
+import tony from "../../images/team/tony.png";
 
 import "../../css/TeamBlock.css";
 
@@ -105,10 +106,10 @@ const TeamBlockContainer = (props) => {
         "Hi! My name is Lydia and I found your volunteering opportunity through the iContribute platform. I’m enthusiastic to apply to your Relay for Life 3 event for the shifts: 8/12/2020, 12:02:00 AM I’m looking forward to your reply and hope to hear from you s",
     },
     {
-      photo: james,
+      photo: tony,
       name: "Tony Li",
       role: "Web Developer",
-      education: "gggggg",
+      education: "Carleton University, Computer Science & Statistics",
       description: "ggg",
     },
     {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import apple from "../images/1 25.png";
 import google from "../images/1 26.png";
 import "../css/FooterBlock.css";
+import privacy from "../terms/Privacy Policy Good Draft.pdf";
 
 const FooterBlock = (props) => {
   return (
@@ -42,20 +43,22 @@ const FooterBlock = (props) => {
               <a href="/nonprofit">NONPROFITS</a>
             </li>
             <li>
-              <a href="/contact">CONTACT US</a>
+              <a href="mailto:icontribute.founder@gmail.com">CONTACT US</a>
             </li>
           </ul>
           <ul className="footer-list2">
             <li>
-              <a href="/ourteam">OUT TEAM</a>
+              <a href="/ourteam">OUR TEAM</a>
             </li>
             <li>
-              <a href="../terms/Privacy-Policy-Good-Draft.pdf" download>
+              <a href={privacy} download>
                 TERMS & CONDITIONS
               </a>
             </li>
             <li>
-              <a>PRIVACY POLICY</a>
+              <a href={privacy} download>
+                PRIVACY POLICY
+              </a>
             </li>
             <li>
               <a

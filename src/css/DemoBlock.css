@@ -1,5 +1,6 @@
 .demoblock-container {
   text-align: center;
+  position: relative;
 }
 .demoblock-header {
   font-family: Montserrat;
@@ -66,4 +67,22 @@
 }
 #demostep-header-mouse {
   margin-top: 127.3px;
+}
+#sp8 {
+  width: 60%;
+}
+.icontrib-phone {
+  z-index: -2;
+}
+.icontrib-gif {
+  position: absolute;
+  left: 357px;
+  top: 241px;
+  z-index: 2;
+}
+.icontrib-filler {
+  position: absolute;
+  left: 478px;
+  bottom: 755px;
+  z-index: 1;
 }
