@@ -9,6 +9,7 @@ import sponsor7 from "../images/sponsors/max.png";
 import sponsor8 from "../images/sponsors/ottawa_community_immigrant_services_organization.png";
 import sponsor9 from "../images/sponsors/OttawaDragonBoatFestival.jpg";
 import sponsor10 from "../images/sponsors/wocrc.png";
+import sponsor11 from "../images/sponsors/ottawafoodbank.png"
 
 import "../css/DemoBlock.css";
 
@@ -21,7 +22,8 @@ const PartnersBlock = (props) => {
       </p>
       <div className="placeholder">
         <img id="sp2" src={sponsor2} />
-        <img id="sp3" src={sponsor3} />
+        {/* <img id="sp7" src={sponsor11} /> */}
+        <img id="sp3" src={sponsor9} />
         <img id="sp4" src={sponsor5} />
 
         <div className="small-logos">
