@@ -23,7 +23,6 @@ const PartnersBlock = (props) => {
       </p>
       <div className="placeholder">
         <img id="sp2" src={sponsor2} />
-        <img id="sp3" src={sponsor9} />
         <img id="sp4" src={sponsor5} />
         <img id="sp8" src={foodbank} />
         <img id="sp9" src={oDragonBoat} />

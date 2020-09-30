@@ -31,7 +31,7 @@ const TeamBlockContainer = (props) => {
       role: "Founder",
       education: "Carleton University, Computer Science & Business",
       description:
-        "This started off as a summer project, but turned into a full-time job; collaborating with local organizations, school boards, leading a team of amazing individuals, and of course, hosting our weekly round of iContribute-Olympics. From putting in work throughout their days, nights, and weekends, to making rap freestyles and singing their hearts during our team bonding sessions. It was an amazing experience to be able to work with so many people that really believe in a vision you created.One fun fact about myself is that I actually almost drowned at a water park ! Some of my personal hobbies include taking dares, doing handstands in public, and making funny tik toks !",
+        "This started off as a summer project, but turned into a full-time job; collaborating with local organizations, school boards, leading a team of amazing individuals. It was an amazing experience to be able to work with so many people that really believe in a vision you created. One fun fact about myself is that I actually almost drowned at a water park ! Some of my personal hobbies include taking dares, doing handstands in public, and making funny tik toks !",
     },
     {
       photo: umai,
