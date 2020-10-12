@@ -14,7 +14,7 @@ const PhotoBlockContainer = (props) => {
     },
   ]);
   return (
-    <div className="photoblock-container">
+    <div data-aos="fade-up" className="photoblock-container">
       <div className="mainblock-photo">
         {photo.map((block, blockId) => {
           return (

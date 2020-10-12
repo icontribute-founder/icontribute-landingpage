@@ -21,7 +21,7 @@ const PartnersBlock = (props) => {
       <p className="partners-disc">
         Organizations we are currently working with.
       </p>
-      <div className="placeholder">
+      <div data-aos="fade-up" className="placeholder">
         <img id="sp2" src={sponsor2} />
         <img id="sp4" src={sponsor5} />
         <img id="sp8" src={foodbank} />

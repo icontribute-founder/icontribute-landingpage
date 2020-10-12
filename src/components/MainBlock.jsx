@@ -6,7 +6,7 @@ import "../css/MainBlock.css";
 
 const MainBlock = (props) => {
   return (
-    <div className="main-container">
+    <div data-aos="fade-up" className="main-container">
       <div className="main-info">
         <h1>Volunteering just got easier</h1>
         <p>
