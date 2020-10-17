@@ -31,7 +31,7 @@ const PhotoBlockContainer = (props) => {
       </div>
       <div className="getstarted">
         <h2>Make a meaningful contribution to your community</h2>
-        <a className="solid-yellow">GET STARTED</a>
+        <a href="mailto:icontribute.founder@gmail.com" className="solid-yellow">GET STARTED</a>
       </div>
     </div>
   );

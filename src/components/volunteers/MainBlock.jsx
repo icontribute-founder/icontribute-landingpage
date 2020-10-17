@@ -41,7 +41,7 @@ const MainBlock = (props) => {
   ]);
   return (
     <div className="main-container-v">
-      <div className="main-info">
+      <div data-aos="fade-up" className="main-info">
         <h1>Find volunteer events effortlessly</h1>
         <p>
           It is easy to get started with us here. After creating an account with
@@ -62,7 +62,7 @@ const MainBlock = (props) => {
           <img src={google} />
         </a>
       </div>
-      <div className="test">
+      <div data-aos="fade-up" className="test">
         <div className="photoblock-scroll-wrapper">
           <div className="photoblock-scroll">
             {photo.map((block, blockId) => {

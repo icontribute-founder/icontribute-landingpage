@@ -23,7 +23,7 @@ const TeamBlockContainer = (props) => {
       name: "James Ying",
       role: "Co-Founder & Developer",
       education: "Carleton University, Computer Science",
-      description: "I am an advid fisherman and music enthusiast.",
+      description: "Working on iContribute has been a fantastic experience. It has been a great learning experience to go through the stages of planning, development and launch. I look forward to working with the team to expand the volunteer platform in the future. In my free time, I enjoy playing badminton in the summer and snowboarding in the winter. I also play the piano and watch movies in my spare time.",
     },
     {
       photo: haohao,
@@ -31,7 +31,7 @@ const TeamBlockContainer = (props) => {
       role: "Founder",
       education: "Carleton University, Computer Science & Business",
       description:
-        "This started off as a summer project, but turned into a full-time job; collaborating with local organizations, school boards, leading a team of amazing individuals. It was an amazing experience to be able to work with so many people that really believe in a vision you created. One fun fact about myself is that I actually almost drowned at a water park ! Some of my personal hobbies include taking dares, doing handstands in public, and making funny tik toks !",
+        "It was an amazing experience to be able to work with so many people that really believe in a vision you created. One fun fact about myself is that I actually almost drowned at a water park ! Some of my personal hobbies include taking dares, doing handstands in public, and making funny tik toks !",
     },
     {
       photo: umai,
@@ -56,7 +56,7 @@ const TeamBlockContainer = (props) => {
       role: "Design Lead",
       education: "University of Toronto, Pharmacy",
       description:
-        "I really enjoyed creating the UI design for iContribute! It was my first time ever using a design tool such as Figma, and it was a great way for me to explore this new and exciting field.My hobbies usually include being active. I love to workout, run, hike, boulder and bike! I also really enjoy bullet journalling to keep my schedule organized especially during the school year. ",
+        "I really enjoyed creating the UI design for iContribute! It was my first time ever using a design tool such as Figma, and it was a great way for me to explore this new and exciting field. \n\nMy hobbies usually include being active. I love to workout, run, hike, boulder and bike! I also really enjoy bullet journalling to keep my schedule organized especially during the school year. ",
     },
     {
       photo: lydia,
@@ -86,8 +86,8 @@ const TeamBlockContainer = (props) => {
       photo: umang,
       name: "Umang Srivastav",
       role: "Back-End Developer",
-      education: "gggggg",
-      description: "ggg",
+      education: "University of California, Irvine",
+      description: "I really liked the team atmosphere and how supportive everyone was! I helped my friend build a rock climbing wall in his backyard during quarantine.",
     },
     {
       photo: samuel,
@@ -101,7 +101,7 @@ const TeamBlockContainer = (props) => {
       photo: ella,
       name: "Ella Queen",
       role: "Tech Advisor",
-      education: "gggggg",
+      education: "University of California",
       description:
         "Hi! My name is Lydia and I found your volunteering opportunity through the iContribute platform. I’m enthusiastic to apply to your Relay for Life 3 event for the shifts: 8/12/2020, 12:02:00 AM I’m looking forward to your reply and hope to hear from you s",
     },
@@ -123,7 +123,7 @@ const TeamBlockContainer = (props) => {
   ]);
   return (
     <div className="teamblock-container">
-      <div className="teamblock-header">
+      <div data-aos="fade-up" className="teamblock-header">
         <h1>
           iContribute is built and maintained by this wonderful group of
           students.
@@ -131,7 +131,7 @@ const TeamBlockContainer = (props) => {
         <a>Click to learn more about us.</a>
       </div>
 
-      <div className="teamblock-grid">
+      <div data-aos="fade-up" className="teamblock-grid">
         {team.map((block, blockId) => {
           return (
             <TeamBlock

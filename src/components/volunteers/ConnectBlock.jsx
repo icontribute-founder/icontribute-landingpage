@@ -5,7 +5,7 @@ import "../../css/Connect.css";
 
 const ConnectBlock = (props) => {
   return (
-    <div className="connect-container">
+    <div data-aos="fade-up" className="connect-container">
       <div className="connect-wrapper">
         <div className="connect-header">
           <h1>Connect with organizations at the tips of your fingers</h1>

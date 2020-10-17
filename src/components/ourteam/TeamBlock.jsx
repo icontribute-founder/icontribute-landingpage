@@ -47,7 +47,7 @@ const TeamBlock = (props) => {
             <div className="teamblock-text">
               <h1 className="team-name">{props.name}</h1>
               <h2 className="team-role">{props.role}</h2>
-              <h3 className="team-education">{props.education}</h3>
+              <h3 className="team-education">{props.education.split('\n').map((item, i) => { return <p key={i}>{item}<br /></p> })}</h3>
               <p className="team-disc">{props.description} </p>
             </div>
           </div>

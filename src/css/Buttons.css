@@ -17,6 +17,7 @@
 .hollow-yellow:hover {
   background-color: #ffc80a;
   color: white;
+  transition-duration: 300ms;
 }
 
 .solid-yellow {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../css/OurTeam.css";
 const MainBlock = (props) => {
   return (
-    <div className="watermark-text-container">
+    <div data-aos="fade-up" className="watermark-text-container">
       <h1 className="watermark-main">
         The people who work at iContribute share the visions of our community.
       </h1>

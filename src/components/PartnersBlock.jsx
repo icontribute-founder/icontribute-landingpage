@@ -27,7 +27,7 @@ const PartnersBlock = (props) => {
         <img id="sp8" src={foodbank} />
         <img id="sp9" src={oDragonBoat} />
 
-        <div className="small-logos">
+        <div data-aos="fade-up" className="small-logos">
           <img id="sp1" src={sponsor1} />
           <img id="sp5" src={sponsor6} />
           <img id="sp6" src={sponsor7} />

@@ -10,13 +10,14 @@ import "../../css/TeamCallBlock.css";
 const TeamCallBlock = (props) => {
   return (
     <div className="teamblockcall-container">
-      <h1>
-        We love what we do, but we’re pretty big on that whole work-life balance
-        too.
+      <div data-aos="fade-up">
+        <h1>
+          We love what we do, but we’re pretty big on that whole work-life balance
+          too.
       </h1>
-      <p>Although we were miles apart, we found ways to connect.</p>
-
-      <div className="zoomcall-grid1">
+        <p>Although we were miles apart, we found ways to connect.</p>
+      </div>
+      <div data-aos="fade-up" className="zoomcall-grid1">
         <img id="photoGrid1" src={grid1} />
         <img id="photoGrid2" src={grid2} />
         <img id="photoGrid3" src={grid3} />
@@ -24,7 +25,7 @@ const TeamCallBlock = (props) => {
         <a id="photoGrid2" />
         <a id="photoGrid3" /> */}
       </div>
-      <div className="zoomcall-grid2">
+      <div data-aos="fade-up" className="zoomcall-grid2">
         <img id="photoGrid4" src={grid4} />
         <img id="photoGrid5" src={grid5} />
         <img id="photoGrid6" src={grid6} />
