@@ -2,6 +2,7 @@ import React from "react";
 import "../css/NavBar.css";
 
 const NavBar = (props) => {
+
   return (
     <div className="navbar-container">
       <div className="navbar-content">
