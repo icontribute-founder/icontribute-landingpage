@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Test from "./Test";
 import map from "../../images/map.png";
 import florida from "../../images/map/florida.png";
 import bowdoin from "../../images/map/bowdoin.png";
 import northWestern from "../../images/map/northWestern.png";
 import "../../css/OurTeam.css";
-import ReactTooltip from 'react-tooltip'
+import ReactTooltip from "react-tooltip";
 import james from "../../images/team/james.jpg";
 import haohao from "../../images/team/haohao.png";
 import umai from "../../images/team/umai.png";
@@ -27,8 +28,8 @@ const AcrossGlobeBlock = (props) => {
       name: "Kirti Desai",
       role: "Back-End Developer",
       education: "University of Florida, Computer Science",
-      left: '673px',
-      top: '436px',
+      left: "673px",
+      top: "386px",
     },
     {
       photo: lydia,
@@ -36,8 +37,8 @@ const AcrossGlobeBlock = (props) => {
       name: "Lydia Pitts",
       role: "Designer and Front-End Developer",
       education: "Bowdoin College, Computer Science & Visual Art",
-      left: '784px',
-      top: '296px',
+      left: "784px",
+      top: "245px",
     },
     // {
     //   name: "James Ying",
@@ -97,19 +98,32 @@ const AcrossGlobeBlock = (props) => {
   const teamModal = (person) => {
     return (
       <div>
-        <img data-tip="React-tooltip" src={person.map} style={{ position: "absolute", left: person.left, top: person.top }} />
+        <img
+          data-tip="React-tooltip"
+          src={person.map}
+          style={{ position: "absolute", left: person.left, top: person.top }}
+        />
         <ReactTooltip place="right" type="dark">
-          <div style={{ width: "250px", display: "flex", flexDirection: "row" }}>
-            <img src={person.photo} style={{ borderRadius: 15, maxWidth: "30%", height: "auto" }} />
+          <div
+            style={{ width: "250px", display: "flex", flexDirection: "row" }}
+          >
+            <img
+              src={person.photo}
+              style={{ borderRadius: 15, maxWidth: "30%", height: "auto" }}
+            />
             <div>
-              <p><strong>{person.name}</strong> <br />{person.role}<br /></p>
+              <p>
+                <strong>{person.name}</strong> <br />
+                {person.role}
+                <br />
+              </p>
               <p>{person.education}</p>
             </div>
           </div>
         </ReactTooltip>
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <div data-aos="fade-up" className="globe-container">
@@ -120,10 +134,24 @@ const AcrossGlobeBlock = (props) => {
       </h2>
       <div style={{ position: "relative" }}>
         <img src={map} />
-        {/* {team.map(person => {
-          return teamModal(person)
+        {/* {team.map((person) => {
+          return teamModal(person);
         })} */}
-        {teamModal(team[0])}
+        {/* {teamModal(team[1])} */}
+        {team.map((person, teamId) => {
+          return (
+            <Test
+              key={teamId}
+              map={person.map}
+              left={person.left}
+              top={person.top}
+              role={person.role}
+              education={person.education}
+              name={person.name}
+              photo={person.photo}
+            />
+          );
+        })}
       </div>
     </div>
   );
