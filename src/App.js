@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 import FooterBlock from './components/FooterBlock';
 import './css/Buttons.css';
 import './css/PageMargin.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import VolunteersScreen from './screens/VolunteersScreen';
 import NonProfitScreen from './screens/NonProfitScreen.jsx';
@@ -13,7 +13,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 const App = (props) => {
   return (
-    <Router>
+    <Router basename="/">
       <ScrollToTop />
       <div className="site-container">
         <NavBar />
