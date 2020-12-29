@@ -1,8 +1,8 @@
-import React from "react";
-import "../css/NavBar.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../css/NavBar.css';
 
 const NavBar = (props) => {
-
   return (
     <div className="navbar-container">
       <div className="navbar-content">
@@ -12,16 +12,18 @@ const NavBar = (props) => {
         </div>
 
         <div className="navbar-links">
-          <a className="home" href="/">
+          <NavLink exact to="/" activeClassName="selected">
             HOME
-          </a>
-          <a className="volunteers" href="/volunteers">
+          </NavLink>
+          <NavLink to="/volunteers" activeClassName="selected">
             VOLUNTEERS
-          </a>
-          <a href="/nonprofit">NONPROFIT</a>
-          <a id="ourteam" href="/ourteam">
+          </NavLink>
+          <NavLink to="/nonprofit" activeClassName="selected">
+            NONPROFIT
+          </NavLink>
+          <NavLink to="/ourteam" id="ourteam" activeClassName="selected">
             OUR TEAM
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

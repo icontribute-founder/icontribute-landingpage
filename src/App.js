@@ -1,20 +1,22 @@
-import React from "react";
-import NavBar from "./components/NavBar";
-import FooterBlock from "./components/FooterBlock";
-import "./css/Buttons.css";
-import "./css/PageMargin.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
-import VolunteersScreen from "./screens/VolunteersScreen";
-import NonProfitScreen from "./screens/NonProfitScreen.jsx";
-import OurTeamScreen from "./screens/OurTeamScreen";
-import GetInTouch from "./components/GetInTouchBlock";
+import React from 'react';
+import NavBar from './components/NavBar';
+import FooterBlock from './components/FooterBlock';
+import './css/Buttons.css';
+import './css/PageMargin.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import VolunteersScreen from './screens/VolunteersScreen';
+import NonProfitScreen from './screens/NonProfitScreen.jsx';
+import OurTeamScreen from './screens/OurTeamScreen';
+import GetInTouch from './components/GetInTouchBlock';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = (props) => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="site-container">
-        <NavBar></NavBar>
+        <NavBar />
         <div className="site-margin">
           <Switch>
             <Route path="/" exact component={HomeScreen} />
@@ -23,8 +25,8 @@ const App = (props) => {
             <Route path="/ourteam" exact component={OurTeamScreen} />
           </Switch>
         </div>
-        <GetInTouch></GetInTouch>
-        <FooterBlock></FooterBlock>
+        <GetInTouch />
+        <FooterBlock />
       </div>
     </Router>
   );

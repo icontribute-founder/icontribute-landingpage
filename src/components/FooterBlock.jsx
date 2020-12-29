@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
-import apple from "../images/1 25.png";
-import google from "../images/1 26.png";
-import "../css/FooterBlock.css";
-import privacy from "../terms/Privacy Policy Good Draft.pdf";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import apple from '../images/1 25.png';
+import google from '../images/1 26.png';
+import '../css/FooterBlock.css';
+import privacy from '../terms/Privacy Policy Good Draft.pdf';
 
 const FooterBlock = (props) => {
   return (
@@ -31,16 +32,16 @@ const FooterBlock = (props) => {
         </div>
 
         <div className="footer-list-container">
-          {" "}
+          {' '}
           <ul className="footer-list">
             <li>
-              <a href="/">HOME</a>
+              <Link to="/">HOME</Link>
             </li>
             <li>
-              <a href="/volunteers">VOLUNTEERS</a>
+              <Link to="/volunteers">VOLUNTEERS</Link>
             </li>
             <li>
-              <a href="/nonprofit">NONPROFITS</a>
+              <Link to="/nonprofit">NONPROFITS</Link>
             </li>
             <li>
               <a href="mailto:icontribute.founder@gmail.com">CONTACT US</a>
@@ -48,7 +49,7 @@ const FooterBlock = (props) => {
           </ul>
           <ul className="footer-list2">
             <li>
-              <a href="/ourteam">OUR TEAM</a>
+              <Link to="/ourteam">OUR TEAM</Link>
             </li>
             <li>
               <a href={privacy} download>
@@ -61,10 +62,7 @@ const FooterBlock = (props) => {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/company/icontribute/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/company/icontribute/" target="_blank">
                 FOLLOW US
               </a>
             </li>
