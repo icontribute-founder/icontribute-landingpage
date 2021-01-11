@@ -12,16 +12,16 @@ const NavBar = (props) => {
         </div>
 
         <div className="navbar-links">
-          <NavLink exact to="/" activeClassName="selected">
+          <NavLink className="navbar-link" exact to="/" activeClassName="selected">
             HOME
           </NavLink>
-          <NavLink to="/volunteers" activeClassName="selected">
+          <NavLink className="navbar-link" to="/volunteers" activeClassName="selected">
             VOLUNTEERS
           </NavLink>
-          <NavLink to="/nonprofit" activeClassName="selected">
+          <NavLink className="navbar-link" to="/nonprofit" activeClassName="selected">
             NONPROFIT
           </NavLink>
-          <NavLink to="/ourteam" id="ourteam" activeClassName="selected">
+          <NavLink className="navbar-link" to="/ourteam" id="ourteam" activeClassName="selected">
             OUR TEAM
           </NavLink>
         </div>

@@ -4,4 +4,13 @@
 .getintouch-container h1,
 .getintouch-container h2 {
   margin: 35px;
+  font-weight: bold;
+}
+
+.getintouch-container h1 {
+  font-size: 2em;
+}
+
+.getintouch-container h2 {
+  font-size: 1.5em;
 }

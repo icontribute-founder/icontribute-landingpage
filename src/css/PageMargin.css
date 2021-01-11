@@ -10,7 +10,8 @@ a:hover {
 .globe-container,
 .watermark-text-container,
 .footer-container,
-.teamblock-container {
+.teamblock-container,
+.FAQBlock-container {
   margin-top: 100px;
 }
 

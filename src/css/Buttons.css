@@ -1,3 +1,12 @@
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
 .hollow-yellow {
   width: 180px;
   height: 54px;
@@ -8,11 +17,14 @@
   font-weight: bold;
   font-size: 12px;
 
+  color: #212121;
+
   border: 3px solid #ffc80a;
   box-sizing: border-box;
   border-radius: 100px;
   padding: 17px;
   text-align: center;
+  transition-duration: 300ms;
 }
 .hollow-yellow:hover {
   background-color: #ffc80a;
@@ -36,11 +48,13 @@
   border-radius: 100px;
   padding: 16px;
   text-align: center;
+  transition-duration: 300ms;
 }
 
 .solid-yellow:hover {
   background-color: white;
   color: black;
+  transition-duration: 300ms;
 }
 
 .yellow-dot {
