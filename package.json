@@ -13,7 +13,9 @@
     "react-pdf": "^5.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-tooltip": "^4.2.10"
+    "react-simple-maps": "^2.3.0",
+    "react-tooltip": "^4.2.10",
+    "shuffle-array": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
