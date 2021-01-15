@@ -1,0 +1,17 @@
+.TestimonialsBlock {
+  text-align: center;
+}
+
+.TestimonialsBlock-header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 600;
+  color: #133a4b;
+}
+
+/* need the following, since the default background color is black (and looks ugly) */
+.carousel,
+.slide {
+  background-color: #ffffff00 !important;
+}

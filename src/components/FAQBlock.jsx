@@ -25,6 +25,11 @@ const FAQBlock = () => {
                   props: {
                     className: 'FAQBlock-link'
                   }
+                },
+                blockquote: {
+                  props: {
+                    className: 'FAQBlock-quote'
+                  }
                 }
               }
             }}

@@ -1,14 +1,16 @@
-import React from "react";
-import MainBlock from "../components/volunteers/MainBlock";
-import WCYDBubbleContainer from "../components/volunteers/WCYDBubbleContainer";
-import ConnectBlock from "../components/volunteers/ConnectBlock";
+import React from 'react';
+import MainBlock from '../components/volunteers/MainBlock';
+import WCYDBubbleContainer from '../components/volunteers/WCYDBubbleContainer';
+import ConnectBlock from '../components/volunteers/ConnectBlock';
+import TestimonialsBlock from '../components/volunteers/TestimonialsBlock';
 
-const VolunteersScreen = (props) => {
+const VolunteersScreen = () => {
   return (
     <div>
-      <MainBlock></MainBlock>
-      <WCYDBubbleContainer></WCYDBubbleContainer>
-      <ConnectBlock></ConnectBlock>
+      <MainBlock />
+      <WCYDBubbleContainer />
+      <ConnectBlock />
+      <TestimonialsBlock />
     </div>
   );
 };
