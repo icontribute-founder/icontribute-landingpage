@@ -74,21 +74,31 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
       {teamLocations.map(({ coord, teamMembers }, i) => {
         const coordinates = coord.split(',');
         return (
-          <Marker
-            key={i}
-            coordinates={coordinates}
-            onMouseEnter={(e) => handleMouseEnter(e, teamMembers)}
-            onMouseLeave={handleMouseLeave}
-          >
+          <Marker key={i} coordinates={coordinates}>
+            <circle className="Globe-PulseCircle" cy="-1.5" fill={getColor(i)}>
+              <animate
+                attributeName="r"
+                from={getCircleRadius(teamMembers.length)}
+                to={getCircleRadius(teamMembers.length) + 10}
+                dur="1.5s"
+                begin="0s"
+                repeatCount="indefinite"
+              />
+              <animate attributeName="opacity" from="0.5" to="0" dur="1.5s" begin="0s" repeatCount="indefinite" />
+            </circle>
             <circle
               key={i}
               cx="12"
               cy="22.5"
               transform="translate(-12, -24)"
-              fillOpacity={0.5}
+              className="Globe-Circle"
+              onMouseEnter={(e) => handleMouseEnter(e, teamMembers)}
+              onMouseLeave={handleMouseLeave}
               fill={getColor(i)}
               r={getCircleRadius(teamMembers.length)}
-            />
+            >
+              <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" begin="0s" repeatCount="indefinite" />
+            </circle>
           </Marker>
         );
       })}

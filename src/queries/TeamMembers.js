@@ -40,6 +40,13 @@ const groupTeamMembersByLocation = (teamMembers) => {
     }
   });
 
+  // sort locations by the number of team members in that location
+  locations.sort((a, b) => {
+    if (a['teamMembers'].length < b['teamMembers'].length) return 1;
+    if (a['teamMembers'].length > b['teamMembers'].length) return -1;
+    return 0;
+  });
+
   return locations;
 };
 

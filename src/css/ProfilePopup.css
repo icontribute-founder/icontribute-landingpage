@@ -1,4 +1,4 @@
-.ProfilePopup-container {
+.ProfilePopup {
   display: flex;
   align-items: center;
 
@@ -22,12 +22,12 @@
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-.ProfilePopup-container-right {
+.ProfilePopup-right {
   flex-direction: row;
   text-align: left;
 }
 
-.ProfilePopup-container-left {
+.ProfilePopup-left {
   flex-direction: row-reverse;
   text-align: right;
 }

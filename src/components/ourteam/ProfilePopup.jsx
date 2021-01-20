@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import blank_profile from '../../images/team/blank_profile.png';
 import '../../css/ProfilePopup.css';
 
 const ProfilePopup = ({ teamMember, position, index }) => {
+  // const [ isFadingOut, setIsFadingOut ] = useState(false);
+
+  // useEffect(() => {
+  //   return () => {
+  //     console.log('unmounting...');
+  //     setIsFadingOut(true);
+
+  //     setTimeout(() => {
+  //       console.log('NOW');
+  //     }, 3000);
+  //   };
+  // });
+
   return (
     <div
-      className={`ProfilePopup-container ProfilePopup-container-${position}`}
+      className={`ProfilePopup ProfilePopup-${position}`}
       style={
         index % 2 === 0 && position === 'right' ? (
           { left: '500px', top: `-${index * 75}px`, animation: `fadein ${0.5 * index + 1}s` }
