@@ -12,6 +12,14 @@
   padding: 5px;
   background-color: #fff;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 .ProfilePopup-container-right {
@@ -29,6 +37,7 @@
   height: 100px; /*<-- TODO*/
   width: 100px; /*<-- TODO*/
   border-radius: 100px;
+  object-fit: cover;
 }
 
 .ProfilePopup-name-role-previous {

@@ -29,16 +29,15 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
   };
 
   const handleMouseEnter = (event, teamMembers) => {
-    console.log('IN');
+    // calculate the side of the screen the mouse is currently on
+    const mouseIsOnTheLeftSideOfTheScreen = event.screenX / window.screen.width < 0.5;
+    setMousePosition(mouseIsOnTheLeftSideOfTheScreen ? 'left' : 'right');
 
-    // const mouseIsOnTheLeftSideOfTheScreen = event.screenX / window.screen.width < 0.5;
-    // setMousePosition(mouseIsOnTheLeftSideOfTheScreen ? 'left' : 'right');
-    // setPeopleOfHoveredLocation(shuffle(teamMembers));
+    setPeopleOfHoveredLocation(shuffle(teamMembers));
   };
 
   const handleMouseLeave = () => {
-    console.log('OUT');
-    // setPeopleOfHoveredLocation([]);
+    setPeopleOfHoveredLocation([]);
   };
 
   const geoUrl =
@@ -82,6 +81,7 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
             onMouseLeave={handleMouseLeave}
           >
             <circle
+              key={i}
               cx="12"
               cy="22.5"
               transform="translate(-12, -24)"

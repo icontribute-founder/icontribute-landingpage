@@ -14,7 +14,8 @@ const InteractiveMap = ({ teamLocations }) => {
         setPeopleOfHoveredLocation={setPeopleOfHoveredLocation}
         setMousePosition={setMousePosition}
       />
-      <div className="InteractiveMap-Popups">
+      {/* zIndex = -1 is NEEDED or else a bug happens when hovering over dots on the globe */}
+      <div className="InteractiveMap-Popups" style={{ zIndex: '-1' }}>
         {peopleOfHoveredLocation.map((person, i) => (
           <ProfilePopup key={i} index={i} teamMember={person} position={mousePosition} />
         ))}
