@@ -38,7 +38,7 @@
 .ProfilePopup-transition-right-enter-active {
   opacity: 1;
   transform: translate(0, 0);
-  transition: all 400ms ease-in;
+  transition: all 400ms ease;
 }
 
 .ProfilePopup-transition-right-exit {
@@ -48,7 +48,7 @@
 .ProfilePopup-transition-right-exit-active {
   opacity: 0.01;
   transform: translate(50px, 0);
-  transition: all 400ms ease-in;
+  transition: all 400ms ease;
 }
 
 .ProfilePopup-transition-left-enter {
@@ -59,7 +59,7 @@
 .ProfilePopup-transition-left-enter-active {
   opacity: 1;
   transform: translate(0, 0);
-  transition: all 400ms ease-in;
+  transition: all 400ms ease;
 }
 
 .ProfilePopup-transition-left-exit {
@@ -69,5 +69,5 @@
 .ProfilePopup-transition-left-exit-active {
   opacity: 0.01;
   transform: translate(-50px, 0);
-  transition: all 400ms ease-in;
+  transition: all 400ms ease;
 }
