@@ -1,19 +1,36 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Chevron from './Chevron';
 
 import '../css/Accordion.css';
 
 function Accordion(props) {
-  const [ setActive, setActiveState ] = useState('');
+  const [ setActive, setActiveState ] = useState(props.isOpen ? 'active' : '');
   const [ setHeight, setHeightState ] = useState('0px');
   const [ setRotate, setRotateState ] = useState('accordion__icon');
+
+  useEffect(
+    () => {
+      if (props.isOpen) {
+        setActiveState('active');
+        setHeightState(`${content.current.scrollHeight}px`);
+        setRotateState('accordion__icon rotate');
+      } else {
+        setActiveState('');
+        setHeightState('0px');
+        setRotateState('accordion__icon');
+      }
+    },
+    [ props.isOpen ]
+  );
 
   const content = useRef(null);
 
   function toggleAccordion() {
-    setActiveState(setActive === '' ? 'active' : '');
-    setHeightState(setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`);
-    setRotateState(setActive === 'active' ? 'accordion__icon' : 'accordion__icon rotate');
+    if (props.isOpen) {
+      props.setIdxOfOpenedAccordion(-1);
+    } else {
+      props.setIdxOfOpenedAccordion(props.idx);
+    }
   }
 
   return (

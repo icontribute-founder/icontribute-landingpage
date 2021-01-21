@@ -7,14 +7,19 @@ import '../css/FAQBlock.css';
 
 const FAQBlock = () => {
   const [ faqItems, setFaqItems ] = useState([]);
+  const [ idxOfOpenedAccordion, setIdxOfOpenedAccordion ] = useState(-1); // if idx = -1, then no Accordions are opened
 
   useEffect(() => {
     fetchFAQs(setFaqItems);
   }, []);
 
-  const faqAccordions = faqItems.map((item, i) => {
+  const faqAccordions = faqItems.map((item, idx) => {
     return (
       <Accordion
+        key={idx}
+        idx={idx}
+        isOpen={idx === idxOfOpenedAccordion}
+        setIdxOfOpenedAccordion={setIdxOfOpenedAccordion}
         title={item.question}
         content={
           // the following converts the markdown into JSX
@@ -37,7 +42,6 @@ const FAQBlock = () => {
             {item.answer}
           </Markdown>
         }
-        key={i}
       />
     );
   });
