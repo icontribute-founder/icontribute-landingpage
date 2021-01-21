@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 import shuffle from 'shuffle-array';
 
@@ -16,6 +16,8 @@ const colors = [
 ];
 
 const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) => {
+  const [ idxOfGlowingCircle, setIdxOfGlowingCircle ] = useState(-1); // if idx = -1, then all circles are glowing
+
   const getColor = (idx) => {
     const i = idx % colors.length;
     return colors[i];
@@ -28,15 +30,21 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
     return Math.min(Math.max(r, 10), 20);
   };
 
-  const handleMouseEnter = (event, teamMembers) => {
+  const isGlowing = (idx) => {
+    return idx === idxOfGlowingCircle || idxOfGlowingCircle === -1;
+  };
+
+  const handleMouseEnter = (event, teamMembers, idx) => {
     // calculate the side of the screen the mouse is currently on
     const mouseIsOnTheLeftSideOfTheScreen = event.screenX / window.screen.width < 0.5;
     setMousePosition(mouseIsOnTheLeftSideOfTheScreen ? 'left' : 'right');
 
+    setIdxOfGlowingCircle(idx);
     setPeopleOfHoveredLocation(shuffle(teamMembers));
   };
 
   const handleMouseLeave = () => {
+    setIdxOfGlowingCircle(-1);
     setPeopleOfHoveredLocation([]);
   };
 
@@ -71,34 +79,34 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
               />
             ))}
       </Geographies>
-      {teamLocations.map(({ coord, teamMembers }, i) => {
+      {teamLocations.map(({ coord, teamMembers }, idx) => {
         const coordinates = coord.split(',');
         return (
-          <Marker key={i} coordinates={coordinates}>
-            <circle className="Globe-PulseCircle" cy="-1.5" fill={getColor(i)}>
-              <animate
-                attributeName="r"
-                from={getCircleRadius(teamMembers.length)}
-                to={getCircleRadius(teamMembers.length) + 10}
-                dur="1.5s"
-                begin="0s"
-                repeatCount="indefinite"
-              />
-              <animate attributeName="opacity" from="0.5" to="0" dur="1.5s" begin="0s" repeatCount="indefinite" />
-            </circle>
+          <Marker key={idx} coordinates={coordinates}>
+            {isGlowing(idx) ? (
+              <circle className="Globe-GlowingCircle" cy="-1.5" fill={getColor(idx)}>
+                <animate
+                  attributeName="r"
+                  from={getCircleRadius(teamMembers.length)}
+                  to={getCircleRadius(teamMembers.length) + 10}
+                  dur="1s"
+                  begin="0s"
+                  repeatCount="indefinite"
+                />
+                <animate attributeName="opacity" from="0.5" to="0" dur="1s" begin="0s" repeatCount="indefinite" />
+              </circle>
+            ) : null}
             <circle
-              key={i}
+              key={idx}
               cx="12"
               cy="22.5"
               transform="translate(-12, -24)"
               className="Globe-Circle"
-              onMouseEnter={(e) => handleMouseEnter(e, teamMembers)}
+              onMouseEnter={(e) => handleMouseEnter(e, teamMembers, idx)}
               onMouseLeave={handleMouseLeave}
-              fill={getColor(i)}
+              fill={getColor(idx)}
               r={getCircleRadius(teamMembers.length)}
-            >
-              <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" begin="0s" repeatCount="indefinite" />
-            </circle>
+            />
           </Marker>
         );
       })}
