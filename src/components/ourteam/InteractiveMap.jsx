@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Globe from './Globe';
 import ProfilePopup from './ProfilePopup';
 import '../../css/InteractiveMap.css';
@@ -16,9 +17,19 @@ const InteractiveMap = ({ teamLocations }) => {
       />
       {/* zIndex = -1 is NEEDED or else a bug happens when hovering over dots on the globe */}
       <div className="InteractiveMap-Popups" style={{ zIndex: '-1' }}>
-        {peopleOfHoveredLocation.map((person, i) => (
-          <ProfilePopup key={i} index={i} teamMember={person} mousePosition={mousePosition} />
-        ))}
+        <TransitionGroup>
+          {peopleOfHoveredLocation.map((person, idx) => {
+            const className =
+              (idx % 2 === 0 && mousePosition === 'right') || (idx % 2 === 1 && mousePosition === 'left')
+                ? 'ProfilePopup-transition-right'
+                : 'ProfilePopup-transition-left';
+            return (
+              <CSSTransition key={idx} timeout={400} classNames={className}>
+                <ProfilePopup index={idx} teamMember={person} mousePosition={mousePosition} />
+              </CSSTransition>
+            );
+          })}
+        </TransitionGroup>
       </div>
     </div>
   );

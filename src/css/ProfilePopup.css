@@ -30,55 +30,44 @@
   object-fit: cover;
 }
 
-.ProfilePopup-name-role-previous {
-  position: absolute;
+.ProfilePopup-transition-right-enter {
+  opacity: 0.01;
+  transform: translate(50px, 0);
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.ProfilePopup-transition-right-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 400ms ease-in;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.ProfilePopup-transition-right-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.ProfilePopup-transition-right-exit-active {
+  opacity: 0.01;
+  transform: translate(50px, 0);
+  transition: all 400ms ease-in;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.ProfilePopup-transition-left-enter {
+  opacity: 0.01;
+  transform: translate(-50px, 0);
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.ProfilePopup-transition-left-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 400ms ease-in;
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.ProfilePopup-transition-left-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.ProfilePopup-transition-left-exit-active {
+  opacity: 0.01;
+  transform: translate(-50px, 0);
+  transition: all 400ms ease-in;
 }
