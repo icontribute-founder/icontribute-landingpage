@@ -22,16 +22,6 @@
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-.ProfilePopup-right {
-  flex-direction: row;
-  text-align: left;
-}
-
-.ProfilePopup-left {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
 .ProfilePopup-img {
   padding: 10px;
   height: 100px; /*<-- TODO*/

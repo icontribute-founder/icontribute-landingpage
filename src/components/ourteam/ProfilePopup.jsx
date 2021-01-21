@@ -1,32 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import blank_profile from '../../images/team/blank_profile.png';
 import '../../css/ProfilePopup.css';
 
-const ProfilePopup = ({ teamMember, position, index }) => {
-  // const [ isFadingOut, setIsFadingOut ] = useState(false);
+const ProfilePopup = ({ teamMember, mousePosition, index }) => {
+  const baseStyle = {
+    top: `-${index * 75}px`,
+    animation: `fadein ${index + 1}s`
+  };
 
-  // useEffect(() => {
-  //   return () => {
-  //     console.log('unmounting...');
-  //     setIsFadingOut(true);
+  const stylePositionedRight = {
+    left: '500px',
+    flexDirection: 'row',
+    textAlign: 'left',
+    ...baseStyle
+  };
 
-  //     setTimeout(() => {
-  //       console.log('NOW');
-  //     }, 3000);
-  //   };
-  // });
+  const stylePositionedLeft = {
+    right: '500px',
+    flexDirection: 'row-reverse',
+    textAlign: 'right',
+    ...baseStyle
+  };
+
+  let style;
+  if ((index % 2 === 0 && mousePosition === 'right') || (index % 2 === 1 && mousePosition === 'left')) {
+    style = stylePositionedRight;
+  } else {
+    style = stylePositionedLeft;
+  }
 
   return (
-    <div
-      className={`ProfilePopup ProfilePopup-${position}`}
-      style={
-        index % 2 === 0 && position === 'right' ? (
-          { left: '500px', top: `-${index * 75}px`, animation: `fadein ${0.5 * index + 1}s` }
-        ) : (
-          { right: '500px', top: `-${index * 75}px`, animation: `fadein ${0.5 * index + 1}s` }
-        )
-      }
-    >
+    <div className={`ProfilePopup`} style={style}>
       <img
         className="ProfilePopup-img"
         src={teamMember.profilePicture ? teamMember.profilePicture.url : blank_profile}
