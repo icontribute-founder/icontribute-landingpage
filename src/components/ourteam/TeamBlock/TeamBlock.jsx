@@ -13,7 +13,7 @@ const TeamBlock = (props) => {
       }}
     >
       <div className="profile-pic-wrapper">
-        <img src={props.photo} className="profile-pic" />
+        <img src={props.photo} className="profile-pic" alt="profile" />
       </div>
       <div className="profile-name">
         <h1>{props.name}</h1>
@@ -36,12 +36,12 @@ const TeamBlock = (props) => {
       >
         <div className="teamblock-wrapper">
           <div className="teamblock-buttons">
-            <a className="solid-purple">Our Team</a>
+            <p className="solid-purple">Our Team</p>
             <button className="x-button">x</button>
           </div>
           <div className="teamblock-info">
             <div className="profile-pic-wrapper">
-              <img className="profile-pic" src={props.photo} />
+              <img className="profile-pic" src={props.photo} alt="profile" />
             </div>
 
             <div className="teamblock-text">

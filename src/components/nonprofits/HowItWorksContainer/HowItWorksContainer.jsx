@@ -43,16 +43,22 @@ const HowItWorksContainer = () => {
           <a
             href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
             target="_blank"
+            rel="noopener noreferrer"
             className="appstore"
           >
-            <img src={apple} />
+            <img src={apple} alt="App Store download" />
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.icontribute" target="_blank" className="appstore">
-            <img src={google} />
+          <a
+            href="https://play.google.com/store/apps/details?id=com.icontribute"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="appstore"
+          >
+            <img src={google} alt="Google Play download" />
           </a>
         </div>
         <div className="howitworks-iphone">
-          <img src={iphone1} />
+          <img src={iphone1} alt="Phone home screen" />
         </div>
       </div>
 
@@ -62,7 +68,7 @@ const HowItWorksContainer = () => {
       </div>
       <div className="howitworks-step-right">
         <div className="howitworks-iphone">
-          <img src={iphone2} />
+          <img src={iphone2} alt="Setting up your organization" />
         </div>
         <div className="howitworks-step-text-right">
           <h1>Sign Up as an Organization</h1>
@@ -105,7 +111,7 @@ const HowItWorksContainer = () => {
           Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.
         </p>
         <div className="mail-notification">
-          <img src={notification} />
+          <img src={notification} alt="Notification of volunteer application" />
         </div>
       </div>
     </div>

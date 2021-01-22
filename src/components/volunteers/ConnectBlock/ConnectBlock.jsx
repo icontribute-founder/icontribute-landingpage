@@ -11,9 +11,9 @@ const ConnectBlock = () => {
           <h1>Connect with organizations at the tips of your fingers</h1>
           <p>You apply to the event, and we immediately draft an email for you to reach out to the organization.</p>
         </div>
-        <img id="connect-icon" src={phone} />
+        <img id="connect-icon" src={phone} alt="phone icon" />
       </div>
-      <img id="connect-email" src={email} />
+      <img id="connect-email" src={email} alt="example email" />
     </div>
   );
 };

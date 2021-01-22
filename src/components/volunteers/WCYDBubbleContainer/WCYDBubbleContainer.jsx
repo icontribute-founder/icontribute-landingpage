@@ -52,7 +52,7 @@ const WCYDBubbleContainer = () => {
 
   return (
     <div className="photoblock-container">
-      <img className="WCYD-image" src={state.img} />
+      <img className="WCYD-image" src={state.img} alt="phone" />
       <div>
         {bubble.map((block, blockId) => {
           return (

@@ -15,27 +15,27 @@ const DemoBlock = () => {
       <p className="demoblock-disc">
         We connect people who are looking for local volunteer opportunities to nonprofits who are actively recruiting
       </p>
-      <img className="icontrib-phone" src={iPhone} />
-      <img className="icontrib-gif" src={gif} />
-      <img className="icontrib-filler" src={blueFiller} />
+      <img className="icontrib-phone" src={iPhone} alt="phone" />
+      <img className="icontrib-gif" src={gif} alt="icontribute logo" />
+      <img className="icontrib-filler" src={blueFiller} alt="background" />
       <div data-aos="fade-up">
         <h2>Simple steps to get you up and running</h2>
         <p className="demoblock-disc">This is how it works</p>
         <div className="demostep-container">
           <div className="demostep">
-            <img src={pencil} />
+            <img src={pencil} alt="pencil" />
             <h3 className="demostep-header">SIGN UP</h3>
             <p className="demostep-disc">Give us a few details about yourself or your organization.</p>
           </div>
           <div id="demostep-mouse" className="demostep">
-            <img id="mouse-icon" src={mouse} />
+            <img id="mouse-icon" src={mouse} alt="mouse" />
             <h3 id="demostep-header-mouse" className="demostep-header">
               EXPLORE
             </h3>
             <p className="demostep-disc">Volunteers browse and apply to events created by organizations.</p>
           </div>
           <div className="demostep">
-            <img src={phone} />
+            <img src={phone} alt="phone" />
             <h3 className="demostep-header">CONNECT</h3>
             <p className="demostep-disc">We connect the both of you on your behalf. </p>
           </div>

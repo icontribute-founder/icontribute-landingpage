@@ -17,16 +17,18 @@ const FooterBlock = () => {
             <a
               href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
               target="_blank"
+              rel="noopener noreferrer"
               className="footer-appstore"
             >
-              <img src={apple} />
+              <img src={apple} alt="App Store download" />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.icontribute"
               className="footer-appstore"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <img src={google} />
+              <img src={google} alt="Google Play download" />
             </a>
           </div>
         </div>
@@ -62,7 +64,7 @@ const FooterBlock = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/icontribute/" target="_blank">
+              <a href="https://www.linkedin.com/company/icontribute/" target="_blank" rel="noopener noreferrer">
                 FOLLOW US
               </a>
             </li>

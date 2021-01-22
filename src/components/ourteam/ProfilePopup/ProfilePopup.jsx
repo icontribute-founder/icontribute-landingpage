@@ -34,6 +34,7 @@ const ProfilePopup = ({ teamMember, mousePosition, index }) => {
       <img
         className="ProfilePopup-img"
         src={teamMember.profilePicture ? teamMember.profilePicture.url : blank_profile}
+        alt={`${teamMember.fullName}'s profile pic`}
       />
 
       <div className="ProfilePopup-text">

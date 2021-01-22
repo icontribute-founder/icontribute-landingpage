@@ -15,14 +15,14 @@ const TeamCallBlock = () => {
         <p>Although we are miles apart, we found ways to connect.</p>
       </div>
       <div data-aos="fade-up" className="zoomcall-grid1">
-        <img id="photoGrid1" src={grid1} />
-        <img id="photoGrid2" src={grid2} />
-        <img id="photoGrid3" src={grid3} />
+        <img id="photoGrid1" src={grid1} alt="zoom group chat" />
+        <img id="photoGrid2" src={grid2} alt="zoom group chat" />
+        <img id="photoGrid3" src={grid3} alt="zoom group chat" />
       </div>
       <div data-aos="fade-up" className="zoomcall-grid2">
-        <img id="photoGrid4" src={grid4} />
-        <img id="photoGrid5" src={grid5} />
-        <img id="photoGrid6" src={grid6} />
+        <img id="photoGrid4" src={grid4} alt="zoom group chat" />
+        <img id="photoGrid5" src={grid5} alt="zoom group chat" />
+        <img id="photoGrid6" src={grid6} alt="zoom group chat" />
       </div>
     </div>
   );

@@ -127,7 +127,7 @@ const TeamBlockContainer = () => {
     <div className="teamblock-container">
       <div data-aos="fade-up" className="teamblock-header">
         <h1>iContribute is built and maintained by this wonderful group of students.</h1>
-        <a>Click to learn more about us.</a>
+        <p>CLICK TO LEARN MORE ABOUT US.</p>
       </div>
 
       <div data-aos="fade-up" className="teamblock-grid">

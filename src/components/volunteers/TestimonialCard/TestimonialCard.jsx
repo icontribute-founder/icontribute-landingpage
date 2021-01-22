@@ -17,7 +17,7 @@ const TestimonialsBlock = ({ testimonial }) => {
         </p>
       </blockquote>
       <div className="TestimonialCard-Profile">
-        <img className="TestimonialCard-ProfilePicture" src={img} />
+        <img className="TestimonialCard-ProfilePicture" src={img} alt="testimonial profile" />
         <div className="TestimonialCard-ProfileText">
           <p className="TestimonialCard-ProfileName">{name}</p>
           <p className="TestimonialCard-ProfileTitle">{title}</p>
