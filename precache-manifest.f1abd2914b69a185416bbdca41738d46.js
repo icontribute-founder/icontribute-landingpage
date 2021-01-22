@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "461a55832337432fe144edcfce8eb497",
+    "revision": "590a4d337fe3ce98c8df0cee89af1d12",
     "url": "/index.html"
   },
   {
-    "revision": "60f4fe3ed71341bcc6c5",
+    "revision": "00abb479c7cba25f07ee",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "ec4734919b2e0db32806",
-    "url": "/static/css/main.b6d9ff97.chunk.css"
+    "revision": "0d276350fc0b5159e3eb",
+    "url": "/static/css/main.c601fd38.chunk.css"
   },
   {
-    "revision": "60f4fe3ed71341bcc6c5",
-    "url": "/static/js/2.6bc3fc61.chunk.js"
+    "revision": "00abb479c7cba25f07ee",
+    "url": "/static/js/2.65b9fcee.chunk.js"
   },
   {
     "revision": "cb4293a028d0175415ddb31dc1aaaefb",
-    "url": "/static/js/2.6bc3fc61.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.65b9fcee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec4734919b2e0db32806",
-    "url": "/static/js/main.d37a7564.chunk.js"
+    "revision": "0d276350fc0b5159e3eb",
+    "url": "/static/js/main.ed7e4ac4.chunk.js"
   },
   {
     "revision": "1272131f3da382bdb130",
@@ -60,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Frame 213.af2d9925.png"
   },
   {
-    "revision": "9b0e1ec7adc20b2906ae0dfb2072f10d",
-    "url": "/static/media/Group 3.9b0e1ec7.png"
-  },
-  {
     "revision": "ed7f76c8ade3093fef0caa6a4c8f08ce",
     "url": "/static/media/OttawaDragonBoatFestival.ed7f76c8.jpg"
   },
@@ -94,14 +90,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9acfe78b8e1cfbf4c1b1d1f31745b96b",
     "url": "/static/media/blank_profile.9acfe78b.png"
-  },
-  {
-    "revision": "49da6816225652117b51e17d5b20f76f",
-    "url": "/static/media/bridges_of_canada.49da6816.png"
-  },
-  {
-    "revision": "e7a8dc994058099a508fe96fe9c32541",
-    "url": "/static/media/calvary_baptist_church.e7a8dc99.png"
   },
   {
     "revision": "8510448cac3f07adf5cb943fa325f6c4",
@@ -214,9 +202,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a66a4c03d06b5758ae33eb230c656f00",
     "url": "/static/media/vedashree.a66a4c03.png"
-  },
-  {
-    "revision": "6e1fb67f61c933480146f3c99be9b8eb",
-    "url": "/static/media/wocrc.6e1fb67f.png"
   }
 ]);

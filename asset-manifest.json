@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6d9ff97.chunk.css",
-    "main.js": "/static/js/main.d37a7564.chunk.js",
-    "main.js.map": "/static/js/main.d37a7564.chunk.js.map",
+    "main.css": "/static/css/main.c601fd38.chunk.css",
+    "main.js": "/static/js/main.ed7e4ac4.chunk.js",
+    "main.js.map": "/static/js/main.ed7e4ac4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.adca023d.js",
     "runtime-main.js.map": "/static/js/runtime-main.adca023d.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.6bc3fc61.chunk.js": "/static/js/2.6bc3fc61.chunk.js",
-    "static/js/2.6bc3fc61.chunk.js.map": "/static/js/2.6bc3fc61.chunk.js.map",
+    "static/js/2.65b9fcee.chunk.js": "/static/js/2.65b9fcee.chunk.js",
+    "static/js/2.65b9fcee.chunk.js.map": "/static/js/2.65b9fcee.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d41a30d84782f127416d7b802039696c.js": "/precache-manifest.d41a30d84782f127416d7b802039696c.js",
+    "precache-manifest.f1abd2914b69a185416bbdca41738d46.js": "/precache-manifest.f1abd2914b69a185416bbdca41738d46.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
-    "static/css/main.b6d9ff97.chunk.css.map": "/static/css/main.b6d9ff97.chunk.css.map",
-    "static/js/2.6bc3fc61.chunk.js.LICENSE.txt": "/static/js/2.6bc3fc61.chunk.js.LICENSE.txt",
+    "static/css/main.c601fd38.chunk.css.map": "/static/css/main.c601fd38.chunk.css.map",
+    "static/js/2.65b9fcee.chunk.js.LICENSE.txt": "/static/js/2.65b9fcee.chunk.js.LICENSE.txt",
     "static/media/Component 1.png": "/static/media/Component 1.adce061d.png",
     "static/media/Component 3.png": "/static/media/Component 3.3ce6b1a1.png",
     "static/media/Component 4.png": "/static/media/Component 4.9c9def52.png",
@@ -21,7 +21,6 @@
     "static/media/Component 6.png": "/static/media/Component 6.67ca1d72.png",
     "static/media/Frame 205.png": "/static/media/Frame 205.56151c96.png",
     "static/media/Frame 213.png": "/static/media/Frame 213.af2d9925.png",
-    "static/media/Group 3.png": "/static/media/Group 3.9b0e1ec7.png",
     "static/media/OttawaDragonBoatFestival.jpg": "/static/media/OttawaDragonBoatFestival.ed7f76c8.jpg",
     "static/media/Privacy Policy Good Draft.pdf": "/static/media/Privacy Policy Good Draft.3594d036.pdf",
     "static/media/able2.png": "/static/media/able2.3f3200d7.png",
@@ -30,8 +29,6 @@
     "static/media/anna-earl-cTtE2FlIRoU-unsplash 1.png": "/static/media/anna-earl-cTtE2FlIRoU-unsplash 1.021deef8.png",
     "static/media/bethany_hope_center.png": "/static/media/bethany_hope_center.99492f45.png",
     "static/media/blank_profile.png": "/static/media/blank_profile.9acfe78b.png",
-    "static/media/bridges_of_canada.png": "/static/media/bridges_of_canada.49da6816.png",
-    "static/media/calvary_baptist_church.png": "/static/media/calvary_baptist_church.e7a8dc99.png",
     "static/media/carmen.png": "/static/media/carmen.8510448c.png",
     "static/media/coaoc.png": "/static/media/coaoc.ad69cdb9.png",
     "static/media/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png": "/static/media/cristi-tohatan-XIBIC21QeZQ-unsplash 1.257c112a.png",
@@ -57,14 +54,13 @@
     "static/media/tony.png": "/static/media/tony.0aa8c4b3.png",
     "static/media/umai.png": "/static/media/umai.e2b14149.png",
     "static/media/umang.png": "/static/media/umang.8453d85d.png",
-    "static/media/vedashree.png": "/static/media/vedashree.a66a4c03.png",
-    "static/media/wocrc.png": "/static/media/wocrc.6e1fb67f.png"
+    "static/media/vedashree.png": "/static/media/vedashree.a66a4c03.png"
   },
   "entrypoints": [
     "static/js/runtime-main.adca023d.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.6bc3fc61.chunk.js",
-    "static/css/main.b6d9ff97.chunk.css",
-    "static/js/main.d37a7564.chunk.js"
+    "static/js/2.65b9fcee.chunk.js",
+    "static/css/main.c601fd38.chunk.css",
+    "static/js/main.ed7e4ac4.chunk.js"
   ]
 }
