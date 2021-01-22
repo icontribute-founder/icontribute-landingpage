@@ -1,10 +1,10 @@
 import React from 'react';
-import TeamBlockContainer from '../components/ourteam/TeamBlockContainer';
-import MainBlock from '../components/ourteam/MainBlock';
-import AcrossGlobeBlock from '../components/ourteam/AcrossGlobeBlock';
-import TeamCallBlock from '../components/ourteam/TeamCallBlock';
+import MainBlock from '../components/ourteam/MainBlock/MainBlock';
+import AcrossGlobeBlock from '../components/ourteam/AcrossGlobeBlock/AcrossGlobeBlock';
+import TeamBlockContainer from '../components/ourteam/TeamBlockContainer/TeamBlockContainer';
+import TeamCallBlock from '../components/ourteam/TeamCallBlock/TeamCallBlock';
 
-const OurTeamScreen = (props) => {
+const OurTeamScreen = () => {
   return (
     <div className="ourteam-page">
       <MainBlock />

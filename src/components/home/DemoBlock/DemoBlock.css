@@ -1,0 +1,55 @@
+.demoblock-container {
+  text-align: center;
+  position: relative;
+}
+.demoblock-header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #133a4b;
+}
+.demoblock-disc {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.demostep-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.demostep-disc {
+  padding: 0 60px;
+}
+
+#demostep-mouse {
+  position: relative;
+}
+#mouse-icon {
+  position: absolute;
+  left: 37%;
+  top: -35px;
+}
+#demostep-header-mouse {
+  margin-top: 127.3px;
+}
+
+.icontrib-phone {
+  z-index: -2;
+}
+.icontrib-gif {
+  position: absolute;
+  left: 357px;
+  top: 241px;
+  z-index: 2;
+}
+.icontrib-filler {
+  position: absolute;
+  left: 478px;
+  bottom: 755px;
+  z-index: 1;
+}

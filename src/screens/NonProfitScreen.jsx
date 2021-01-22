@@ -1,13 +1,13 @@
-import React from "react";
-import MainBlock from "../components/nonprofits/MainBlock";
-import "../css/NonProfits.css";
-import HowItWorksContainer from "../components/nonprofits/HowItWorksContainer";
+import React from 'react';
+import MainBlock from '../components/nonprofits/MainBlock/MainBlock';
+import HowItWorksContainer from '../components/nonprofits/HowItWorksContainer/HowItWorksContainer';
+import '../css/NonProfitScreen.css';
 
-const NonProfitScreen = (props) => {
+const NonProfitScreen = () => {
   return (
     <div className="nonprofit-page">
-      <MainBlock></MainBlock>
-      <HowItWorksContainer></HowItWorksContainer>
+      <MainBlock />
+      <HowItWorksContainer />
     </div>
   );
 };

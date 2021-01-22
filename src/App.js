@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import FooterBlock from './components/FooterBlock';
+import NavBar from './components/Navbar/NavBar';
+import FooterBlock from './components/FooterBlock/FooterBlock';
 import './css/Buttons.css';
 import './css/PageMargin.css';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
@@ -8,10 +8,10 @@ import HomeScreen from './screens/HomeScreen';
 import VolunteersScreen from './screens/VolunteersScreen';
 import NonProfitScreen from './screens/NonProfitScreen.jsx';
 import OurTeamScreen from './screens/OurTeamScreen';
-import GetInTouch from './components/GetInTouchBlock';
+import GetInTouchBlock from './components/GetInTouchBlock/GetInTouchBlock';
 import ScrollToTop from './components/ScrollToTop';
 
-const App = (props) => {
+const App = () => {
   return (
     <Router basename="/">
       <ScrollToTop />
@@ -25,7 +25,7 @@ const App = (props) => {
             <Route path="/ourteam" exact component={OurTeamScreen} />
           </Switch>
         </div>
-        <GetInTouch />
+        <GetInTouchBlock />
         <FooterBlock />
       </div>
     </Router>

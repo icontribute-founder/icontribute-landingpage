@@ -1,0 +1,16 @@
+.teamblock-header {
+  text-align: center;
+}
+
+.teamblock-header h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: #133a4b;
+}
+
+.teamblock-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

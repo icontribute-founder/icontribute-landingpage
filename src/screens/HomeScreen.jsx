@@ -1,11 +1,11 @@
 import React from 'react';
-import MainBlock from '../components/MainBlock';
-import DemoBlock from '../components/DemoBlock';
-import PhotoBlockContainer from '../components/PhotoBlockContainer';
-import PartnerBlock from '../components/PartnersBlock';
-import FAQBlock from '../components/FAQBlock';
+import MainBlock from '../components/home/MainBlock/MainBlock';
+import DemoBlock from '../components/home/DemoBlock/DemoBlock';
+import PhotoBlockContainer from '../components/home/PhotoBlockContainer/PhotoBlockContainer';
+import PartnerBlock from '../components/home/PartnerBlock/PartnersBlock';
+import FAQBlock from '../components/home/FAQBlock/FAQBlock';
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
   return (
     <div>
       <MainBlock />

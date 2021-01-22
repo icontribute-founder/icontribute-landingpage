@@ -1,8 +1,8 @@
 import React from 'react';
-import MainBlock from '../components/volunteers/MainBlock';
-import WCYDBubbleContainer from '../components/volunteers/WCYDBubbleContainer';
-import ConnectBlock from '../components/volunteers/ConnectBlock';
-import TestimonialsBlock from '../components/volunteers/TestimonialsBlock';
+import MainBlock from '../components/volunteers/MainBlock/MainBlock';
+import WCYDBubbleContainer from '../components/volunteers/WCYDBubbleContainer/WCYDBubbleContainer';
+import ConnectBlock from '../components/volunteers/ConnectBlock/ConnectBlock';
+import TestimonialsBlock from '../components/volunteers/TestimonialsBlock/TestimonialsBlock';
 
 const VolunteersScreen = () => {
   return (
