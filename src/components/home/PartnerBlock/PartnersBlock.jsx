@@ -9,6 +9,7 @@ import oDragonBoat from '../../../images/sponsors/OttawaDragonBoatFestival.jpg';
 import practicum from '../../../images/sponsors/practicum.png';
 import enactus from '../../../images/sponsors/enactus.png';
 import foodbank from '../../../images/sponsors/ottawafoodbank.png';
+import hatch from '../../../images/sponsors/Hatch.png';
 
 import './PartnersBlock.css';
 
@@ -34,6 +35,9 @@ const PartnersBlock = () => {
       <div data-aos="fade-up" className="small-backed-logos">
         <img id="sp10" alt="Enactus sponsor" src={enactus} />
         <img id="sp10" alt="Practicum sponsor" src={practicum} />
+      </div>
+      <div data-aos="fade-up" className="small-backed-logos">
+        <img id="sp10" alt="Hatch sponsor" src={hatch} />
       </div>
       {/* <a className="hollow-yellow">LEARN MORE</a> */}
     </div>
