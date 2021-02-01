@@ -41,6 +41,19 @@
   align-items: center;
 }
 
+.long-logos > img,
+.small-logo > img,
+.backer {
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
+}
+.long-logos > img:hover,
+.small-logo > img:hover,
+.backer:hover {
+  top: -10px;
+}
+
 .small-logo img {
   width: 70%;
 }

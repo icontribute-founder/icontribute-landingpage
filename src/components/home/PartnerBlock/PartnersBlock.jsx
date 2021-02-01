@@ -28,7 +28,7 @@ const PartnersBlock = () => {
             if (!partner.isLongBanner) {
               return (
                 <div className="small-logo">
-                  <img alt={partner.name} src={partner.logo.url} key={i} />;
+                  <img alt={partner.name} src={partner.logo.url} key={i} />
                 </div>
               );
             }
