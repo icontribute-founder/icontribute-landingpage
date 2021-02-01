@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c488030eb6e4718ca2cb799a0363fb1",
+    "revision": "c2ce17153d438e5aebae446bdaf8dba8",
     "url": "/index.html"
   },
   {
-    "revision": "e49b54b8e90cc5bf681a",
+    "revision": "404018ff0b2166e2f4f9",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "af16f5cfce525e35e34a",
-    "url": "/static/css/main.c601fd38.chunk.css"
+    "revision": "e5572e98379d7b7313fe",
+    "url": "/static/css/main.da22ac8c.chunk.css"
   },
   {
-    "revision": "e49b54b8e90cc5bf681a",
-    "url": "/static/js/2.2c419f4b.chunk.js"
+    "revision": "404018ff0b2166e2f4f9",
+    "url": "/static/js/2.b8d3ff76.chunk.js"
   },
   {
     "revision": "cb4293a028d0175415ddb31dc1aaaefb",
-    "url": "/static/js/2.2c419f4b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b8d3ff76.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af16f5cfce525e35e34a",
-    "url": "/static/js/main.ab335273.chunk.js"
+    "revision": "e5572e98379d7b7313fe",
+    "url": "/static/js/main.98f88ad5.chunk.js"
   },
   {
     "revision": "1272131f3da382bdb130",
@@ -60,16 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Frame 213.af2d9925.png"
   },
   {
-    "revision": "ed7f76c8ade3093fef0caa6a4c8f08ce",
-    "url": "/static/media/OttawaDragonBoatFestival.ed7f76c8.jpg"
-  },
-  {
     "revision": "3594d036b29fafa0e9fc0c0548487f75",
     "url": "/static/media/Privacy Policy Good Draft.3594d036.pdf"
-  },
-  {
-    "revision": "3f3200d718315fad11f64059e350bd6b",
-    "url": "/static/media/able2.3f3200d7.png"
   },
   {
     "revision": "e6447df147289e06d4cd647065b4b455",
@@ -84,20 +76,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/anna-earl-cTtE2FlIRoU-unsplash 1.021deef8.png"
   },
   {
-    "revision": "99492f45c480894345b32e60d4fc5c2d",
-    "url": "/static/media/bethany_hope_center.99492f45.png"
-  },
-  {
     "revision": "9acfe78b8e1cfbf4c1b1d1f31745b96b",
     "url": "/static/media/blank_profile.9acfe78b.png"
   },
   {
     "revision": "8510448cac3f07adf5cb943fa325f6c4",
     "url": "/static/media/carmen.8510448c.png"
-  },
-  {
-    "revision": "ad69cdb981e7e87b9bc30380087d45f7",
-    "url": "/static/media/coaoc.ad69cdb9.png"
   },
   {
     "revision": "257c112a2460665733a866f1b79d50c2",
@@ -168,20 +152,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/lydia.b9cf312c.png"
   },
   {
-    "revision": "a94647140af844b3dd13f43dd6c173e9",
-    "url": "/static/media/max.a9464714.png"
-  },
-  {
     "revision": "bd387529bca1bf3700ff1944a9db1f8d",
     "url": "/static/media/momkid.bd387529.png"
-  },
-  {
-    "revision": "66ea3ceae54030433d4478964200c0c9",
-    "url": "/static/media/ottawa_community_immigrant_services_organization.66ea3cea.png"
-  },
-  {
-    "revision": "9847b7d53acb4c6fe1f847ca0053433d",
-    "url": "/static/media/ottawafoodbank.9847b7d5.png"
   },
   {
     "revision": "fe3f4942998ff05dd750c30f6bb5a007",
