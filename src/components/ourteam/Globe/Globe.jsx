@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 import shuffle from 'shuffle-array';
+import { getRandom } from '../../../helpers/Array';
+
+// constants and color options:
+const MIN_CIRCLE_RADIUS = 7;
+const MAX_CIRCLE_RADIUS = 15;
+const MAX_POPUPS_TO_DISPLAY = 7;
+
+const geoUrl = 'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
 
 const colors = [
   '#4e79a7',
@@ -16,22 +24,22 @@ const colors = [
 ];
 
 const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) => {
-  const [ idxOfGlowingCircle, setIdxOfGlowingCircle ] = useState(-1); // if idx = -1, then all circles are glowing
+  // represents the index of which circle is glowing
+  // if idx = -1, then all circles are glowing
+  const [ idxOfGlowingCircle, setIdxOfGlowingCircle ] = useState(-1);
 
-  const getColor = (idx) => {
-    const i = idx % colors.length;
+  const getColor = (idxOfCircle) => {
+    const i = idxOfCircle % colors.length;
     return colors[i];
   };
 
   const getCircleRadius = (numberOfPeople) => {
-    const r = numberOfPeople * 5;
-    // minimum radius = 10
-    // maximum radius = 20
-    return Math.min(Math.max(r, 10), 20);
+    const radius = numberOfPeople * 5;
+    return Math.min(Math.max(radius, MIN_CIRCLE_RADIUS), MAX_CIRCLE_RADIUS);
   };
 
-  const isGlowing = (idx) => {
-    return idx === idxOfGlowingCircle || idxOfGlowingCircle === -1;
+  const isGlowing = (idxOfCircle) => {
+    return idxOfCircle === idxOfGlowingCircle || idxOfGlowingCircle === -1;
   };
 
   const handleMouseEnter = (event, teamMembers, idx) => {
@@ -39,17 +47,15 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
     const mouseIsOnTheLeftSideOfTheScreen = event.screenX / window.screen.width < 0.5;
     setMousePosition(mouseIsOnTheLeftSideOfTheScreen ? 'left' : 'right');
 
+    const numPopupsToDisplay = Math.min(teamMembers.length, MAX_POPUPS_TO_DISPLAY);
+    setPeopleOfHoveredLocation(shuffle(getRandom(teamMembers, numPopupsToDisplay)));
     setIdxOfGlowingCircle(idx);
-    setPeopleOfHoveredLocation(shuffle(teamMembers));
   };
 
   const handleMouseLeave = () => {
     setIdxOfGlowingCircle(-1);
     setPeopleOfHoveredLocation([]);
   };
-
-  const geoUrl =
-    'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
 
   return (
     <ComposableMap
@@ -88,12 +94,12 @@ const Globe = ({ teamLocations, setMousePosition, setPeopleOfHoveredLocation }) 
                 <animate
                   attributeName="r"
                   from={getCircleRadius(teamMembers.length)}
-                  to={getCircleRadius(teamMembers.length) + 10}
-                  dur="1s"
+                  to={getCircleRadius(teamMembers.length) + 15}
+                  dur="2s"
                   begin="0s"
                   repeatCount="indefinite"
                 />
-                <animate attributeName="opacity" from="0.5" to="0" dur="1s" begin="0s" repeatCount="indefinite" />
+                <animate attributeName="opacity" from="0.5" to="0" dur="2s" begin="0s" repeatCount="indefinite" />
               </circle>
             ) : null}
             <circle
