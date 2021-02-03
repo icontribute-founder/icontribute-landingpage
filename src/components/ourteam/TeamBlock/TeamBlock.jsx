@@ -38,9 +38,9 @@ const TeamBlock = ({ teamMembers }) => {
           const reverseScrollDirection = idx % 2 === 0;
 
           return (
-            <div>
+            <div key={idx}>
               <p className="TeamBlock-TeamName">{teamName}</p>
-              <Slider {...sliderSettings} rtl={reverseScrollDirection} key={idx}>
+              <Slider {...sliderSettings} rtl={reverseScrollDirection}>
                 {teamMembers
                   .filter(teamFilter)
                   .map((teamMember, idx) => <ProfileCard key={idx} teamMember={teamMember} />)}

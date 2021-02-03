@@ -19,13 +19,14 @@ const InteractiveMap = ({ teamLocations }) => {
       <div className="InteractiveMap-Popups" style={{ zIndex: '-1' }}>
         <TransitionGroup>
           {peopleOfHoveredLocation.map((person, idx) => {
+            const delay = `${idx * 30}ms`;
             const className =
               (idx % 2 === 0 && mousePosition === 'right') || (idx % 2 === 1 && mousePosition === 'left')
                 ? 'ProfilePopup-transition-right'
                 : 'ProfilePopup-transition-left';
             return (
               <CSSTransition key={idx} timeout={400} classNames={className}>
-                <ProfilePopup index={idx} teamMember={person} mousePosition={mousePosition} />
+                <ProfilePopup index={idx} teamMember={person} mousePosition={mousePosition} delay={delay} />
               </CSSTransition>
             );
           })}

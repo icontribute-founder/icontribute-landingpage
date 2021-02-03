@@ -2,8 +2,9 @@ import React from 'react';
 import blank_profile from '../../../images/team/blank_profile.png';
 import './ProfilePopup.css';
 
-const ProfilePopup = ({ teamMember, mousePosition, index }) => {
+const ProfilePopup = ({ teamMember, mousePosition, index, delay }) => {
   const baseStyle = {
+    transitionDelay: delay,
     top: `-${index * 75}px`,
     animation: `fadein ${index + 1}s`
   };
