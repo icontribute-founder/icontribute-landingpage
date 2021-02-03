@@ -1,76 +1,25 @@
-.profile-pic-wrapper {
-  /* overflow: hidden; */
-  width: 317px;
-  height: 402px;
-  /* border-radius: 12px; */
-  margin: auto;
-  position: relative;
+.TeamBlock {
+  margin-bottom: 100px;
 }
 
-.profile-pic {
-  height: 402px;
-  /* left: 50%;
-  margin-left: -200px;
-  position: absolute; */
+.TeamBlock-Header {
+  text-align: center;
 }
 
-.profile-name h1,
-.profile-role h2 {
-  margin: 5px 0px;
-  width: 282px;
-  margin: 5px auto;
-}
-
-.profile-name h1 {
+.TeamBlock-Header h1 {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #133a4b;
 }
 
-.profile-role h2 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 50px;
+.TeamBlock-Gallery {
+  text-align: center;
 }
 
-.team-education {
-  font-style: normal;
-  font-weight: normal;
-  white-space: pre-wrap;
-}
-
-.team-disc {
-  font-size: 20px;
-  padding-right: 100px;
-}
-.teamblock-wrapper {
-  height: 100%;
-}
-
-.teamblock-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 88%;
-}
-.teamblock-buttons {
-  padding: 3%;
-  border-bottom: 1px solid black;
-}
-.teamblock-buttons a {
-  padding: 0px;
-}
-
-.teamblock-info .profile-pic-wrapper {
-  height: 100%;
-  width: 100%;
-}
-.teamblock-info .profile-pic {
-  height: 100%;
-  display: block;
-}
-.x-button {
-  float: right;
+.TeamBlock-TeamName {
+  font-size: 36px;
+  color: #133a4b;
+  margin-top: 100px;
 }

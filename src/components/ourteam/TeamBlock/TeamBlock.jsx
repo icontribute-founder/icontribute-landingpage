@@ -1,67 +1,54 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React from 'react';
+import Slider from 'react-slick';
+import ProfileCard from '../ProfileCard/ProfileCard';
 
 import './TeamBlock.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const TeamBlock = (props) => {
-  const [ modal, setModal ] = useState(false);
+import teamCategories from '../../../helpers/TeamMember';
+
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
+  swipeToSlide: false,
+  draggable: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  speed: 2500,
+  autoplaySpeed: 2000,
+  cssEase: 'ease'
+};
+
+const TeamBlock = ({ teamMembers }) => {
   return (
-    <div
-      className="profile-container"
-      onClick={() => {
-        setModal(!modal);
-      }}
-    >
-      <div className="profile-pic-wrapper">
-        <img src={props.photo} className="profile-pic" alt="profile" />
+    <div className="TeamBlock">
+      <div data-aos="fade-up" className="TeamBlock-Header">
+        <h1>iContribute is built and maintained by this wonderful group of students.</h1>
+        {/* <p>CLICK TO LEARN MORE ABOUT US.</p> */}
       </div>
-      <div className="profile-name">
-        <h1>{props.name}</h1>
-      </div>
-      <div className="profile-role">
-        <h2>{props.role}</h2>
-      </div>
-      <Modal
-        style={{
-          content: {
-            top: '50px',
-            bottom: '50px',
-            left: '200px',
-            right: '200px',
-            overflow: 'hidden',
-            padding: '0px'
-          }
-        }}
-        isOpen={modal}
-      >
-        <div className="teamblock-wrapper">
-          <div className="teamblock-buttons">
-            <p className="solid-purple">Our Team</p>
-            <button className="x-button">x</button>
-          </div>
-          <div className="teamblock-info">
-            <div className="profile-pic-wrapper">
-              <img className="profile-pic" src={props.photo} alt="profile" />
-            </div>
 
-            <div className="teamblock-text">
-              <h1 className="team-name">{props.name}</h1>
-              <h2 className="team-role">{props.role}</h2>
-              <h3 className="team-education">
-                {props.education.split('\n').map((item, i) => {
-                  return (
-                    <p key={i}>
-                      {item}
-                      <br />
-                    </p>
-                  );
-                })}
-              </h3>
-              <p className="team-disc">{props.description} </p>
+      <div data-aos="fade-up" className="TeamBlock-Gallery">
+        {teamCategories.map((category, idx) => {
+          const teamName = category.teamName;
+          const teamFilter = category.filter;
+          const reverseScrollDirection = idx % 2 === 0;
+
+          return (
+            <div>
+              <p className="TeamBlock-TeamName">{teamName}</p>
+              <Slider {...sliderSettings} rtl={reverseScrollDirection} key={idx}>
+                {teamMembers
+                  .filter(teamFilter)
+                  .map((teamMember, idx) => <ProfileCard key={idx} teamMember={teamMember} />)}
+              </Slider>
             </div>
-          </div>
-        </div>
-      </Modal>
+          );
+        })}
+      </div>
     </div>
   );
 };

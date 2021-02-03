@@ -4,14 +4,14 @@ import Chevron from './Chevron';
 import './FAQAccordion.css';
 
 function FAQAccordion(props) {
-  const [ setActive, setActiveState ] = useState(props.isOpen ? 'active' : '');
+  const [ setActive, setActiveState ] = useState(props.isOpen ? 'accordion--active' : '');
   const [ setHeight, setHeightState ] = useState('0px');
   const [ setRotate, setRotateState ] = useState('accordion__icon');
 
   useEffect(
     () => {
       if (props.isOpen) {
-        setActiveState('active');
+        setActiveState('accordion--active');
         setHeightState(`${content.current.scrollHeight}px`);
         setRotateState('accordion__icon rotate');
       } else {

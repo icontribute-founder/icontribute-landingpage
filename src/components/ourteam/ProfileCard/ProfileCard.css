@@ -1,0 +1,22 @@
+.ProfileCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProfileCard-Pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.ProfileCard-Name {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.ProfileCard-Role {
+  font-size: 14px;
+  margin-top: 0;
+}

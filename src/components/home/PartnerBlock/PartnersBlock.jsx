@@ -27,8 +27,8 @@ const PartnersBlock = () => {
           {partners.map((partner, i) => {
             if (!partner.isLongBanner) {
               return (
-                <div className="small-logo">
-                  <img alt={partner.name} src={partner.logo.url} key={i} />
+                <div className="small-logo" key={i}>
+                  <img alt={partner.name} src={partner.logo.url} />
                 </div>
               );
             }

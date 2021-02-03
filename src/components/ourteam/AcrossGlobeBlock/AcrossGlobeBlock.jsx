@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import InteractiveMap from '../InteractiveMap/InteractiveMap';
-import fetchTeam from '../../../queries/TeamMembers';
 import './AcrossGlobeBlock.css';
 
-const AcrossGlobeBlock = () => {
-  const [ teamLocations, setTeamLocations ] = useState([]);
-
-  useEffect(() => {
-    fetchTeam((placeholder) => null, setTeamLocations);
-  }, []);
-
+const AcrossGlobeBlock = ({ teamLocations }) => {
   return (
     <div data-aos="fade-up" className="AcrossGlobeBlock">
       <h1 className="AcrossGlobeBlock-header">From Across The Globe</h1>

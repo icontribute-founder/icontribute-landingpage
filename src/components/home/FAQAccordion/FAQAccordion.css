@@ -17,7 +17,7 @@
 }
 
 .accordion:hover,
-.active {
+.accordion--active {
   color: #026896;
 }
 
