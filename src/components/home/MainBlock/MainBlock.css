@@ -27,3 +27,61 @@
 .appstore {
   padding: 0;
 }
+
+/* .Home-MainBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-MainBlock-Info {
+  margin-bottom: 100px;
+}
+
+.Home-MainBlock-Header {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #133a4b;
+}
+
+.Home-MainBlock-Details {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  color: #133a4b;
+  width: 60%;
+  margin: 50px 0;
+}
+
+.Home-MainBlock-AppstoreLink {
+  padding: 0;
+  margin: 0 5px;
+  width: 150px;
+  height: 50px;
+}
+
+.Home-MainBlock-AppstoreLink img {
+  width: 100%;
+  height: 100%;
+}
+
+.Home-MainBlock-PhoneGif {
+  position: relative;
+  user-select: none;
+}
+
+.Home-MainBlock-Gif {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.Home-MainBlock-Accent {
+  user-select: none;
+  position: absolute;
+  margin-top: 0;
+  top: -70%;
+  right: -40%;
+  z-index: -1;
+} */
