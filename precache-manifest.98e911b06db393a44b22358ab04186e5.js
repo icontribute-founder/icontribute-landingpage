@@ -1,35 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba4735e8b30b83a84a2e41bafa314ccc",
+    "revision": "d5507197914657df4f734ffc49136938",
     "url": "/index.html"
   },
   {
-    "revision": "b64d9a11caa2e0c23f3e",
+    "revision": "359d1e9eacd9d44cf04e",
     "url": "/static/css/2.c90e42fa.chunk.css"
   },
   {
-    "revision": "0950f80831075adf4886",
-    "url": "/static/css/main.2d407a97.chunk.css"
+    "revision": "65cea921cc40519556df",
+    "url": "/static/css/main.902385d2.chunk.css"
   },
   {
-    "revision": "b64d9a11caa2e0c23f3e",
-    "url": "/static/js/2.f3b1d4f7.chunk.js"
+    "revision": "359d1e9eacd9d44cf04e",
+    "url": "/static/js/2.3e57be7e.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.f3b1d4f7.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3e57be7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0950f80831075adf4886",
-    "url": "/static/js/main.e786ff72.chunk.js"
+    "revision": "65cea921cc40519556df",
+    "url": "/static/js/main.47baa88c.chunk.js"
   },
   {
     "revision": "1272131f3da382bdb130",
     "url": "/static/js/runtime-main.adca023d.js"
-  },
-  {
-    "revision": "51867e9ccc2963e14a1fc979cfc3c84b",
-    "url": "/static/media/Component 1.51867e9c.png"
   },
   {
     "revision": "adce061d5668e246a25c44e00c97f97f",
@@ -60,12 +56,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Frame 213.af2d9925.png"
   },
   {
-    "revision": "3594d036b29fafa0e9fc0c0548487f75",
-    "url": "/static/media/Privacy Policy Good Draft.3594d036.pdf"
+    "revision": "5762128aea81eff85e9ba435857c5fa7",
+    "url": "/static/media/Iphone_Macbook together.5762128a.png"
   },
   {
-    "revision": "021deef8462c7532ac9b05732f6d6f34",
-    "url": "/static/media/anna-earl-cTtE2FlIRoU-unsplash 1.021deef8.png"
+    "revision": "3594d036b29fafa0e9fc0c0548487f75",
+    "url": "/static/media/Privacy Policy Good Draft.3594d036.pdf"
   },
   {
     "revision": "9acfe78b8e1cfbf4c1b1d1f31745b96b",
@@ -116,14 +112,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/iphone2.76cb8bfb.png"
   },
   {
-    "revision": "3f9a2aa121155c1160fc8d420ec66119",
-    "url": "/static/media/kidmom.3f9a2aa1.png"
-  },
-  {
-    "revision": "bd387529bca1bf3700ff1944a9db1f8d",
-    "url": "/static/media/momkid.bd387529.png"
-  },
-  {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
     "url": "/static/media/slick.b7c9e1e4.woff"
   },
@@ -138,5 +126,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "b18c9ec00f73d08240f55e5719012f63",
+    "url": "/static/media/tutor card.b18c9ec0.png"
   }
 ]);
