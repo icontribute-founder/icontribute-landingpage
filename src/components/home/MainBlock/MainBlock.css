@@ -1,34 +1,5 @@
-.main-container {
-  position: relative;
+.Home-MainBlock {
   margin-top: 100px;
-}
-
-.iphone_png {
-  position: absolute;
-  top: -50px;
-  right: -30px;
-}
-
-.main-info h1 {
-  font-size: 64px;
-  font-weight: 600;
-  width: 698px;
-  margin: 50px 0;
-}
-.main-info p {
-  font-size: 24px;
-  font-weight: normal;
-  font-family: "Open Sans", sans-serif;
-  color: #133a4b;
-  width: 523px;
-  margin: 50px 0;
-}
-
-.appstore {
-  padding: 0;
-}
-
-/* .Home-MainBlock {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,10 +18,10 @@
 
 .Home-MainBlock-Details {
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: #133a4b;
-  width: 60%;
+  width: 100%;
   margin: 50px 0;
 }
 
@@ -66,22 +37,11 @@
   height: 100%;
 }
 
-.Home-MainBlock-PhoneGif {
-  position: relative;
-  user-select: none;
+.Home-MainBlock-Tips {
+  display: flex;
+  margin-top: 20px;
 }
 
-.Home-MainBlock-Gif {
-  position: absolute;
-  top: 0;
-  left: 5%;
+.Home-MainBlock-Image {
+  max-width: 60%;
 }
-
-.Home-MainBlock-Accent {
-  user-select: none;
-  position: absolute;
-  margin-top: 0;
-  top: -70%;
-  right: -40%;
-  z-index: -1;
-} */

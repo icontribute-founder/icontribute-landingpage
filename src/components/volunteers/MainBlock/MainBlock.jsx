@@ -1,43 +1,43 @@
 import React from 'react';
-import PhotoBlock from '../../PhotoBlock/PhotoBlock';
-import test from '../../../images/anna-earl-cTtE2FlIRoU-unsplash 1.png';
-import test2 from '../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png';
 import apple from '../../../images/1 25.png';
 import google from '../../../images/1 26.png';
-import kidmom from '../../../images/kidmom.png';
-import test4 from '../../../images/photoblock/momkid.png';
+// import PhotoBlock from '../../PhotoBlock/PhotoBlock';
+// import test from '../../../images/anna-earl-cTtE2FlIRoU-unsplash 1.png';
+// import test2 from '../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png';
+// import kidmom from '../../../images/kidmom.png';
+// import test4 from '../../../images/photoblock/momkid.png';
 import './MainBlock.css';
 
-const photos = [
-  {
-    photo: test4,
-    title: 'Student Fundraiser',
-    location: 'Ottawa Community',
-    date: 'Sun Jun 16, 2021',
-    distance: '15 km'
-  },
-  {
-    photo: test2,
-    title: 'Community Cleaning',
-    location: 'Ottawa Community',
-    date: 'Every Saturday in 2021',
-    distance: '10 km'
-  },
-  {
-    photo: test,
-    title: 'Student Volunteer',
-    location: 'Ottawa Community',
-    date: 'Sat Jun 16, 2020',
-    distance: '10.1 km'
-  },
-  {
-    photo: kidmom,
-    title: 'Daycare Helper',
-    location: 'Ottawa Daycare Center',
-    date: 'Every Sunday in 2021',
-    distance: '8 km'
-  }
-];
+// const photos = [
+//   {
+//     photo: test4,
+//     title: 'Student Fundraiser',
+//     location: 'Ottawa Community',
+//     date: 'Sun Jun 16, 2021',
+//     distance: '15 km'
+//   },
+//   {
+//     photo: test2,
+//     title: 'Community Cleaning',
+//     location: 'Ottawa Community',
+//     date: 'Every Saturday in 2021',
+//     distance: '10 km'
+//   },
+//   {
+//     photo: test,
+//     title: 'Student Volunteer',
+//     location: 'Ottawa Community',
+//     date: 'Sat Jun 16, 2020',
+//     distance: '10.1 km'
+//   },
+//   {
+//     photo: kidmom,
+//     title: 'Daycare Helper',
+//     location: 'Ottawa Daycare Center',
+//     date: 'Every Sunday in 2021',
+//     distance: '8 km'
+//   }
+// ];
 
 const MainBlock = () => {
   return (
@@ -65,24 +65,15 @@ const MainBlock = () => {
           <img src={google} alt="Google Play download" />
         </a>
       </div>
-      <div data-aos="fade-up" className="test">
-        <div className="photoblock-scroll-wrapper">
-          <div className="photoblock-scroll">
-            {photos.map((block, blockId) => {
-              return (
-                <PhotoBlock
-                  key={blockId}
-                  photo={block.photo}
-                  title={block.title}
-                  location={block.location}
-                  date={block.date}
-                  distance={block.distance}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      <iframe
+        data-aos="fade-up"
+        title="iContribute launch video"
+        src="https://drive.google.com/file/d/1tj2jsvMgDrHY7MHLsTzh0Qf7kaLlK-Rv/preview"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        frameborder="0"
+        width="500"
+        height="300"
+      />
     </div>
   );
 };

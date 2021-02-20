@@ -7,7 +7,7 @@ import privacy from '../../terms/Privacy Policy Good Draft.pdf';
 
 const FooterBlock = () => {
   return (
-    <div>
+    <div className="FooterBlock">
       <div className="footer-container">
         <div className="footer-logo">
           <h1 className="footer-header">
@@ -71,7 +71,7 @@ const FooterBlock = () => {
           </ul>
         </div>
       </div>
-      <footer>© 2020 iContribute. All rights reserved.</footer>
+      <footer>© {new Date().getFullYear().toString()} iContribute. All rights reserved.</footer>
     </div>
   );
 };

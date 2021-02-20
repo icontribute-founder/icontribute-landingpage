@@ -1,0 +1,16 @@
+.StripedTip {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.StripedTip-Image {
+  margin-right: 10px;
+}
+
+.StripedTip-Text {
+  /* width: 200px; */
+  font-family: Open Sans;
+  font-weight: 400;
+  /* font-size: 18px; */
+}

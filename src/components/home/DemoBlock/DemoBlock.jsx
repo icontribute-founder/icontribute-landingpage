@@ -19,7 +19,7 @@ const DemoBlock = () => {
       <img className="icontrib-gif" src={gif} alt="icontribute logo" />
       <img className="icontrib-filler" src={blueFiller} alt="background" />
       <div data-aos="fade-up">
-        <h2>Simple steps to get you up and running</h2>
+        <h2 className="demoblock-subheader">Simple steps to get you up and running</h2>
         <p className="demoblock-disc">This is how it works</p>
         <div className="demostep-container">
           <div className="demostep">

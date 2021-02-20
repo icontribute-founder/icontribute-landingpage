@@ -1,6 +1,7 @@
 import React from 'react';
 import PhotoBlock from '../../PhotoBlock/PhotoBlock';
 import test2 from '../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png';
+import './PhotoBlockContainer.css';
 
 const photos = [
   {
@@ -30,7 +31,7 @@ const PhotoBlockContainer = () => {
         })}
       </div>
       <div className="getstarted">
-        <h2>Make a meaningful contribution to your community</h2>
+        <h2 className="photoblock-container-header">Make a meaningful contribution to your community</h2>
         <a href="mailto:icontribute.founder@gmail.com" className="solid-yellow">
           GET STARTED
         </a>

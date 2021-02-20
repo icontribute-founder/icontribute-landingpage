@@ -11,7 +11,8 @@ a:hover {
 .footer-container,
 .teamblock-container,
 .AcrossGlobeBlock,
-.FAQBlock {
+.FAQBlock,
+.VideoBlock {
   margin-top: 100px;
 }
 

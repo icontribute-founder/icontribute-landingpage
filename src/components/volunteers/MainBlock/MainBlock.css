@@ -1,7 +1,7 @@
 .main-container-v {
-  display: grid;
-  grid-template-columns: 620px 700px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
 
