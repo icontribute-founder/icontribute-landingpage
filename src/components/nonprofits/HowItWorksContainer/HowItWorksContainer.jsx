@@ -7,6 +7,7 @@ import google from '../../../images/1 26.png';
 import SmallPhotoBlock from '../SmallPhotoBlock/SmallPhotoBlock';
 import test2 from '../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png';
 import test3 from '../../../images/Frame 205.png';
+import './HowItWorksContainer.css';
 
 const photos = [
   {
@@ -27,7 +28,7 @@ const photos = [
 
 const HowItWorksContainer = () => {
   return (
-    <div className="howitworks-container">
+    <div data-aos="fade-up" className="howitworks-container">
       <div className="howitworks-header">
         <h1>HOW IT WORKS</h1>
         <h2>Connect to 1000s of students in the community</h2>

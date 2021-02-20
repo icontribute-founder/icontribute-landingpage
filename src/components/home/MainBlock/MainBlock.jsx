@@ -9,7 +9,7 @@ const MainBlock = () => {
   return (
     <div data-aos="fade-up" className="Home-MainBlock">
       <div className="Home-MainBlock-Info">
-        <h1 className="Home-MainBlock-Header">Volunteering just got easier</h1>
+        <h1 className="Home-MainBlock-Header">Volunteering just got easier.</h1>
         <p className="Home-MainBlock-Details">
           We are making it easy to find, manage, and connect to volunteer opportunities for both students and
           organizations.

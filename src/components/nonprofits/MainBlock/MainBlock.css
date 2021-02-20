@@ -1,19 +1,31 @@
-.main-container {
-  position: relative;
+.Nonprofits-MainBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
 
-.main-info h1 {
-  font-size: 64px;
-  font-weight: 600;
-  width: 698px;
-  margin: 50px 0;
+.Nonprofits-MainBlock-Info {
+  text-align: right;
 }
-.main-info p {
-  font-size: 24px;
-  font-weight: normal;
+
+.Nonprofits-MainBlock-Header {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #133a4b;
+}
+
+.Nonprofits-MainBlock-Details {
+  font-size: 18px;
+  font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: #133a4b;
-  width: 523px;
+  width: 100%;
   margin: 50px 0;
+}
+
+.Nonprofits-MainBlock-Photo {
+  width: 50%;
+  margin-left: 50px;
 }

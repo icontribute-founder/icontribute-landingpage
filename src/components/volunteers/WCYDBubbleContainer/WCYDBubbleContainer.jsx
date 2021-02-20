@@ -15,6 +15,8 @@ import testing1 from '../../../images/iphone/Component 4.png';
 import testing2 from '../../../images/iphone/Component 5.png';
 import testing3 from '../../../images/iphone/Component 6.png';
 
+import './WCYDBubbleContainer.css';
+
 const WCYDBubbleContainer = () => {
   const [ bubble, setBubble ] = useState([
     {
@@ -51,7 +53,7 @@ const WCYDBubbleContainer = () => {
   });
 
   return (
-    <div className="photoblock-container">
+    <div data-aos="fade-up" className="photoblock-container">
       <img className="WCYD-image" src={state.img} alt="phone" />
       <div>
         {bubble.map((block, blockId) => {

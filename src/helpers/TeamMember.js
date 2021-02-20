@@ -5,7 +5,7 @@ const founderKeywords = [ 'founder' ];
 const developerKeywords = [ 'developer', 'engineer' ];
 const designerKeywords = [ 'design' ];
 const managerKeywords = [ 'manage' ];
-const businessTeamKeywords = [ 'market', 'advisor', 'advising', 'consult', 'agent', 'financ' ];
+const businessTeamKeywords = [ 'market', 'advisor', 'advising', 'consult', 'agent', 'financ', 'affair' ];
 
 const getTeamMemberRole = (teamMember) => {
   return teamMember.role.toLowerCase();
