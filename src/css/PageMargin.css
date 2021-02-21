@@ -1,3 +1,19 @@
+@media only screen and (max-width: 1000px) {
+  .main-container,
+  .photoblock-container,
+  .demoblock-container,
+  .partners-container,
+  .getintouch-container,
+  .watermark-text-container,
+  .footer-container,
+  .teamblock-container,
+  .AcrossGlobeBlock,
+  .FAQBlock,
+  .VideoBlock {
+    margin-top: 10px !important;
+  }
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -18,6 +34,10 @@ a:hover {
 
 .photoblock-container {
   margin-top: 200px;
+}
+
+.site-container {
+  margin: 0 auto;
 }
 
 .site-margin {

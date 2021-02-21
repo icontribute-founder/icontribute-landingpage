@@ -1,17 +1,33 @@
-.getintouch-container {
+@media only screen and (max-width: 1000px) {
+  .GetInTouchBlock-Header {
+    font-size: 24px !important;
+  }
+
+  .GetInTouchBlock-Subheader {
+    font-size: 18px !important;
+  }
+
+  .GetInTouchBlock-Image {
+    max-width: 120px;
+  }
+}
+
+.GetInTouchBlock {
+  margin-top: 100px;
   text-align: center;
 }
-.getintouch-container h1,
-.getintouch-container h2 {
+
+.GetInTouchBlock-Header,
+.GetInTouchBlock-Subheader {
   margin: 35px;
   font-weight: bold;
   color: #133a4b;
 }
 
-.getintouch-container h1 {
+.GetInTouchBlock-Header {
   font-size: 2em;
 }
 
-.getintouch-container h2 {
+.GetInTouchBlock-Subheader {
   font-size: 1.5em;
 }

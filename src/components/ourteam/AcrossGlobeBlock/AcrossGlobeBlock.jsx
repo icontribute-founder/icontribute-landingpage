@@ -5,7 +5,7 @@ import './AcrossGlobeBlock.css';
 const AcrossGlobeBlock = ({ teamLocations }) => {
   return (
     <div data-aos="fade-up" className="AcrossGlobeBlock">
-      <h1 className="AcrossGlobeBlock-header">From Across The Globe</h1>
+      <h1 className="AcrossGlobeBlock-header">From Across The Continent</h1>
       <h2 className="AcrossGlobeBlock-subheader">
         Our team is located in multiple areas around the world. We have collaborated endlessly to bring our app to you.
       </h2>

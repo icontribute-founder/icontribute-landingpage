@@ -14,7 +14,7 @@ const PartnersBlock = () => {
   return (
     <div className="partners-container">
       <h2 className="partners-header">Partners</h2>
-      <p className="partners-desc">Organizations we are currently working with.</p>
+      <p className="partners-desc">Find what you are passionate about.</p>
       <div data-aos="fade-up" className="partners">
         <div className="long-logos">
           {partners.map((partner, i) => {

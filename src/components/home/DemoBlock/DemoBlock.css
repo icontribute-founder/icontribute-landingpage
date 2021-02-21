@@ -1,3 +1,37 @@
+@media only screen and (max-width: 1000px) {
+  .demoblock-disc {
+    font-size: 18px !important;
+  }
+
+  .demoblock-subheader {
+    margin-top: 80px;
+  }
+
+  .demostep-container {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .demostep {
+    margin-top: 40px;
+  }
+
+  .demostep:nth-child(1) > img {
+    position: relative;
+    transform: translateX(20px);
+  }
+
+  .demostep:nth-child(2) > img {
+    position: relative;
+    transform: translateX(-10px);
+  }
+
+  .demostep:nth-child(3) > img {
+    position: relative;
+    transform: translateX(10px);
+  }
+}
+
 .demoblock-container {
   text-align: center;
   position: relative;

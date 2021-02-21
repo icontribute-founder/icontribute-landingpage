@@ -1,12 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Chevron from './Chevron';
-
 import './FAQAccordion.css';
+
+import { useMediaQuery } from 'react-responsive';
+import { MOBILE_SCREEN_SIZE } from '../../../constants/MediaQueries';
 
 function FAQAccordion(props) {
   const [ setActive, setActiveState ] = useState(props.isOpen ? 'accordion--active' : '');
   const [ setHeight, setHeightState ] = useState('0px');
   const [ setRotate, setRotateState ] = useState('accordion__icon');
+  const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
+
+  let chevronSize = 20;
+  if (isMobile) chevronSize = 15;
 
   useEffect(
     () => {
@@ -37,7 +43,9 @@ function FAQAccordion(props) {
     <div className="accordion__section">
       <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
         <p className="accordion__title">{props.title}</p>
-        <Chevron className={`${setRotate}`} width={20} height={20} fill={'#026896'} />
+        {isMobile ? null : (
+          <Chevron className={`${setRotate}`} width={chevronSize} height={chevronSize} fill={'#026896'} />
+        )}
       </button>
       <div ref={content} style={{ maxHeight: `${setHeight}` }} className="accordion__content">
         <div className="accordion__text">{props.content}</div>

@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1000px) {
+  .partners-header {
+    font-size: 36px !important;
+  }
+
+  .partners-desc {
+    font-size: 18px !important;
+  }
+}
+
 .partners-container {
   text-align: center;
 }

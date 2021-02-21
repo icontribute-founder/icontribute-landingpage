@@ -7,20 +7,29 @@ import gif from '../../../images/sponsors/iContributeGif.gif';
 import blueFiller from '../../../images/iphone/Screen Shot 2020-09-28 at 8.55.57 AM.png';
 import './DemoBlock.css';
 
+import { useMediaQuery } from 'react-responsive';
+import { MOBILE_SCREEN_SIZE } from '../../../constants/MediaQueries';
+
 const DemoBlock = () => {
+  const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
+
   return (
     <div data-aos="fade-up" className="demoblock-container">
       <h2 className="demoblock-header">One platform.</h2>
-      <h2 className="demoblock-header">For both students and organizations</h2>
+      {isMobile ? null : <h2 className="demoblock-header">For both students and organizations</h2>}
       <p className="demoblock-disc">
-        We connect people who are looking for local volunteer opportunities to nonprofits who are actively recruiting
+        We connect people who are looking for local volunteer opportunities to nonprofits who are actively recruiting.
       </p>
-      <img className="icontrib-phone" src={iPhone} alt="phone" />
-      <img className="icontrib-gif" src={gif} alt="icontribute logo" />
-      <img className="icontrib-filler" src={blueFiller} alt="background" />
+      {isMobile ? null : (
+        <div>
+          <img className="icontrib-phone" src={iPhone} alt="phone" />
+          <img className="icontrib-gif" src={gif} alt="icontribute logo" />
+          <img className="icontrib-filler" src={blueFiller} alt="background" />
+        </div>
+      )}
       <div data-aos="fade-up">
-        <h2 className="demoblock-subheader">Simple steps to get you up and running</h2>
-        <p className="demoblock-disc">This is how it works</p>
+        <h2 className="demoblock-subheader">Simple steps to get you up and running.</h2>
+        {isMobile ? null : <p className="demoblock-disc">This is how it works. Yup. It's that easy.</p>}
         <div className="demostep-container">
           <div className="demostep">
             <img src={pencil} alt="pencil" />

@@ -12,7 +12,7 @@ const MainBlock = () => {
           mobile platform. It only takes a few steps to get started.
         </p>
       </div>
-      <img className="Nonprofits-MainBlock-Photo" src={img} />
+      <img className="Nonprofits-MainBlock-Photo" src={img} alt="volunteer tutor" />
     </div>
   );
 };

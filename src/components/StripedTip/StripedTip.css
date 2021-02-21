@@ -1,7 +1,8 @@
 .StripedTip {
   display: flex;
   align-items: center;
-  margin: 20px;
+  margin: 5px;
+  width: 300px;
 }
 
 .StripedTip-Image {

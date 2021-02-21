@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1000px) {
+  .accordion__title,
+  .accordion__text {
+    font-size: 18px !important;
+  }
+}
+
 /* Style the accordion section */
 .accordion__section {
   display: flex;

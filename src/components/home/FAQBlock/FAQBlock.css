@@ -1,3 +1,18 @@
+@media only screen and (max-width: 1000px) {
+  .FAQBlock-header {
+    font-size: 36px !important;
+  }
+
+  .FAQBlock-desc {
+    font-size: 18px !important;
+    margin: 5px !important;
+  }
+
+  .FAQBlock-accordions {
+    margin-top: 50px !important;
+  }
+}
+
 .FAQBlock {
   text-align: center;
   position: relative;
@@ -11,7 +26,7 @@
   color: #133a4b;
 }
 
-.FAQBlock-disc {
+.FAQBlock-desc {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;

@@ -11,11 +11,16 @@ import OurTeamScreen from './screens/OurTeamScreen';
 import GetInTouchBlock from './components/GetInTouchBlock/GetInTouchBlock';
 import ScrollToTop from './components/ScrollToTop';
 
+import { useMediaQuery } from 'react-responsive';
+import { MOBILE_SCREEN_SIZE } from './constants/MediaQueries';
+
 const App = () => {
+  const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
+
   return (
     <Router basename="/">
       <ScrollToTop />
-      <div className="site-container">
+      <div className="site-container" style={{ width: isMobile ? '' : '1300px' }}>
         <NavBar />
         <div className="site-margin">
           <Switch>

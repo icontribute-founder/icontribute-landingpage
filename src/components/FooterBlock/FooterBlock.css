@@ -1,3 +1,70 @@
+@media only screen and (max-width: 1000px) {
+  .FooterBlock {
+    margin-top: 80px;
+  }
+
+  .FooterBlock-Logo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .FooterBlock-Logo-Company {
+    margin-bottom: 0;
+
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+    color: #026896;
+  }
+
+  .FooterBlock-Logo-Slogan {
+    margin-top: 0;
+
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color: #736b6b;
+  }
+
+  .FooterBlock-Links-List {
+    list-style: none;
+    padding: 0;
+  }
+
+  .FooterBlock-Links-List li {
+    text-align: center;
+  }
+
+  .FooterBlock-Links-List li a {
+    padding: 0;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    color: #292929;
+  }
+
+  .FooterBlock-SocialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+
+  .FooterBlock-SocialLink {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .FooterBlock-SocialIcon {
+    max-width: fit-content;
+  }
+
+  .FooterBlock-AppStores {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+}
+
 .FooterBlock {
   margin-bottom: 50px;
 }
