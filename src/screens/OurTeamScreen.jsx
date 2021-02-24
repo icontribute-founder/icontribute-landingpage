@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
+
 import MainBlock from '../components/ourteam/MainBlock/MainBlock';
 import AcrossGlobeBlock from '../components/ourteam/AcrossGlobeBlock/AcrossGlobeBlock';
 import TeamBlock from '../components/ourteam/TeamBlock/TeamBlock';
@@ -9,6 +11,9 @@ import fetchTeam from '../queries/TeamMembers';
 const OurTeamScreen = () => {
   const [ teamMembers, setTeamMembers ] = useState([]);
   const [ teamLocations, setTeamLocations ] = useState([]);
+  useEffect(() => {
+    ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
+  }, []);
 
   useEffect(() => {
     fetchTeam(setTeamMembers, setTeamLocations);

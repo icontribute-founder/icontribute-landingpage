@@ -1,5 +1,5 @@
 {
-  "name": "contrib",
+  "name": "iContribute Landing Page",
   "homepage": "https://icontribute.community",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "markdown-to-jsx": "^7.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.3.0",
     "react-modal": "^3.11.2",
     "react-pdf": "^5.0.0",
     "react-responsive": "^8.2.0",
@@ -35,16 +36,8 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [ ">0.2%", "not dead", "not op_mini all" ],
+    "development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"

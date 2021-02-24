@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 import NavBar from './components/Navbar/NavBar';
 import FooterBlock from './components/FooterBlock/FooterBlock';
 import './css/Buttons.css';
@@ -16,6 +18,10 @@ import { MOBILE_SCREEN_SIZE } from './constants/MediaQueries';
 
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
+
+  useEffect(() => {
+    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
+  }, []);
 
   return (
     <Router basename="/">

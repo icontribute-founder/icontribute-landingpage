@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 import MainBlock from '../components/home/MainBlock/MainBlock';
 import DemoBlock from '../components/home/DemoBlock/DemoBlock';
 import PhotoBlockContainer from '../components/home/PhotoBlockContainer/PhotoBlockContainer';
@@ -11,6 +13,9 @@ import { MOBILE_SCREEN_SIZE } from '../constants/MediaQueries';
 
 const HomeScreen = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
+  useEffect(() => {
+    ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
+  }, []);
 
   return (
     <div>
