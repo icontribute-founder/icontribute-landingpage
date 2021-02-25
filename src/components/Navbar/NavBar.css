@@ -1,36 +1,21 @@
 .Navbar {
   margin-top: 50px;
-  text-align: center;
 }
 
 .navbar-content {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
-.navbar-logo,
+.navbar-content .NavBarLogo {
+  display: inline-block;
+}
+
 .navbar-links {
   display: inline-block;
   padding-right: 100px;
-}
-
-.navbar-logo {
-  float: left;
-  text-align: left;
-}
-.navbar-logo h1 {
-  margin: 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  color: #026896;
-}
-.navbar-logo h2 {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: lighter;
-  color: #736b6b;
 }
 
 .navbar-links {
@@ -38,6 +23,7 @@
   padding-right: 0;
 }
 .navbar-link {
+  padding: 0;
   margin-right: 100px;
   font-size: 22px;
   font-weight: normal;

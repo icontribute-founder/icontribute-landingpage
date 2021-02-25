@@ -16,10 +16,7 @@ const NavBar = () => {
   return (
     <div className="Navbar">
       <div className="navbar-content">
-        <div className="navbar-logo">
-          <h1>iContribute</h1>
-          <h2>We rise by lifting others</h2>
-        </div>
+        <NavBarLogo />
 
         <div className="navbar-links">
           <NavLink className="navbar-link" exact to="/" activeClassName="selected">

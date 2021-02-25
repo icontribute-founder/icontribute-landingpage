@@ -1,29 +1,11 @@
 @media only screen and (max-width: 1000px) {
   .FooterBlock {
     margin-top: 80px;
-  }
-
-  .FooterBlock-Logo {
     text-align: center;
+  }
+
+  .FooterBlock .NavBarLogo {
     margin-bottom: 40px;
-  }
-
-  .FooterBlock-Logo-Company {
-    margin-bottom: 0;
-
-    font-family: Montserrat;
-    font-size: 36px;
-    font-weight: 400;
-    color: #026896;
-  }
-
-  .FooterBlock-Logo-Slogan {
-    margin-top: 0;
-
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: 400;
-    color: #736b6b;
   }
 
   .FooterBlock-Links-List {
@@ -78,50 +60,43 @@
   font-size: 18px;
   height: 467px;
 }
-.footer-header {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 44px;
-  color: #133a4b;
-  margin: 60px;
+
+.footer-logo {
+  text-align: center;
+  padding-top: 30px;
 }
-.footer-header h2 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+
+.footer-logo .NavBarLogo {
+  margin-bottom: 40px;
 }
 
 .footer-list-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.footer-list,
-.footer-list2 {
+
+.footer-list {
   list-style: none;
   margin: 60px;
   padding: 0;
 }
 
-.footer-list li a,
-.footer-list2 li a {
+.footer-list li a {
   padding: 0;
   padding-bottom: 5px;
   margin-bottom: 40px;
   color: #292929;
 }
 
-.footer-appstore-container {
-  margin-left: 60px;
-}
 .footer-appstore {
   padding: 0;
 }
+
 .footer-appstore img {
   width: 150px;
   height: 47px;
 }
-footer {
+
+.FooterBlock-Copyright {
   text-align: center;
 }

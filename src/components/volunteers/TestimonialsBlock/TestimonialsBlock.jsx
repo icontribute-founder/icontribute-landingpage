@@ -29,7 +29,7 @@ const TestimonialsBlock = () => {
           showStatus={false}
           showThumbs={false}
         >
-          {testimonials.map((testimonial) => <TestimonialCard testimonial={testimonial} />)}
+          {testimonials.map((testimonial, i) => <TestimonialCard testimonial={testimonial} key={i} />)}
         </Carousel>
       ) : null}
     </div>

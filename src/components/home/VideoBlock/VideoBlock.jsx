@@ -11,7 +11,7 @@ export default function VideoBlock() {
         title="iContribute launch video"
         src="https://drive.google.com/file/d/1tj2jsvMgDrHY7MHLsTzh0Qf7kaLlK-Rv/preview"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        frameborder="0"
+        frameBorder="0"
         allowFullScreen
       />
     </div>
