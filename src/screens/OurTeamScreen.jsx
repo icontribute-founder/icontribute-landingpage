@@ -12,6 +12,7 @@ const OurTeamScreen = () => {
   const [ teamMembers, setTeamMembers ] = useState([]);
   const [ teamLocations, setTeamLocations ] = useState([]);
   useEffect(() => {
+    document.title = 'iContribute - Our Team';
     ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
   }, []);
 

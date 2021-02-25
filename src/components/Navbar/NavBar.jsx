@@ -26,7 +26,7 @@ const NavBar = () => {
             VOLUNTEERS
           </NavLink>
           <NavLink className="navbar-link" to="/nonprofit" activeClassName="selected">
-            NONPROFIT
+            NONPROFITS
           </NavLink>
           <NavLink className="navbar-link" to="/ourteam" id="ourteam" activeClassName="selected">
             OUR TEAM

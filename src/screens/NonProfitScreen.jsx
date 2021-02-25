@@ -7,6 +7,7 @@ import '../css/NonProfitScreen.css';
 
 const NonProfitScreen = () => {
   useEffect(() => {
+    document.title = 'iContribute - Nonprofits';
     ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
   }, []);
 

@@ -8,6 +8,7 @@ import TestimonialsBlock from '../components/volunteers/TestimonialsBlock/Testim
 
 const VolunteersScreen = () => {
   useEffect(() => {
+    document.title = 'iContribute - Volunteers';
     ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
   }, []);
 
