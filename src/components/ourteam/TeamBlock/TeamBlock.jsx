@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import ProfileCard from '../ProfileCard/ProfileCard';
+import ProfileModal from '../../ProfileModal/ProfileModal';
 
 import './TeamBlock.css';
 import 'slick-carousel/slick/slick.css';
@@ -9,26 +10,29 @@ import 'slick-carousel/slick/slick-theme.css';
 import teamCategories from '../../../helpers/TeamMember';
 
 const sliderSettings = {
+  touchMove: true,
+  draggable: true,
+  swipeToSlide: true,
   dots: true,
   infinite: true,
   autoplay: true,
   pauseOnHover: true,
   pauseOnDotsHover: true,
-  swipeToSlide: false,
-  draggable: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  speed: 2500,
   autoplaySpeed: 2000,
   cssEase: 'ease'
 };
 
 const TeamBlock = ({ teamMembers }) => {
+  const [ isModalOpen, setIsModalOpen ] = useState(false);
+  const [ currentTeamMember, setCurrentTeamMember ] = useState({});
+
   return (
     <div className="TeamBlock">
       <div data-aos="fade-up" className="TeamBlock-Header">
         <h1>iContribute is built and maintained by this wonderful group of students.</h1>
-        {/* <p>CLICK TO LEARN MORE ABOUT US.</p> */}
+        <p>Click to learn more about us!</p>
       </div>
 
       <div data-aos="fade-up" className="TeamBlock-Gallery">
@@ -43,12 +47,20 @@ const TeamBlock = ({ teamMembers }) => {
               <Slider {...sliderSettings} rtl={reverseScrollDirection}>
                 {teamMembers
                   .filter(teamFilter)
-                  .map((teamMember, idx) => <ProfileCard key={idx} teamMember={teamMember} />)}
+                  .map((teamMember, idx) => (
+                    <ProfileCard
+                      key={idx}
+                      teamMember={teamMember}
+                      setIsModalOpen={setIsModalOpen}
+                      setCurrentTeamMember={setCurrentTeamMember}
+                    />
+                  ))}
               </Slider>
             </div>
           );
         })}
       </div>
+      <ProfileModal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} teamMember={currentTeamMember} />
     </div>
   );
 };

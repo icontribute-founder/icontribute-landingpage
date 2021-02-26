@@ -24,3 +24,11 @@
   color: #133a4b;
   margin-top: 100px;
 }
+
+/* REMOVE OUTLINE OF LIBRARY CLASSES */
+
+.slick:focus,
+.slick-active:focus,
+.slick-cloned:focus {
+  outline: 0 !important;
+}

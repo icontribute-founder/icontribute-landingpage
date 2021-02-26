@@ -5,7 +5,13 @@
   align-items: center;
 }
 
+.ProfileCard:focus {
+  outline: 0;
+}
+
 .ProfileCard-Pic {
+  cursor: pointer;
+
   width: 300px;
   height: 300px;
   border-radius: 150px;
@@ -17,6 +23,12 @@
 }
 
 .ProfileCard-Role {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.ProfileCard-Alumni {
   font-size: 14px;
   margin-top: 0;
 }

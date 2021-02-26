@@ -5,6 +5,9 @@ const query = `
       fullName
       role
       education
+      narrative
+      dateJoined
+      isAlumni
       profilePicture {
         url
       }
