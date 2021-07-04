@@ -1,22 +1,22 @@
-.Nonprofits-MainBlock {
+.Organizations-MainBlock {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
 
-.Nonprofits-MainBlock-Info {
+.Organizations-MainBlock-Info {
   text-align: right;
 }
 
-.Nonprofits-MainBlock-Header {
+.Organizations-MainBlock-Header {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 0;
   color: #133a4b;
 }
 
-.Nonprofits-MainBlock-Details {
+.Organizations-MainBlock-Details {
   font-size: 18px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
@@ -25,7 +25,7 @@
   margin: 50px 0;
 }
 
-.Nonprofits-MainBlock-Photo {
+.Organizations-MainBlock-Photo {
   width: 50%;
   margin-left: 50px;
 }

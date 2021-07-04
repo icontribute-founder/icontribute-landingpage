@@ -1,21 +1,21 @@
-.nonprofit-page .main-container {
+.organization-page .main-container {
   display: grid;
   grid-template-columns: 500px 700px;
   margin-bottom: 200px;
 }
-.nonprofit-page .main-info {
+.organization-page .main-info {
   text-align: right;
 }
 
-.nonprofit-page .main-info h1,
-.nonprofit-page .main-info p {
+.organization-page .main-info h1,
+.organization-page .main-info p {
   width: 500px;
 }
 
-.nonprofit-photoblock .photo-block-box {
+.organization-photoblock .photo-block-box {
   margin-left: 60px;
 }
-.nonprofit-photoblock .photo-block {
+.organization-photoblock .photo-block {
   width: 628px;
   height: 512px;
   padding: 0;
@@ -23,7 +23,7 @@
   box-shadow: 0px 4px 30px rgba(233, 233, 233, 0.51);
 }
 
-.nonprofit-photoblock .photo-block .photo-infoblock {
+.organization-photoblock .photo-block .photo-infoblock {
   margin: 0 40px;
   margin-bottom: 30px;
   width: 548px;
@@ -31,35 +31,35 @@
   bottom: 0;
 }
 
-.nonprofit-photoblock .photo-block .photo-distance {
+.organization-photoblock .photo-block .photo-distance {
   margin-top: 0;
 }
-.nonprofit-photoblock .photo-block .photo-block-photo {
+.organization-photoblock .photo-block .photo-block-photo {
   margin-top: 40px;
 }
-.nonprofit-photoblock .photo-block h1 {
+.organization-photoblock .photo-block h1 {
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   color: #026896;
 }
-.nonprofit-photoblock .photo-block h2 {
+.organization-photoblock .photo-block h2 {
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
 }
-.nonprofit-photoblock .photo-block h3 {
+.organization-photoblock .photo-block h3 {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 30px;
 }
-.nonprofit-photoblock .photo-block h1,
-.nonprofit-photoblock .photo-block h2,
-.nonprofit-photoblock .photo-block h3 {
+.organization-photoblock .photo-block h1,
+.organization-photoblock .photo-block h2,
+.organization-photoblock .photo-block h3 {
   margin: 10px 0;
 }
 
@@ -176,12 +176,12 @@
   color: #133a4b;
 }
 
-/* .nonprofit-photoblock .photo-block {
+/* .organization-photoblock .photo-block {
   width: 628px;
   height: 512px;
 }
 
-.nonprofit-photoblock .photo-block .photo-block-photo {
+.organization-photoblock .photo-block .photo-block-photo {
   width: 542px;
   height: 298px;
 } */

@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import apple from '../../images/1 25.png';
-import google from '../../images/1 26.png';
-import SocialMediaBar from '../SocialMediaBar/SocialMediaBar';
-import NavBarLogo from '../NavBarLogo/NavBarLogo';
-import privacy from '../../terms/Privacy Policy Good Draft.pdf';
-import './FooterBlock.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import apple from "../../images/1 25.png";
+import google from "../../images/1 26.png";
+import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
+import NavBarLogo from "../NavBarLogo/NavBarLogo";
+import privacy from "../../terms/Privacy Policy Good Draft.pdf";
+import "./FooterBlock.css";
 
-import { useMediaQuery } from 'react-responsive';
-import { MOBILE_SCREEN_SIZE } from '../../constants/MediaQueries';
+import { useMediaQuery } from "react-responsive";
+import { MOBILE_SCREEN_SIZE } from "../../constants/MediaQueries";
 
 const FooterBlock = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
@@ -53,7 +53,10 @@ const FooterBlock = () => {
             <img src={google} alt="Google Play download" />
           </a>
         </div>
-        <footer>© {new Date().getFullYear().toString()} iContribute. All rights reserved.</footer>
+        <footer>
+          © {new Date().getFullYear().toString()} iContribute. All rights
+          reserved.
+        </footer>
       </div>
     );
   }
@@ -85,7 +88,7 @@ const FooterBlock = () => {
         </div>
 
         <div className="footer-list-container">
-          {' '}
+          {" "}
           <ul className="footer-list">
             <li>
               <Link to="/">HOME</Link>
@@ -94,7 +97,7 @@ const FooterBlock = () => {
               <Link to="/volunteers">VOLUNTEERS</Link>
             </li>
             <li>
-              <Link to="/nonprofit">NONPROFITS</Link>
+              <Link to="/organizations">ORGANIZATIONS</Link>
             </li>
             <li>
               <a href="mailto:icontribute.founder@gmail.com">CONTACT US</a>
@@ -105,24 +108,27 @@ const FooterBlock = () => {
               <Link to="/ourteam">OUR TEAM</Link>
             </li>
             <li>
-              <a href={privacy} download>
-                TERMS & CONDITIONS
-              </a>
+              <Link to="/privacy">TERMS {"&"} CONDITIONS</Link>
             </li>
             <li>
-              <a href={privacy} download>
-                PRIVACY POLICY
-              </a>
+              <Link to="/privacy">PRIVACY POLICY</Link>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/icontribute/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/icontribute/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 FOLLOW US
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <p className="FooterBlock-Copyright">© {new Date().getFullYear().toString()} iContribute. All rights reserved.</p>
+      <p className="FooterBlock-Copyright">
+        © {new Date().getFullYear().toString()} iContribute. All rights
+        reserved.
+      </p>
     </div>
   );
 };
