@@ -16,12 +16,14 @@ const NavBar = () => {
   return (
     <div className="Navbar">
       <div className="navbar-content">
-        <NavBarLogo />
+        <NavLink className="navbar-link" to="/">
+          <NavBarLogo to="/" />
+        </NavLink>
 
         <div className="navbar-links">
-          <NavLink className="navbar-link" exact to="/" activeClassName="selected">
+          {/*<NavLink className="navbar-link" exact to="/" activeClassName="selected">
             HOME
-          </NavLink>
+          </NavLink>*/} 
           <NavLink className="navbar-link" to="/volunteers" activeClassName="selected">
             VOLUNTEERS
           </NavLink>
