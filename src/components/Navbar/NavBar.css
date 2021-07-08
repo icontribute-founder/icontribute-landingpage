@@ -13,6 +13,10 @@
   display: inline-block;
 }
 
+.navbar-logo {
+  text-transform: none !important;
+}
+
 .navbar-links {
   display: inline-block;
   padding-right: 100px;
@@ -29,19 +33,20 @@
   font-size: 22px;
   font-weight: normal;
   color: #736b6b;
+  height: 42px;
 
   /* hover setup */
   background-image: linear-gradient(#ffbc03, #ffbc03),
     linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
-  background-size: 0 2px, auto;
+  background-size: 0 4px, auto;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: 50% 100%;
   transition: all 0.2s ease-out;
 }
 
 .navbar-link:hover,
 .navbar-link.selected {
-  background-size: 100% 2px, auto;
+  background-size: 100% 4px, auto;
 }
 
 #ourteam {
