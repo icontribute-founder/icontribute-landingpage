@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 
-import MainBlock from '../components/organizations/MainBlock/MainBlock';
-import HowItWorksContainer from '../components/organizations/HowItWorksContainer/HowItWorksContainer';
-import '../css/OrganizationScreen.css';
+import MainBlock from "../components/organizations/MainBlock/MainBlock";
+import HowItWorksContainer from "../components/organizations/HowItWorksContainer/HowItWorksContainer";
+import "../css/OrganizationScreen.css";
 
 const OrganizationScreen = () => {
   useEffect(() => {
-    document.title = 'iContribute - Organizations';
+    document.title = "iContribute - Organizations";
     ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
   }, []);
 

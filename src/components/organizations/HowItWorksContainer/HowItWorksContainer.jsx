@@ -1,29 +1,29 @@
-import React from 'react';
-import iphone1 from '../../../images/iphone/iphone1.png';
-import iphone2 from '../../../images/iphone/iphone2.png';
-import notification from '../../../images/Frame 213.png';
-import apple from '../../../images/1 25.png';
-import google from '../../../images/1 26.png';
-import SmallPhotoBlock from '../SmallPhotoBlock/SmallPhotoBlock';
-import test2 from '../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png';
-import test3 from '../../../images/Frame 205.png';
-import './HowItWorksContainer.css';
+import React from "react";
+import iphone1 from "../../../images/iphone/iphone1.png";
+import iphone2 from "../../../images/iphone/iphone2.png";
+import notification from "../../../images/Frame 213.png";
+import apple from "../../../images/1 25.png";
+import google from "../../../images/1 26.png";
+import SmallPhotoBlock from "../SmallPhotoBlock/SmallPhotoBlock";
+import test2 from "../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png";
+import test3 from "../../../images/Frame 205.png";
+import "./HowItWorksContainer.css";
 
 const photos = [
   {
     photo: test2,
-    title: 'Fundraiser',
-    location: 'Ottawa Community',
-    date: 'Sat Jun 16, 2020',
-    distance: '10.1 km'
+    title: "Fundraiser",
+    location: "Ottawa Community",
+    date: "Sat Jun 16, 2020",
+    distance: "10.1 km",
   },
   {
     photo: test3,
-    title: 'Student Volunteer',
-    location: 'Ottawa Community',
-    date: 'Sat Jun 17 2020',
-    distance: '10.1 km'
-  }
+    title: "Student Volunteer",
+    location: "Ottawa Community",
+    date: "Sat Jun 17 2020",
+    distance: "10.1 km",
+  },
 ];
 
 const HowItWorksContainer = () => {
@@ -40,7 +40,10 @@ const HowItWorksContainer = () => {
       <div className="howitworks-step-left">
         <div className="howitworks-step-text-left">
           <h1>Download the app</h1>
-          <h2>Download iContribute app for your mobile device. It works with iOS and Android.</h2>
+          <h2>
+            Download iContribute app for your mobile device. It works with iOS
+            and Android.
+          </h2>
           <a
             href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
             target="_blank"
@@ -62,7 +65,6 @@ const HowItWorksContainer = () => {
           <img src={iphone1} alt="Phone home screen" />
         </div>
       </div>
-
       <div className="step-right">
         <h1>STEP 2</h1>
         <div className="yellow-dot" />
@@ -73,7 +75,10 @@ const HowItWorksContainer = () => {
         </div>
         <div className="howitworks-step-text-right">
           <h1>Sign Up as an Organization</h1>
-          <h2>Fill in the required fields to make an account with us. It only takes a few fields.</h2>
+          <h2>
+            Fill in the required fields to make an account with us. It only
+            takes a few fields.
+          </h2>
         </div>
       </div>
       <div className="step-left">
@@ -83,7 +88,10 @@ const HowItWorksContainer = () => {
       <div className="howitworks-step-left">
         <div className="howitworks-step-text-left">
           <h1>Create and Post your Events</h1>
-          <h2>Fill in the details about your event and the time slots you would like volunteers to work.</h2>
+          <h2>
+            Fill in the details about your event and the time slots you would
+            like volunteers to work.
+          </h2>
         </div>
         <div className="howitworks-photoblock-container">
           <div className="howitworks-photoblock-wrapper">
@@ -109,7 +117,8 @@ const HowItWorksContainer = () => {
       <div className="step4-wrapper">
         <h1>Confirm Your Volunteers</h1>
         <p>
-          Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.
+          Volunteers will apply to your event and all you have to do is confirm
+          if they will be attending via email.
         </p>
         <div className="mail-notification">
           <img src={notification} alt="Notification of volunteer application" />
