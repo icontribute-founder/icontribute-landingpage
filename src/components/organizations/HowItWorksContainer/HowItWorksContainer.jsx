@@ -116,10 +116,10 @@ const HowItWorksContainer = () => {
       </div>
       <div className="step4-wrapper">
         <h1>Confirm Your Volunteers</h1>
-        <p>
+        <h2>
           Volunteers will apply to your event and all you have to do is confirm
           if they will be attending via email.
-        </p>
+        </h2>
         <div className="mail-notification">
           <img src={notification} alt="Notification of volunteer application" />
         </div>

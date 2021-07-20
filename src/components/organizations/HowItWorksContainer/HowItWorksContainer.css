@@ -1,3 +1,285 @@
 .howitworks-container {
   margin-top: 200px;
 }
+
+.howitworks-header {
+  text-align: center;
+}
+
+.howitworks-header h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #133a4b;
+}
+.howitworks-header h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  color: #133a4b;
+}
+
+.howitworks-step-left .appstore img {
+  height: 47px;
+  width: 150px;
+}
+
+.step-left,
+.step-right {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+.step-left .yellow-dot,
+.step-right .yellow-dot {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.step-left h1,
+.step-right h1,
+.step-center h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffbc03;
+}
+.step-right {
+  text-align: right;
+}
+
+.howitworks-step-left,
+.howitworks-step-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.howitworks-step-text-left h1,
+.howitworks-step-text-right h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #133a4b;
+  margin-bottom: 50px;
+}
+.howitworks-step-text-left h2,
+.howitworks-step-text-right h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.howitworks-step-text-left {
+  border-right: 1px solid #cdcdcd;
+  text-align: right;
+  padding-right: 64px;
+}
+
+.howitworks-step-text-right {
+  border-left: 1px solid #cdcdcd;
+  text-align: left;
+  padding-left: 64px;
+  padding-right: 20px;
+}
+
+.step-center {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.step4-wrapper {
+  text-align: center;
+}
+.step4-wrapper h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.step4-wrapper p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #133a4b;
+}
+
+/* .organization-photoblock .photo-block {
+  width: 628px;
+  height: 512px;
+}
+
+.organization-photoblock .photo-block .photo-block-photo {
+  width: 542px;
+  height: 298px;
+} */
+.howitworks-photoblock-wrapper {
+  margin-left: 64px;
+}
+.howitworks-photoblock-wrapper .sphoto-block-box {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .howitworks-container {
+    margin-top: 100px;
+  }
+
+  .howitworks-header {
+    text-align: center;
+  }
+
+  .howitworks-header h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #133a4b;
+    text-align: center;
+  }
+  .howitworks-header h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #133a4b;
+    text-align: center;
+  }
+
+  .howitworks-step-left .appstore img {
+    height: 47px;
+    width: 150px;
+  }
+
+  .step-left,
+  .step-right,
+  .step-center {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  div.yellow-dot {
+    display: none;
+  }
+  .step-left h1,
+  .step-right h1,
+  .step-center h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffbc03;
+  }
+  .step-right {
+    text-align: right;
+  }
+
+  .howitworks-step-left,
+  .howitworks-step-right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .howitworks-step-left > .howitworks-iphone,
+  .howitworks-step-right > .howitworks-iphone {
+    display: none;
+  }
+  .howitworks-step-text-left h1,
+  .howitworks-step-text-right h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #133a4b;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .howitworks-step-text-left h2,
+  .howitworks-step-text-right h2,
+  .step4-wrapper h2 {
+    font-family: Montserrat;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .howitworks-step-text-left {
+    border-right: none;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .howitworks-step-text-right {
+    border-left: none;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .step4-wrapper {
+    text-align: center;
+  }
+  .step4-wrapper h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .step4-wrapper p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #133a4b;
+  }
+
+  .step4-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* .organization-photoblock .photo-block {
+    width: 628px;
+    height: 512px;
+  }
+  
+  .organization-photoblock .photo-block .photo-block-photo {
+    width: 542px;
+    height: 298px;
+  } */
+  .howitworks-photoblock-wrapper {
+    margin-left: 0px;
+  }
+  .howitworks-photoblock-wrapper .sphoto-block-box {
+    margin-bottom: 40px;
+  }
+
+  .step-center > h1,
+  .step-left > h1,
+  .step-right > h1 {
+    margin-top: 100px;
+  }
+
+  .appstore {
+    margin-top: 50px;
+  }
+}
