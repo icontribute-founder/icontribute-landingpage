@@ -9,6 +9,9 @@ import test2 from "../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png";
 import test3 from "../../../images/Frame 205.png";
 import "./HowItWorksContainer.css";
 
+import { useMediaQuery } from "react-responsive";
+import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
+
 const photos = [
   {
     photo: test2,
@@ -27,6 +30,7 @@ const photos = [
 ];
 
 const HowItWorksContainer = () => {
+  const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   return (
     <div data-aos="fade-up" className="howitworks-container">
       <div className="howitworks-header">
@@ -93,22 +97,24 @@ const HowItWorksContainer = () => {
             like volunteers to work.
           </h2>
         </div>
-        <div className="howitworks-photoblock-container">
-          <div className="howitworks-photoblock-wrapper">
-            {photos.map((block, blockId) => {
-              return (
-                <SmallPhotoBlock
-                  key={blockId}
-                  photo={block.photo}
-                  title={block.title}
-                  location={block.location}
-                  date={block.date}
-                  distance={block.distance}
-                />
-              );
-            })}
+        {!isMobile && (
+          <div className="howitworks-photoblock-container">
+            <div className="howitworks-photoblock-wrapper">
+              {photos.map((block, blockId) => {
+                return (
+                  <SmallPhotoBlock
+                    key={blockId}
+                    photo={block.photo}
+                    title={block.title}
+                    location={block.location}
+                    date={block.date}
+                    distance={block.distance}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <div className="step-center">
         <div className="yellow-dot" />
