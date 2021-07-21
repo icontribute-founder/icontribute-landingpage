@@ -16,10 +16,9 @@ const NavBar = () => {
   return (
     <div className="Navbar">
       <div className="navbar-content">
-        <NavLink className="navbar-link" to="/">
-          <NavBarLogo />
+        <NavLink className="navbar-logo" to="/">
+          <NavBarLogo to="/" />
         </NavLink>
-
         <div className="navbar-links">
           {/*<NavLink className="navbar-link" exact to="/" activeClassName="selected">
             HOME

@@ -5,6 +5,7 @@ import google from "../../images/1 26.png";
 import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
 import privacy from "../../terms/Privacy Policy Good Draft.pdf";
+import TOS from "../../terms/iContribute Terms and Conditions 2021.pdf";
 import "./FooterBlock.css";
 
 import { useMediaQuery } from "react-responsive";
@@ -23,7 +24,7 @@ const FooterBlock = () => {
               <a href="mailto:icontribute.founder@gmail.com">CONTACT US</a>
             </li>
             <li>
-              <a href={privacy} download>
+              <a href={TOS} download>
                 TERMS & CONDITIONS
               </a>
             </li>
@@ -108,10 +109,14 @@ const FooterBlock = () => {
               <Link to="/ourteam">OUR TEAM</Link>
             </li>
             <li>
-              <Link to="/privacy">TERMS {"&"} CONDITIONS</Link>
+              <a href={TOS} download>
+                TERMS {"&"} CONDITIONS
+              </a>
             </li>
             <li>
-              <Link to="/privacy">PRIVACY POLICY</Link>
+              <a href={privacy} download>
+                PRIVACY POLICY
+              </a>
             </li>
             <li>
               <a
