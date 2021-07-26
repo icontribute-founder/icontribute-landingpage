@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import TestimonialCard from '../TestimonialCard/TestimonialCard';
-import { Carousel } from 'react-responsive-carousel';
-import fetchTestimonials from '../../../queries/Testimonials';
+import React, { useState, useEffect } from "react";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
+import { Carousel } from "react-responsive-carousel";
+import fetchTestimonials from "../../../queries/Testimonials";
 
-import './TestimonialsBlock.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import "./TestimonialsBlock.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const TestimonialsBlock = () => {
-  const [ testimonials, setTestimonials ] = useState([]);
+  const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
     fetchTestimonials(setTestimonials);
@@ -21,7 +21,6 @@ const TestimonialsBlock = () => {
       {testimonials.length > 0 ? (
         <Carousel
           infiniteLoop
-          autoPlay
           useKeyboardArrows
           interval={3000}
           transitionTime={1000}
@@ -29,7 +28,9 @@ const TestimonialsBlock = () => {
           showStatus={false}
           showThumbs={false}
         >
-          {testimonials.map((testimonial, i) => <TestimonialCard testimonial={testimonial} key={i} />)}
+          {testimonials.map((testimonial, i) => (
+            <TestimonialCard testimonial={testimonial} key={i} />
+          ))}
         </Carousel>
       ) : null}
     </div>
