@@ -17,7 +17,7 @@ const NavBar = () => {
     <div className="Navbar">
       <div className="navbar-content">
         <NavLink className="navbar-logo" to="/">
-          <NavBarLogo to="/" />
+          <NavBarLogo />
         </NavLink>
         <div className="navbar-links">
           {/*<NavLink className="navbar-link" exact to="/" activeClassName="selected">
