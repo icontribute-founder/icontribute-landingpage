@@ -144,12 +144,14 @@
     margin-right: 2%;
   }
 
-  .WYCD-bubble {
+  .WYCD-bubble,
+  .WYCD-bubble-active {
     margin: 20px auto !important;
     width: 100% !important;
     max-width: 570px !important;
     height: auto;
     min-height: 176px !important;
+    opacity: 1 !important;
   }
   .WYCD-bubble:hover {
     color: #000 !important;

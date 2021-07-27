@@ -10,7 +10,6 @@ import TestimonialsBlock from "../components/volunteers/TestimonialsBlock/Testim
 
 const VolunteersScreen = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
-  console.log(isMobile);
   useEffect(() => {
     document.title = "iContribute - Volunteers";
     ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"

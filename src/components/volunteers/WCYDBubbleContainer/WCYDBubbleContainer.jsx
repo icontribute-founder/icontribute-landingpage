@@ -78,7 +78,6 @@ const WCYDBubbleContainer = ({ isMobile }) => {
       intvl = setInterval(() => {
         setCount((counterRef.current + 1) % 4);
         counterRef.current = (counterRef.current + 1) % 4;
-        console.log("Ref: " + counterRef.current);
         setState({ img: images[counterRef.current] });
       }, 2500);
     }
