@@ -1,11 +1,20 @@
 // these keywords are compared to a team member's role (e.g. UX Designer)
 // if there is a match, we know that this team member is part of a particular team (e.g. Designers)
 // ...maybe move this to contentful?
-const founderKeywords = [ 'founder' ];
-const developerKeywords = [ 'developer', 'engineer' ];
-const designerKeywords = [ 'design' ];
-const managerKeywords = [ 'manage' ];
-const businessTeamKeywords = [ 'market', 'advisor', 'advising', 'consult', 'agent', 'financ', 'affair' ];
+const founderKeywords = ["founder"];
+const developerKeywords = ["developer", "engineer"];
+const designerKeywords = ["design"];
+const managerKeywords = ["manage"];
+const businessTeamKeywords = [
+  "market",
+  "advisor",
+  "advising",
+  "consult",
+  "agent",
+  "financ",
+  "affair",
+  "human resources",
+];
 
 const getTeamMemberRole = (teamMember) => {
   return teamMember.role.toLowerCase();
@@ -72,11 +81,11 @@ const isInBusinessTeam = (teamMember) => {
 };
 
 const teamCategories = [
-  { teamName: 'Founders', filter: isFounder },
-  { teamName: 'Developers', filter: isDeveloper },
-  { teamName: 'Designers', filter: isDesigner },
-  { teamName: 'Managers', filter: isManager },
-  { teamName: 'Business Team', filter: isInBusinessTeam }
+  { teamName: "Founders", filter: isFounder },
+  { teamName: "Developers", filter: isDeveloper },
+  { teamName: "Designers", filter: isDesigner },
+  { teamName: "Managers", filter: isManager },
+  { teamName: "Business Team", filter: isInBusinessTeam },
 ];
 
 export default teamCategories;
