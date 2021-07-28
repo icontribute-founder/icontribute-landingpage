@@ -133,7 +133,7 @@
 
 @media screen and (max-width: 1000px) {
   .howitworks-container {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .howitworks-header {
@@ -147,6 +147,7 @@
     font-size: 36px;
     color: #133a4b;
     text-align: center;
+    margin-top: 0px;
   }
   .howitworks-header h2 {
     font-family: Montserrat;
@@ -276,7 +277,7 @@
   .step-center > h1,
   .step-left > h1,
   .step-right > h1 {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   .appstore {
