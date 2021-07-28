@@ -82,6 +82,7 @@ const WCYDBubbleContainer = ({ isMobile }) => {
       }, 2500);
     }
     return () => clearInterval(intvl);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
