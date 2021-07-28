@@ -112,7 +112,7 @@ const WCYDBubbleContainer = ({ isMobile }) => {
               setState={setState}
               setBubble={setBubble}
               isActive={count === blockId}
-              stoppedInterval={stoppedInterval}
+              stoppedInterval={isMobile ? true : stoppedInterval}
             />
           );
         })}
