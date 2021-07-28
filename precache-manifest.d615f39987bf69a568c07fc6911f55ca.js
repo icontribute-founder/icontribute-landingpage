@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d1705ef417d1f97d8cfc473192798fe",
+    "revision": "13f82fff71a6bc890cd860e3361d177e",
     "url": "/index.html"
   },
   {
-    "revision": "598446f33657a3e9e1aa",
+    "revision": "b54a1dffd8b72b082c79",
     "url": "/static/css/2.c90e42fa.chunk.css"
   },
   {
-    "revision": "9ad8d38f4d7f67d8b60d",
-    "url": "/static/css/main.90728eb7.chunk.css"
+    "revision": "e1a7e3ec1754e7c3de8c",
+    "url": "/static/css/main.b3cd1a87.chunk.css"
   },
   {
-    "revision": "598446f33657a3e9e1aa",
-    "url": "/static/js/2.1e0e8e42.chunk.js"
+    "revision": "b54a1dffd8b72b082c79",
+    "url": "/static/js/2.b698e32f.chunk.js"
   },
   {
     "revision": "56d69253fb75d220d0563b95a758c3fa",
-    "url": "/static/js/2.1e0e8e42.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b698e32f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ad8d38f4d7f67d8b60d",
-    "url": "/static/js/main.3d0f447e.chunk.js"
+    "revision": "e1a7e3ec1754e7c3de8c",
+    "url": "/static/js/main.d3d73c2c.chunk.js"
   },
   {
     "revision": "1272131f3da382bdb130",
@@ -76,10 +76,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Iphone_Macbook together.5762128a.png"
   },
   {
-    "revision": "3594d036b29fafa0e9fc0c0548487f75",
-    "url": "/static/media/Privacy Policy Good Draft.3594d036.pdf"
-  },
-  {
     "revision": "cd0308eb65469a0530d60646b4b52211",
     "url": "/static/media/Stripe 1.cd0308eb.svg"
   },
@@ -126,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0867e89d82ccbfd2d31998b6e6c48a0e",
     "url": "/static/media/grid6.0867e89d.png"
+  },
+  {
+    "revision": "3a40f6b4436510127593c8dd72c225a0",
+    "url": "/static/media/iContribute Privacy Policy 2021.3a40f6b4.pdf"
   },
   {
     "revision": "b2a9ab3e27f37d27303b9cce2f96aca0",
