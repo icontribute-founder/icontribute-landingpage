@@ -4,7 +4,7 @@ import apple from "../../images/1 25.png";
 import google from "../../images/1 26.png";
 import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
-import privacy from "../../terms/Privacy Policy Good Draft.pdf";
+import privacy from "../../terms/iContribute Privacy Policy 2021.pdf";
 import TOS from "../../terms/iContribute Terms and Conditions 2021.pdf";
 import "./FooterBlock.css";
 
