@@ -29,3 +29,42 @@
   height: 695px;
   margin-left: 138px;
 }
+
+@media screen and (max-width: 1000px) {
+  .connect-wrapper {
+    display: unset;
+    grid-template-columns: 700px 200px;
+    width: 825px;
+    margin: auto;
+  }
+
+  #connect-icon {
+    display: none;
+  }
+
+  .connect-header {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  .connect-header h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #133a4b;
+  }
+  .connect-header p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #133a4b;
+  }
+  #connect-email {
+    max-width: 1024px;
+    width: 95%;
+    height: auto;
+    margin-left: 5%;
+  }
+}
