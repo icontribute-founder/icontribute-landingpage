@@ -91,6 +91,8 @@ const WCYDBubbleContainer = ({ isMobile }) => {
         clearInterval(intvl);
         setStoppedInterval(true);
         console.log("Stopped!");
+        setCount(count + 100);
+        console.log(count);
       }}
       data-aos="fade-up"
       className="photoblock-container"

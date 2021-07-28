@@ -4,8 +4,18 @@ import "./WYCDBubble.css";
 const WCYDBubble = (props) => {
   return (
     <div
-      className={props.isActive ? "WYCD-bubble-active" : "WYCD-bubble"}
-      onMouseEnter={() => props.setState({ img: props.img })}
+      className={
+        !props.stoppedInterval
+          ? props.isActive
+            ? "WYCD-bubble-active"
+            : "WYCD-bubble-inactive"
+          : "WYCD-bubble"
+      }
+      onMouseEnter={
+        props.stoppedInterval
+          ? () => props.setState({ img: props.img })
+          : () => {}
+      }
     >
       <div data-aos="fade-up" className="WCYD-icon-container">
         <img className="WCYD-icon" src={props.iconDark} alt="icon dark" />
