@@ -1,6 +1,6 @@
 .TestimonialCard {
   margin: 0px 100px;
-  padding: 25px 50px;
+  padding: 25px 50px 0px 50px;
   padding-bottom: 50px;
   box-shadow: 0px 4px 30px rgba(233, 233, 233, 0.51);
   border: solid #f1f1f2 1px;
@@ -71,4 +71,86 @@
   max-width: 200px;
 
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .TestimonialCard {
+    margin: 0px 0px;
+    padding: 25px 10px;
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 30px rgba(233, 233, 233, 0.51);
+    border: solid #f1f1f2 1px;
+    border-radius: 40px;
+    background-color: #fff;
+  }
+
+  .TestimonialCard-Quote {
+    font-size: 24px;
+    text-align: left;
+    margin: 0 25px;
+    padding: 0.5em 10px;
+  }
+
+  .TestimonialCard-Quote:before,
+  .TestimonialCard-Quote:after {
+    color: #ccc;
+  }
+
+  .TestimonialCard-Quote:before {
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+
+    position: relative;
+    top: 0.3em;
+  }
+
+  .TestimonialCard-Quote:after {
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-left: 100%;
+    vertical-align: -0.4em;
+
+    position: relative;
+    right: 0.3em;
+  }
+
+  .TestimonialCard-Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+  }
+
+  blockquote {
+    margin: 0px !important;
+  }
+
+  .TestimonialCard-ProfileText {
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 24px;
+  }
+
+  .TestimonialCard-ProfileName,
+  .TestimonialCard-ProfileTitle {
+    margin: 5px 0px;
+  }
+
+  .TestimonialCard-ProfileName {
+    font-weight: 700;
+  }
+
+  .TestimonialCard-ProfilePicture {
+    width: 20%;
+    height: 20%;
+    min-width: 160px;
+    max-width: 200px;
+
+    border-radius: 50%;
+  }
 }
