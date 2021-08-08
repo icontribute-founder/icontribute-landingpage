@@ -132,10 +132,12 @@ nav {
 @keyframes siteMarginPush {
   from {
     transform: translateX(0px);
+    opacity: 1;
   }
   to {
     opacity: 1;
     transform: translateX(-350px);
+    opacity: 0.2;
   }
 }
 
