@@ -34,7 +34,14 @@ nav {
 .nav-link {
   padding: 20px 10px;
   font-size: 20px;
-  background-size: 0 4px, auto;
+  font-size: 22px;
+  font-weight: normal;
+  color: #736b6b;
+  height: 60px;
+
+  background-image: linear-gradient(#ffbc03, #ffbc03),
+    linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
+  background-size: 0% 4px, auto;
   background-repeat: no-repeat;
   background-position: 50% 100%;
   transition: all 0.2s ease-out;
