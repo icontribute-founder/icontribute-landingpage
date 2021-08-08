@@ -10,13 +10,32 @@ const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const burgerRef = useRef(null);
   const [linkClicked, setLinkClicked] = useState(false);
+
   useEffect(() => {
     setLinkClicked(false);
     var navSlide = () => {
+      const navbar = document.querySelector("nav");
       const nav = document.querySelector(".nav-links");
       const siteMargin = document.querySelector(".site-margin");
       const navLinks = document.querySelectorAll(".nav-links li");
       setTimeout(() => {
+        window.addEventListener("mousewheel", function (e) {
+          if (e.wheelDelta >= 0) {
+            navbar.classList.add("scroll-up");
+            navbar.classList.remove("scroll-down");
+          } else {
+            navbar.classList.add("scroll-down");
+            navbar.classList.remove("scroll-up");
+            nav.classList.remove("nav-active");
+            burgerRef.current.classList.remove("toggle");
+            if (siteMargin.style.animation) {
+              siteMargin.style.animation = "";
+            }
+            navLinks.forEach((link, idx) => {
+              link.style.animation = "";
+            });
+          }
+        });
         burgerRef.current.addEventListener("click", () => {
           nav.classList.toggle("nav-active");
           burgerRef.current.classList.toggle("toggle");
