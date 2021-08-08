@@ -23,12 +23,14 @@ const NavBar = () => {
         window.addEventListener("wheel", function (e) {
           if (e.wheelDelta >= 0) {
             if (lastScrollDirection.current === "down") {
+              alert("up");
               navbar.classList.add("scroll-up");
               navbar.classList.remove("scroll-down");
               lastScrollDirection.current = "up";
             }
           } else {
             if (lastScrollDirection.current === "up") {
+              alert("down");
               navbar.classList.add("scroll-down");
               navbar.classList.remove("scroll-up");
               nav.classList.remove("nav-active");
