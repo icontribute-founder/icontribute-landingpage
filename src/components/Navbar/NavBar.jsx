@@ -26,7 +26,6 @@ const NavBar = () => {
               navbar.classList.add("scroll-up");
               navbar.classList.remove("scroll-down");
               lastScrollDirection.current = "up";
-              console.log("scroll down");
             }
           } else {
             if (lastScrollDirection.current === "up") {
@@ -40,7 +39,6 @@ const NavBar = () => {
               navLinks.forEach((link) => {
                 link.style.animation = "";
               });
-              console.log("scroll up");
               lastScrollDirection.current = "down";
             }
           }
