@@ -10,6 +10,7 @@ const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const burgerRef = useRef(null);
   const [linkClicked, setLinkClicked] = useState(false);
+  const lastScrollDirection = useRef("up");
 
   useEffect(() => {
     setLinkClicked(false);
@@ -19,21 +20,29 @@ const NavBar = () => {
       const siteMargin = document.querySelector(".site-margin");
       const navLinks = document.querySelectorAll(".nav-links li");
       setTimeout(() => {
-        window.addEventListener("mousewheel", function (e) {
+        window.addEventListener("wheel", function (e) {
           if (e.wheelDelta >= 0) {
-            navbar.classList.add("scroll-up");
-            navbar.classList.remove("scroll-down");
-          } else {
-            navbar.classList.add("scroll-down");
-            navbar.classList.remove("scroll-up");
-            nav.classList.remove("nav-active");
-            burgerRef.current.classList.remove("toggle");
-            if (siteMargin.style.animation) {
-              siteMargin.style.animation = "";
+            if (lastScrollDirection.current === "down") {
+              navbar.classList.add("scroll-up");
+              navbar.classList.remove("scroll-down");
+              lastScrollDirection.current = "up";
+              console.log("scroll down");
             }
-            navLinks.forEach((link, idx) => {
-              link.style.animation = "";
-            });
+          } else {
+            if (lastScrollDirection.current === "up") {
+              navbar.classList.add("scroll-down");
+              navbar.classList.remove("scroll-up");
+              nav.classList.remove("nav-active");
+              burgerRef.current.classList.remove("toggle");
+              if (siteMargin.style.animation) {
+                siteMargin.style.animation = "";
+              }
+              navLinks.forEach((link) => {
+                link.style.animation = "";
+              });
+              console.log("scroll up");
+              lastScrollDirection.current = "down";
+            }
           }
         });
         burgerRef.current.addEventListener("click", () => {

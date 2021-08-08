@@ -116,6 +116,15 @@ nav {
   .burger {
     display: block;
   }
+  .scroll-down {
+    transform: translateY(-100px);
+    transition: 0.2s;
+  }
+
+  .scroll-up {
+    transform: translateY(0px);
+    transition: 0.2s;
+  }
 }
 
 .nav-active {
@@ -170,6 +179,15 @@ nav {
   .burger {
     display: block;
   }
+  .scroll-down {
+    transform: translateY(-100px);
+    transition: 0.2s;
+  }
+
+  .scroll-up {
+    transform: translateY(0px);
+    transition: 0.2s;
+  }
 }
 
 .nav-active {
@@ -207,14 +225,4 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.scroll-down {
-  transform: translateY(-100px);
-  transition: 0.2s;
-}
-
-.scroll-up {
-  transform: translateY(0px);
-  transition: 0.2s;
 }
