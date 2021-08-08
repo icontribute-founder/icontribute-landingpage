@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
 import "./NavBar.css";
@@ -9,7 +9,6 @@ import { MOBILE_SCREEN_SIZE } from "./../../constants/MediaQueries";
 const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const burgerRef = useRef(null);
-  const [linkClicked, setLinkClicked] = useState(false);
   useEffect(() => {
     var navSlide = () => {
       const nav = document.querySelector(".nav-links");
@@ -54,20 +53,6 @@ const NavBar = () => {
     });
   }, [isMobile]);
 
-  useEffect(() => {
-    const nav = document.querySelector(".nav-links");
-    const siteMargin = document.querySelector(".site-margin");
-    const navLinks = document.querySelectorAll(".nav-links li");
-    nav.classList.remove("nav-active");
-    burgerRef.current.classList.remove("toggle");
-    if (siteMargin.style.animation) {
-      siteMargin.style.animation = "";
-    }
-    navLinks.forEach((link, idx) => {
-      link.style.animation = "";
-    });
-  }, [linkClicked]);
-
   /*if (isMobile) {
     return <NavBarLogo isMobile={true} />;
   }*/
@@ -81,13 +66,7 @@ const NavBar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <NavLink
-            onClick={() => {
-              setLinkClicked(true);
-            }}
-            className="nav-link"
-            to="/"
-          >
+          <NavLink className="nav-link" to="/">
             HOME
           </NavLink>
         </li>
