@@ -34,7 +34,6 @@ const fetchTestimonials = (setTestimonials) => {
         console.error(errors);
       } else {
         setTestimonials(data.testimonialCollection.items);
-        console.log(data.testimonialCollection.items);
       }
     });
 };
