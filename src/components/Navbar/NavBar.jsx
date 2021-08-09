@@ -10,7 +10,6 @@ const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const burgerRef = useRef(null);
   const [linkClicked, setLinkClicked] = useState(false);
-  const lastScrollDirection = useRef("up");
 
   useEffect(() => {
     setLinkClicked(false);
@@ -30,7 +29,6 @@ const NavBar = () => {
       });
     }
     var navSlide = () => {
-      const navbar = document.querySelector("nav");
       const nav = document.querySelector(".nav-links");
       const siteMargin = document.querySelector(".site-margin");
       const navLinks = document.querySelectorAll(".nav-links li");
