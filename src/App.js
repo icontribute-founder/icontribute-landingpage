@@ -34,7 +34,7 @@ const App = () => {
             <Route path="/" exact component={HomeScreen} />
             <Route path="/volunteers" exact component={VolunteersScreen} />
             <Route path="/organizations" exact component={OrganizationScreen} />
-            <Route path="/ourteam" exact component={OurTeamScreen} />
+            <Route path="/our-team" exact component={OurTeamScreen} />
             <Route path="/privacy" exact component={PrivacyPolicyScreen} />
             <Route path="/TOS" exact component={PrivacyPolicyScreen} />
           </Switch>
