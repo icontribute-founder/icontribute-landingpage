@@ -15,6 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "./constants/MediaQueries";
+import StickySocials from "./components/StickySocials/StickySocials";
 
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
@@ -27,6 +28,7 @@ const App = () => {
         style={{ width: isMobile ? "" : "1300px" }}
       >
         <NavBar />
+        <StickySocials />
         <div className="site-margin">
           <Switch>
             <Route path="/" exact component={HomeScreen} />
