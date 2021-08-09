@@ -13,6 +13,7 @@ const NavBar = () => {
   const lastScrollDirection = useRef("up");
 
   useEffect(() => {
+    alert("Reached UseEffect");
     setLinkClicked(false);
     var navSlide = () => {
       const navbar = document.querySelector("nav");
@@ -20,17 +21,39 @@ const NavBar = () => {
       const siteMargin = document.querySelector(".site-margin");
       const navLinks = document.querySelectorAll(".nav-links li");
       setTimeout(() => {
+        document.addEventListener("scroll", function (e) {
+          alert("document scroll");
+        });
+        window.addEventListener("scroll", function (e) {
+          alert("window scroll");
+        });
+        document.addEventListener("wheel", function (e) {
+          alert("document wheel");
+        });
+        window.addEventListener("wheel", function (e) {
+          alert("window wheel");
+        });
+        document.addEventListener("onscroll", function (e) {
+          alert("document onscroll");
+        });
+        window.addEventListener("onscroll", function (e) {
+          alert("window onscroll");
+        });
+        window.onscroll = function () {
+          alert("window onscroll not listener");
+        };
+        document.onscroll = function () {
+          alert("document onscroll not listener");
+        };
         window.addEventListener("wheel", function (e) {
           if (e.wheelDelta >= 0) {
             if (lastScrollDirection.current === "down") {
-              alert("up");
               navbar.classList.add("scroll-up");
               navbar.classList.remove("scroll-down");
               lastScrollDirection.current = "up";
             }
           } else {
             if (lastScrollDirection.current === "up") {
-              alert("down");
               navbar.classList.add("scroll-down");
               navbar.classList.remove("scroll-up");
               nav.classList.remove("nav-active");
