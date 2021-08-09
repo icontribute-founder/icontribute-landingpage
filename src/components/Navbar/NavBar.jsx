@@ -10,6 +10,7 @@ const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const burgerRef = useRef(null);
   const [linkClicked, setLinkClicked] = useState(false);
+  const lastScrollDirection = useRef("up");
 
   useEffect(() => {
     setLinkClicked(false);
@@ -29,15 +30,32 @@ const NavBar = () => {
       });
     }
     var navSlide = () => {
+      const navbar = document.querySelector("nav");
       const nav = document.querySelector(".nav-links");
       const siteMargin = document.querySelector(".site-margin");
       const navLinks = document.querySelectorAll(".nav-links li");
       setTimeout(() => {
         scrollEventThrottle((scrollPos, previousScrollPos) => {
           if (previousScrollPos > scrollPos) {
-            alert("going up");
+            // down
+            navbar.classList.add("scroll-up");
+            navbar.classList.remove("scroll-down");
+            lastScrollDirection.current = "up";
           } else {
-            alert("going down");
+            // up
+            if (lastScrollDirection.current === "up") {
+              navbar.classList.add("scroll-down");
+              navbar.classList.remove("scroll-up");
+              nav.classList.remove("nav-active");
+              burgerRef.current.classList.remove("toggle");
+              if (siteMargin.style.animation) {
+                siteMargin.style.animation = "";
+              }
+              navLinks.forEach((link) => {
+                link.style.animation = "";
+              });
+              lastScrollDirection.current = "down";
+            }
           }
         });
         /*window.addEventListener("scroll", function (e) {
@@ -131,7 +149,6 @@ const NavBar = () => {
           <NavLink
             onClick={() => {
               setLinkClicked((click) => !click);
-              console.log("called click");
             }}
             className="nav-link"
             to="/"
