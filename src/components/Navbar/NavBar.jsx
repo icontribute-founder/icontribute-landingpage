@@ -13,39 +13,36 @@ const NavBar = () => {
   const lastScrollDirection = useRef("up");
 
   useEffect(() => {
-    alert("Reached UseEffect");
     setLinkClicked(false);
+    function scrollEventThrottle(fn) {
+      let last_known_scroll_position = 0;
+      let ticking = false;
+      window.addEventListener("scroll", function () {
+        let previous_known_scroll_position = last_known_scroll_position;
+        last_known_scroll_position = window.scrollY;
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            fn(last_known_scroll_position, previous_known_scroll_position);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    }
     var navSlide = () => {
       const navbar = document.querySelector("nav");
       const nav = document.querySelector(".nav-links");
       const siteMargin = document.querySelector(".site-margin");
       const navLinks = document.querySelectorAll(".nav-links li");
       setTimeout(() => {
-        document.addEventListener("scroll", function (e) {
-          alert("document scroll");
+        scrollEventThrottle((scrollPos, previousScrollPos) => {
+          if (previousScrollPos > scrollPos) {
+            alert("going up");
+          } else {
+            alert("going down");
+          }
         });
-        window.addEventListener("scroll", function (e) {
-          alert("window scroll");
-        });
-        document.addEventListener("wheel", function (e) {
-          alert("document wheel");
-        });
-        window.addEventListener("wheel", function (e) {
-          alert("window wheel");
-        });
-        document.addEventListener("onscroll", function (e) {
-          alert("document onscroll");
-        });
-        window.addEventListener("onscroll", function (e) {
-          alert("window onscroll");
-        });
-        window.onscroll = function () {
-          alert("window onscroll not listener");
-        };
-        document.onscroll = function () {
-          alert("document onscroll not listener");
-        };
-        window.addEventListener("wheel", function (e) {
+        /*window.addEventListener("scroll", function (e) {
           if (e.wheelDelta >= 0) {
             if (lastScrollDirection.current === "down") {
               navbar.classList.add("scroll-up");
@@ -67,7 +64,7 @@ const NavBar = () => {
               lastScrollDirection.current = "down";
             }
           }
-        });
+        });*/
         burgerRef.current.addEventListener("click", () => {
           nav.classList.toggle("nav-active");
           burgerRef.current.classList.toggle("toggle");
