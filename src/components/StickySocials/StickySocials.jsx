@@ -21,13 +21,6 @@ const StickySocials = () => {
       const socialIcons = document.querySelector(".sticky-socials");
       setTimeout(() => {
         socialIcons.style.animation = "appearFromLeft 1s ease forwards";
-        window.addEventListener("scroll", (e) => {
-          if (window.scrollY > 3300) {
-            socialIcons.style.animation = "appearFromLeft 1s ease reverse";
-          } else {
-            socialIcons.style.animation = "appearFromLeft 1s ease forwards";
-          }
-        });
       }, 100);
     };
     navSlide();
