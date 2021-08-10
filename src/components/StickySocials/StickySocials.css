@@ -1,9 +1,23 @@
 .sticky-socials {
+  /*opacity: 0;*/
+  z-index: 1000;
   position: fixed;
   top: calc(50vh - 128px);
+  left: 20px;
   display: flex;
   flex-direction: column;
-  margin-left: -1vw;
+  opacity: 0;
+}
+
+@keyframes appearFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .sticky-socials img {
