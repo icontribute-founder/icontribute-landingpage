@@ -22,7 +22,7 @@ const StickySocials = () => {
       setTimeout(() => {
         socialIcons.style.animation = "appearFromLeft 1s ease forwards";
         window.addEventListener("scroll", (e) => {
-          if (window.scrollY > 3000) {
+          if (window.scrollY > 3200) {
             socialIcons.style.animation = "appearFromLeft 1s ease reverse";
           } else {
             socialIcons.style.animation = "appearFromLeft 1s ease forwards";
