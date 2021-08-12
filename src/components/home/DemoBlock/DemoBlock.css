@@ -23,7 +23,7 @@
 
   .demostep:nth-child(2) > img {
     position: relative;
-    transform: translateX(-10px);
+    transform: translateX(10px);
   }
 
   .demostep:nth-child(3) > img {
@@ -83,12 +83,12 @@
 .icontrib-gif {
   position: absolute;
   left: 357px;
-  top: 241px;
+  top: 180px;
   z-index: 2;
 }
 .icontrib-filler {
   position: absolute;
   left: 478px;
-  bottom: 755px;
+  bottom: 600px;
   z-index: 1;
 }
