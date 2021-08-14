@@ -5,11 +5,16 @@
   }
 }
 
+ol {
+  padding: 0px 20px;
+}
+
 /* Style the accordion section */
 .accordion__section {
   display: flex;
   flex-direction: column;
   border-bottom: solid #cccccc 1px;
+  padding: 15px 0px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -57,10 +62,18 @@
 
 /* Style the accordion content text */
 .accordion__text {
+  margin: 20px 0px;
   padding: 10px 10px;
   padding-top: 0px;
   font-size: 21px;
 }
+
+.accordion__text > div > *,
+.accordion__text > span {
+  line-height: 1.6;
+  margin: 5px 0px;
+}
+
 .FAQBlock-quote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
