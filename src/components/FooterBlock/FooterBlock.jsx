@@ -10,10 +10,11 @@ import "./FooterBlock.css";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../constants/MediaQueries";
+import { useTranslation } from "react-i18next";
 
 const FooterBlock = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
-
+  const { t } = useTranslation();
   if (isMobile) {
     return (
       <div className="FooterBlock">
@@ -21,16 +22,16 @@ const FooterBlock = () => {
         <div className="FooterBlock-Links">
           <ul className="FooterBlock-Links-List">
             <li>
-              <a href="mailto:icontribute.founder@gmail.com">CONTACT US</a>
+              <a href="mailto:icontribute.founder@gmail.com">{t("CONTACT")}</a>
             </li>
             <li>
               <a href={TOS} download>
-                TERMS & CONDITIONS
+                {t("TERMS & CONDITIONS")}
               </a>
             </li>
             <li>
               <a href={privacy} download>
-                PRIVACY POLICY
+                {t("PRIVACY POLICY")}
               </a>
             </li>
           </ul>
@@ -55,8 +56,7 @@ const FooterBlock = () => {
           </a>
         </div>
         <footer>
-          © {new Date().getFullYear().toString()} iContribute. All rights
-          reserved.
+          © {new Date().getFullYear().toString()} {t("Rights Text")}
         </footer>
       </div>
     );
@@ -92,30 +92,30 @@ const FooterBlock = () => {
           {" "}
           <ul className="footer-list">
             <li>
-              <Link to="/">HOME</Link>
+              <Link to="/">{t("HOME")}</Link>
             </li>
             <li>
-              <Link to="/volunteers">VOLUNTEERS</Link>
+              <Link to="/volunteers">{t("VOLUNTEERS")}</Link>
             </li>
             <li>
-              <Link to="/organizations">ORGANIZATIONS</Link>
+              <Link to="/organizations">{t("ORGANIZATIONS")}</Link>
             </li>
             <li>
-              <a href="mailto:icontribute.founder@gmail.com">CONTACT US</a>
+              <a href="mailto:icontribute.founder@gmail.com">{t("CONTACT")}</a>
             </li>
           </ul>
           <ul className="footer-list">
             <li>
-              <Link to="/ourteam">OUR TEAM</Link>
+              <Link to="/ourteam">{t("OUR TEAM")}</Link>
             </li>
             <li>
               <a href={TOS} download>
-                TERMS {"&"} CONDITIONS
+                {t("TERMS & CONDITIONS")}
               </a>
             </li>
             <li>
               <a href={privacy} download>
-                PRIVACY POLICY
+                {t("PRIVACY POLICY")}
               </a>
             </li>
             <li>
@@ -124,15 +124,14 @@ const FooterBlock = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                FOLLOW US
+                {t("FOLLOW US")}
               </a>
             </li>
           </ul>
         </div>
       </div>
       <p className="FooterBlock-Copyright">
-        © {new Date().getFullYear().toString()} iContribute. All rights
-        reserved.
+        © {new Date().getFullYear().toString()} {t("Rights Text")}
       </p>
     </div>
   );

@@ -9,22 +9,19 @@ import "./DemoBlock.css";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
+import { useTranslation } from "react-i18next";
 
 const DemoBlock = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
+  const { t } = useTranslation();
 
   return (
     <div data-aos="fade-up" className="demoblock-container">
-      <h2 className="demoblock-header">One platform.</h2>
+      <h2 className="demoblock-header">{t("demoblock-header-0")}</h2>
       {isMobile ? null : (
-        <h2 className="demoblock-header">
-          For both students and organizations
-        </h2>
+        <h2 className="demoblock-header">{t("demoblock-header-1")}</h2>
       )}
-      <p className="demoblock-disc">
-        We connect people who are looking for local volunteer opportunities to
-        nonprofits who are actively recruiting.
-      </p>
+      <p className="demoblock-disc">{t("demoblock-disc-1")}</p>
       {isMobile ? null : (
         <div>
           <img className="icontrib-phone" src={iPhone} alt="phone" />
@@ -33,37 +30,27 @@ const DemoBlock = () => {
         </div>
       )}
       <div data-aos="fade-up">
-        <h2 className="demoblock-subheader">
-          Simple steps to get you up and running.
-        </h2>
+        <h2 className="demoblock-subheader">{t("demoblock-subheader-2")}</h2>
         {isMobile ? null : (
-          <p className="demoblock-disc">
-            This is how it works. Yup. It's that easy.
-          </p>
+          <p className="demoblock-disc">{t("demoblock-disc-2")}</p>
         )}
         <div className="demostep-container">
           <div className="demostep">
             <img src={pencil} alt="pencil" />
-            <h3 className="demostep-header">SIGN UP</h3>
-            <p className="demostep-disc">
-              Give us a few details about yourself or your organization.
-            </p>
+            <h3 className="demostep-header">{t("demostep-header-3")}</h3>
+            <p className="demostep-disc">{t("demostep-disc-3")}</p>
           </div>
           <div id="demostep-mouse" className="demostep">
             <img id="mouse-icon" src={mouse} alt="mouse" />
             <h3 id="demostep-header-mouse" className="demostep-header">
-              EXPLORE
+              {t("demostep-header-4")}
             </h3>
-            <p className="demostep-disc">
-              Volunteers browse and apply to events created by organizations.
-            </p>
+            <p className="demostep-disc">{t("demostep-disc-4")}</p>
           </div>
           <div className="demostep">
             <img src={phone} alt="phone" />
-            <h3 className="demostep-header">CONNECT</h3>
-            <p className="demostep-disc">
-              We connect the both of you on your behalf.{" "}
-            </p>
+            <h3 className="demostep-header">{t("demostep-header-5")}</h3>
+            <p className="demostep-disc">{t("demostep-disc-5")}</p>
           </div>
         </div>
       </div>

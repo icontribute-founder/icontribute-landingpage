@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
+import LangSelector from "../Navbar/LangSelector";
 import "./NavBar.css";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "./../../constants/MediaQueries";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
@@ -110,6 +112,8 @@ const NavBar = () => {
     });
   }, [linkClicked]);
 
+  const { t } = useTranslation();
+
   /*if (isMobile) {
     return <NavBarLogo isMobile={true} />;
   }*/
@@ -130,7 +134,7 @@ const NavBar = () => {
             className="nav-link"
             to="/"
           >
-            HOME
+            {t("HOME")}
           </NavLink>
         </li>
         <li>
@@ -142,7 +146,7 @@ const NavBar = () => {
             to="/volunteers"
             activeClassName="selected"
           >
-            VOLUNTEERS
+            {t("VOLUNTEERS")}
           </NavLink>
         </li>
         <li>
@@ -154,7 +158,7 @@ const NavBar = () => {
             to="/organizations"
             activeClassName="selected"
           >
-            ORGANIZATIONS
+            {t("ORGANIZATIONS")}
           </NavLink>
         </li>
         <li>
@@ -166,9 +170,16 @@ const NavBar = () => {
             to="/our-team"
             activeClassName="selected"
           >
-            OUR TEAM
+            {t("OUR TEAM")}
           </NavLink>
         </li>
+        {isMobile ? (
+          <li>
+            <LangSelector />
+          </li>
+        ) : (
+          ""
+        )}
       </ul>
       <div ref={burgerRef} className="burger">
         <div className="line1"></div>
