@@ -4,10 +4,15 @@ import "./LangSelector.css";
 import i18n from "i18next";
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../constants/MediaQueries";
+import { useEffect } from "react";
 
 const LangSelector = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const [language, setLanguage] = useState(i18n.language);
+
+  useEffect(() => {
+    setLanguage("EN");
+  }, []);
 
   const handleLanguageChange = (lang) => {
     switch (lang) {
