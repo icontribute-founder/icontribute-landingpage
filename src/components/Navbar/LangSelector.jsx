@@ -26,6 +26,10 @@ const LangSelector = () => {
     }
   };
 
+  useEffect(() => {
+    i18n.changeLanguage("EN");
+  }, []);
+
   return !isMobile ? (
     <div className="lang-selector">
       <div>

@@ -13,6 +13,7 @@ import OurTeamScreen from "./screens/OurTeamScreen";
 import GetInTouchBlock from "./components/GetInTouchBlock/GetInTouchBlock";
 import ScrollToTop from "./components/ScrollToTop";
 import LangSelector from "./components/Navbar/LangSelector";
+import i18n from "i18next";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "./constants/MediaQueries";
@@ -20,7 +21,7 @@ import StickySocials from "./components/StickySocials/StickySocials";
 
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
-
+  i18n.changeLanguage("EN");
   return (
     <Router basename="/">
       <ScrollToTop />
