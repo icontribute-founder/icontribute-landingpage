@@ -10,11 +10,6 @@ const LangSelector = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const [language, setLanguage] = useState(i18n.language);
 
-  useEffect(() => {
-    setLanguage("EN");
-    i18n.changeLanguage("EN");
-  }, []);
-
   const handleLanguageChange = (lang) => {
     switch (lang) {
       case "EN":

@@ -7,10 +7,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import i18n from "i18next";
 
 // google analytics
 import ReactGA from "react-ga";
 ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
+
+i18n.changeLanguage("EN");
 
 ReactDOM.render(
   <React.StrictMode>
