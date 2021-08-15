@@ -12,6 +12,7 @@ const LangSelector = () => {
 
   useEffect(() => {
     setLanguage("EN");
+    i18n.changeLanguage("EN");
   }, []);
 
   const handleLanguageChange = (lang) => {
