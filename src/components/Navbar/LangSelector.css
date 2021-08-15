@@ -1,0 +1,46 @@
+.lang-selector {
+  width: 92vw;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lang-selector > div > a,
+.lang-selector > div > a:active,
+.lang-selector > div > a:hover,
+.lang-selector > div > a:focus,
+.lang-selector > div > a:visited {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+}
+
+.mobile-lang-selector > a,
+.mobile-lang-selector > a:active,
+.mobile-lang-selector > a:hover,
+.mobile-lang-selector > a:focus,
+.mobile-lang-selector > a:visited {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 0;
+}
+
+.mobile-lang-selector > .lang-active,
+.mobile-lang-selector > .lang-active:active,
+.mobile-lang-selector > .lang-active:hover,
+.mobile-lang-selector > .lang-active:focus,
+.mobile-lang-selector > .lang-active:visited {
+  color: blue;
+  font-weight: 600;
+}
+
+.lang-selector > div > .lang-active,
+.lang-selector > div > .lang-active:active,
+.lang-selector > div > .lang-active:hover,
+.lang-selector > div > .lang-active:focus,
+.lang-selector > div > .lang-active:visited {
+  color: blue;
+  font-weight: 600;
+}

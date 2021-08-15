@@ -12,6 +12,7 @@ import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
 import OurTeamScreen from "./screens/OurTeamScreen";
 import GetInTouchBlock from "./components/GetInTouchBlock/GetInTouchBlock";
 import ScrollToTop from "./components/ScrollToTop";
+import LangSelector from "./components/Navbar/LangSelector";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "./constants/MediaQueries";
@@ -27,6 +28,7 @@ const App = () => {
         className="site-container"
         style={{ width: isMobile ? "" : "1300px" }}
       >
+        {!isMobile ? <LangSelector /> : ""}
         <NavBar />
         <StickySocials />
         <div className="site-margin">

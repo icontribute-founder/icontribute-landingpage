@@ -1,6 +1,8 @@
-const query = `
+import i18n from "i18next";
+
+const FAQQuery = (locale) => `
 {
-  faqCollection (order: displayOrder_ASC) {
+  faqCollection (order: displayOrder_ASC, locale: "${locale}") {
     items {
       question
       answer
@@ -10,6 +12,8 @@ const query = `
 `;
 
 const fetchFAQs = (setFaqItems) => {
+  const query = FAQQuery(i18n.language === "FR" ? "fr" : "en-EN");
+  console.log(query);
   window
     .fetch(
       `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE_ID}/`,
