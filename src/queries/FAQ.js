@@ -13,7 +13,6 @@ const FAQQuery = (locale) => `
 
 const fetchFAQs = (setFaqItems) => {
   const query = FAQQuery(i18n.language === "FR" ? "fr" : "en-US");
-  console.log(i18n.language);
   window
     .fetch(
       `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE_ID}/`,
