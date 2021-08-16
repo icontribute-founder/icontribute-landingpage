@@ -71,4 +71,25 @@ export const TRANSLATIONS_EN = {
   "Confirm Your Volunteers": "Confirm Your Volunteers",
   "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.":
     "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.",
+
+  // VOLUNTEERS PAGE
+  "Volunteers-MainBlock-Header": "Find volunteer events effortlessly.",
+  "Volunteers-MainBlock-Details":
+    "It is easy to get started with us here. After creating an account with us, you will be able to browse from a variety of volunteer events.",
+  "Bubble-Header-1": "Explore events near you",
+  "Bubble-Caption-1":
+    "Scroll through a wide range of volunteering opportunities in your area.",
+  "Bubble-Header-2": "Save events for later",
+  "Bubble-Caption-2":
+    "You can save events that you are interested in and apply to them at a later date.",
+  "Bubble-Header-3": "View upcoming events",
+  "Bubble-Caption-3":
+    "See what is next on your volunteering schedule and view events you have already finished.",
+  "Bubble-Header-4": "Customize your profile",
+  "Bubble-Caption-4":
+    "Edit your personal interests to help us find the right events for you.",
+  "connect-header-h1": "Connect with organizations at the tips of your fingers",
+  "connect-header-p":
+    "You apply to the event, and we immediately draft an email for you to reach out to the organization.",
+  Testimonials: "Testimonials",
 };
