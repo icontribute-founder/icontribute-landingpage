@@ -43,11 +43,40 @@ export const TRANSLATIONS_EN = {
   "backed-by-header": "Backed by",
   "VideoBlock-header": "Featured:",
   "FAQBlock-header": "Questions?",
-  "FAQBlock-desc-1.1": "Send us your questions",
+  "FAQBlock-desc-1.1": "Send us your questions ",
   "FAQBlock-desc-1.2": "We are always ready to help you.",
-  "FAQBlock-link-1": "here",
+  "FAQBlock-link": "here",
   "GetInTouchBlock-Header": "GET IN TOUCH WITH US",
   "GetInTouchBlock-Subheader":
     "Feel free to reach out to us. We are happy to help.",
   CONTACT: "CONTACT US",
+
+  // ORGANIZATION PAGE
+  "Organizations-MainBlock-Header": "Reach a bigger audience.",
+  "Organizations-MainBlock-Details":
+    "Your organization can increase its exposure in the Ottawa community by connecting with students through our mobile platform. It only takes a few steps to get started.",
+  "HOW IT WORKS": "HOW IT WORKS",
+  "Connect to 1000s of students in the community":
+    "Connect to 1000s of students in the community",
+  STEP: "STEP",
+  "Download the app": "Download the app",
+  "Download iContribute app for your mobile device. It works with iOS and Android.":
+    "Download iContribute app for your mobile device. It works with iOS and Android.",
+  "Sign Up as an Organization": "Sign Up as an Organization",
+  "Fill in the required fields to make an account with us. It only takes a few fields.":
+    "Fill in the required fields to make an account with us. It only takes a few minutes.",
+  "Create and Post your Events": "Create and Post your Events",
+  "Fill in the details about your event and the time slots you would like volunteers to work.":
+    "Fill in the details about your event and the time slots you would like volunteers to work.",
+  "Confirm Your Volunteers": "Confirm Your Volunteers",
+  "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.":
+    "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
 };

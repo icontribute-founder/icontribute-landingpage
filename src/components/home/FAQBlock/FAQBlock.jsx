@@ -3,6 +3,7 @@ import Markdown from "markdown-to-jsx";
 import FAQAccordion from "../FAQAccordion/FAQAccordion";
 import fetchFAQs from "../../../queries/FAQ";
 import "./FAQBlock.css";
+import i18n from "i18next";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
@@ -16,7 +17,7 @@ const FAQBlock = () => {
 
   useEffect(() => {
     fetchFAQs(setFaqItems);
-  }, []);
+  }, [i18n.language]);
 
   const faqAccordions = faqItems.map((item, idx) => {
     return (

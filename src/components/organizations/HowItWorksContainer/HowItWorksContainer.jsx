@@ -11,6 +11,7 @@ import "./HowItWorksContainer.css";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
+import { useTranslation } from "react-i18next";
 
 const photos = [
   {
@@ -30,23 +31,26 @@ const photos = [
 ];
 
 const HowItWorksContainer = () => {
+  const { t } = useTranslation();
+
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   return (
     <div data-aos="fade-up" className="howitworks-container">
       <div className="howitworks-header">
-        <h1>HOW IT WORKS</h1>
-        <h2>Connect to 1000s of students in the community</h2>
+        <h1>{t("HOW IT WORKS")}</h1>
+        <h2>{t("Connect to 1000s of students in the community")}</h2>
       </div>
       <div className="step-left">
-        <h1>STEP 1</h1>
+        <h1>{t("STEP")} 1</h1>
         <div className="yellow-dot" />
       </div>
       <div className="howitworks-step-left">
         <div className="howitworks-step-text-left">
-          <h1>Download the app</h1>
+          <h1>{t("Download the app")}</h1>
           <h2>
-            Download iContribute app for your mobile device. It works with iOS
-            and Android.
+            {t(
+              "Download iContribute app for your mobile device. It works with iOS and Android."
+            )}
           </h2>
           <a
             href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
@@ -70,7 +74,7 @@ const HowItWorksContainer = () => {
         </div>
       </div>
       <div className="step-right">
-        <h1>STEP 2</h1>
+        <h1>{t("STEP")} 2</h1>
         <div className="yellow-dot" />
       </div>
       <div className="howitworks-step-right">
@@ -78,23 +82,25 @@ const HowItWorksContainer = () => {
           <img src={iphone2} alt="Setting up your organization" />
         </div>
         <div className="howitworks-step-text-right">
-          <h1>Sign Up as an Organization</h1>
+          <h1>{t("Sign Up as an Organization")}</h1>
           <h2>
-            Fill in the required fields to make an account with us. It only
-            takes a few fields.
+            {t(
+              "Fill in the required fields to make an account with us. It only takes a few fields."
+            )}
           </h2>
         </div>
       </div>
       <div className="step-left">
-        <h1>STEP 3</h1>
+        <h1>{t("STEP")} 3</h1>
         <div className="yellow-dot" />
       </div>
       <div className="howitworks-step-left">
         <div className="howitworks-step-text-left">
-          <h1>Create and Post your Events</h1>
+          <h1>{t("Create and Post your Events")}</h1>
           <h2>
-            Fill in the details about your event and the time slots you would
-            like volunteers to work.
+            {t(
+              " Fill in the details about your event and the time slots you would like volunteers to work."
+            )}
           </h2>
         </div>
         {!isMobile && (
@@ -118,13 +124,14 @@ const HowItWorksContainer = () => {
       </div>
       <div className="step-center">
         <div className="yellow-dot" />
-        <h1>STEP 4</h1>
+        <h1>{t("STEP")} 4</h1>
       </div>
       <div className="step4-wrapper">
-        <h1>Confirm Your Volunteers</h1>
+        <h1>{t("Confirm Your Volunteers")}</h1>
         <h2>
-          Volunteers will apply to your event and all you have to do is confirm
-          if they will be attending via email.
+          {t(
+            "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email."
+          )}
         </h2>
         <div className="mail-notification">
           <img src={notification} alt="Notification of volunteer application" />

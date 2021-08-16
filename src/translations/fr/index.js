@@ -53,4 +53,25 @@ export const TRANSLATIONS_FR = {
   "GetInTouchBlock-Subheader":
     "N'hésitez pas à nous contacter. Nous sommes heureux de vous aider.",
   CONTACT: "CONTACTEZ-NOUS",
+
+  // ORGANIZATION PAGE
+  "Organizations-MainBlock-Header": "Touchez un public plus large.",
+  "Organizations-MainBlock-Details":
+    "Votre organisation peut augmenter sa visibilité dans la communauté d'Ottawa en se connectant avec les élèves, les étudiantes et les étudiants via notre plateforme mobile. Il suffit de quelques étapes pour commencer.",
+  "HOW IT WORKS": "COMMENT ÇA FONCTIONNE",
+  "Connect to 1000s of students in the community":
+    "Connectez-vous à des milliers d’élèves, d’étudiantes et d'étudiants de la communauté",
+  STEP: "ÉTAPE",
+  "Download the app": "Téléchargez l'application",
+  "Download iContribute app for your mobile device. It works with iOS and Android.":
+    "Téléchargez l'application iContribute sur votre appareil mobile. Il fonctionne avec iOS et Android",
+  "Sign Up as an Organization": "Inscrivez-vous en tant qu'organisation",
+  "Fill in the required fields to make an account with us. It only takes a few minutes.":
+    "Remplissez les champs obligatoires pour créer un compte chez nous. Cela ne prend que quelques minutes.",
+  "Create and Post your Events": "Créez et publiez vos activités",
+  "Fill in the details about your event and the time slots you would like volunteers to work.":
+    "Ajoutez des détails au sujet de l’activité proposée et désignez les plages horaires pour lesquelles vous souhaitez que les bénévoles travaillent.",
+  "Confirm Your Volunteers": "Confirmez la demande de vos bénévoles",
+  "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.":
+    "Les bénévoles postuleront à votre activité et tout ce que vous aurez à faire est de confirmer votre accord avec elles ou avec eux par courriel.",
 };
