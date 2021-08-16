@@ -71,12 +71,4 @@ export const TRANSLATIONS_EN = {
   "Confirm Your Volunteers": "Confirm Your Volunteers",
   "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.":
     "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
 };

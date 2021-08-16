@@ -17,6 +17,7 @@ const FAQBlock = () => {
 
   useEffect(() => {
     fetchFAQs(setFaqItems);
+    // eslint-disable-next-line
   }, [i18n.language]);
 
   const faqAccordions = faqItems.map((item, idx) => {
