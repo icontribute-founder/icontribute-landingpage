@@ -32,7 +32,7 @@
 .mobile-lang-selector > .lang-active:hover,
 .mobile-lang-selector > .lang-active:focus,
 .mobile-lang-selector > .lang-active:visited {
-  color: blue;
+  color: #026896;
   font-weight: 600;
 }
 
@@ -41,6 +41,6 @@
 .lang-selector > div > .lang-active:hover,
 .lang-selector > div > .lang-active:focus,
 .lang-selector > div > .lang-active:visited {
-  color: blue;
+  color: #026896;
   font-weight: 600;
 }

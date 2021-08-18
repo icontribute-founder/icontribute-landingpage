@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-import ProfileCard from '../ProfileCard/ProfileCard';
-import ProfileModal from '../../ProfileModal/ProfileModal';
+import React, { useState } from "react";
+import Slider from "react-slick";
+import ProfileCard from "../ProfileCard/ProfileCard";
+import ProfileModal from "../../ProfileModal/ProfileModal";
 
-import './TeamBlock.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "./TeamBlock.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import teamCategories from '../../../helpers/TeamMember';
+import teamCategories from "../../../helpers/TeamMember";
+import { useTranslation } from "react-i18next";
 
 const sliderSettings = {
   touchMove: true,
@@ -21,18 +22,18 @@ const sliderSettings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplaySpeed: 2000,
-  cssEase: 'ease'
+  cssEase: "ease",
 };
 
 const TeamBlock = ({ teamMembers }) => {
-  const [ isModalOpen, setIsModalOpen ] = useState(false);
-  const [ currentTeamMember, setCurrentTeamMember ] = useState({});
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentTeamMember, setCurrentTeamMember] = useState({});
+  const { t } = useTranslation();
   return (
     <div className="TeamBlock">
       <div data-aos="fade-up" className="TeamBlock-Header">
-        <h1>iContribute is built and maintained by this wonderful group of students.</h1>
-        <p>Click to learn more about us!</p>
+        <h1>{t("TeamBlock-Header-h1")}</h1>
+        <p>{t("TeamBlock-Header-p")}</p>
       </div>
 
       <div data-aos="fade-up" className="TeamBlock-Gallery">
@@ -45,22 +46,24 @@ const TeamBlock = ({ teamMembers }) => {
             <div key={idx}>
               <p className="TeamBlock-TeamName">{teamName}</p>
               <Slider {...sliderSettings} rtl={reverseScrollDirection}>
-                {teamMembers
-                  .filter(teamFilter)
-                  .map((teamMember, idx) => (
-                    <ProfileCard
-                      key={idx}
-                      teamMember={teamMember}
-                      setIsModalOpen={setIsModalOpen}
-                      setCurrentTeamMember={setCurrentTeamMember}
-                    />
-                  ))}
+                {teamMembers.filter(teamFilter).map((teamMember, idx) => (
+                  <ProfileCard
+                    key={idx}
+                    teamMember={teamMember}
+                    setIsModalOpen={setIsModalOpen}
+                    setCurrentTeamMember={setCurrentTeamMember}
+                  />
+                ))}
               </Slider>
             </div>
           );
         })}
       </div>
-      <ProfileModal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} teamMember={currentTeamMember} />
+      <ProfileModal
+        isOpen={isModalOpen}
+        closeModal={() => setIsModalOpen(false)}
+        teamMember={currentTeamMember}
+      />
     </div>
   );
 };

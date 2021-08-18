@@ -1,18 +1,20 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import apple from "../../../images/1 25.png";
 import google from "../../../images/1 26.png";
 import "./MainBlock.css";
 
 const MainBlock = () => {
+  const { t } = useTranslation();
+
   return (
     <div data-aos="fade-up" className="Volunteers-MainBlock">
       <div className="Volunteers-MainBlock-Info">
         <h1 className="Volunteers-MainBlock-Header">
-          Find volunteer events effortlessly.
+          {t("Volunteers-MainBlock-Header")}
         </h1>
         <p className="Volunteers-MainBlock-Details">
-          It is easy to get started with us here. After creating an account with
-          us, you will be able to browse from a variety of volunteer events.
+          {t("Volunteers-MainBlock-Details")}
         </p>
         <div className="app-download-icons">
           <a

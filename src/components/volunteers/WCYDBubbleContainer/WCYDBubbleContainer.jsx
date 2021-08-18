@@ -16,39 +16,38 @@ import testing2 from "../../../images/iphone/Component 5.png";
 import testing3 from "../../../images/iphone/Component 6.png";
 
 import "./WCYDBubbleContainer.css";
+import { useTranslation } from "react-i18next";
 
 var intvl = null;
 
 const WCYDBubbleContainer = ({ isMobile }) => {
+  const { t } = useTranslation();
+
   const [bubble, setBubble] = useState([
     {
-      header: "Explore events near you",
-      caption:
-        "Scroll through a wide range of volunteering opportunities in your area.",
+      header: `${t("Bubble-Header-1")}`,
+      caption: `${t("Bubble-Caption-1")}`,
       icon: searchIcon,
       iconDark: searchIconDark,
       image: testing0,
     },
     {
-      header: "Save events for later",
-      caption:
-        "You can save events that you are interested in and apply to them at a later date.",
+      header: `${t("Bubble-Header-2")}`,
+      caption: `${t("Bubble-Caption-2")}`,
       icon: heartIcon,
       iconDark: heartIconDark,
       image: testing1,
     },
     {
-      header: "View upcoming events",
-      caption:
-        "See what is next on your volunteering schedule and view events you have already finished.",
+      header: `${t("Bubble-Header-3")}`,
+      caption: `${t("Bubble-Caption-3")}`,
       icon: bulletIcon,
       iconDark: bulletIconDark,
       image: testing2,
     },
     {
-      header: "Customize your profile",
-      caption:
-        "Edit your personal interests to help us find the right events for you.",
+      header: `${t("Bubble-Header-4")}`,
+      caption: `${t("Bubble-Caption-4")}`,
       icon: userIcon,
       iconDark: userIconDark,
       image: testing3,

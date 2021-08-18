@@ -71,7 +71,6 @@ export const TRANSLATIONS_EN = {
   "Confirm Your Volunteers": "Confirm Your Volunteers",
   "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.":
     "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.",
-
   // VOLUNTEERS PAGE
   "Volunteers-MainBlock-Header": "Find volunteer events effortlessly.",
   "Volunteers-MainBlock-Details":
@@ -92,4 +91,18 @@ export const TRANSLATIONS_EN = {
   "connect-header-p":
     "You apply to the event, and we immediately draft an email for you to reach out to the organization.",
   Testimonials: "Testimonials",
+
+  // OUR TEAM
+  "watermark-main":
+    "The people who work at iContribute share the visions of our community.",
+  "AcrossGlobeBlock-header": "From Across The Continent",
+  "AcrossGlobeBlock-subheader":
+    "Our team is located in multiple areas around the world. We have collaborated endlessly to bring our app to you.",
+  "TeamBlock-Header-h1":
+    "iContribute is built and maintained by this wonderful group of students.",
+  "TeamBlock-Header-p": "Click to learn more about us!",
+  "teamblockcall-container-h1":
+    "We love what we do, but we’re pretty big on that whole work-life balance too.",
+  "teamblockcall-container-p":
+    "Although we are miles apart, we found ways to connect.",
 };

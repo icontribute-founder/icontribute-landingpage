@@ -13,25 +13,25 @@ import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
 import { useTranslation } from "react-i18next";
 
-const photos = [
-  {
-    photo: test2,
-    title: "Fundraiser",
-    location: "Ottawa Community",
-    date: "Sat Jun 16, 2020",
-    distance: "10.1 km",
-  },
-  {
-    photo: test3,
-    title: "Student Volunteer",
-    location: "Ottawa Community",
-    date: "Sat Jun 17 2020",
-    distance: "10.1 km",
-  },
-];
-
 const HowItWorksContainer = () => {
   const { t } = useTranslation();
+
+  const photos = [
+    {
+      photo: test2,
+      title: `${t("Fundraiser")}`,
+      location: `${t("Ottawa Community")}`,
+      date: `${t("Sat Jun 16, 2020")}`,
+      distance: `${t("10.1 km")}`,
+    },
+    {
+      photo: test3,
+      title: `${t("Student Volunteer")}`,
+      location: `${t("Ottawa Community")}`,
+      date: `${t("Sat Jun 17, 2020")}`,
+      distance: `${t("10.1 km")}`,
+    },
+  ];
 
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   return (
