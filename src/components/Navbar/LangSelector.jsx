@@ -5,13 +5,10 @@ import i18n from "i18next";
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../constants/MediaQueries";
 import { useEffect } from "react";
-import { useHistory, useLocation } from "react-router-dom";
 
 const LangSelector = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const [language, setLanguage] = useState(i18n.language);
-  const { pathname } = useLocation();
-  const history = useHistory();
 
   const handleLanguageChange = (lang, path) => {
     switch (lang) {
@@ -19,17 +16,14 @@ const LangSelector = () => {
         setLanguage("EN");
         i18n.changeLanguage("EN");
         console.log(path);
-        history.push(path);
         break;
       case "FR":
         setLanguage("FR");
         i18n.changeLanguage("FR");
-        history.push(path);
         break;
       default:
         setLanguage("EN");
         i18n.changeLanguage("EN");
-        history.push(path);
     }
   };
 
@@ -37,13 +31,13 @@ const LangSelector = () => {
     i18n.changeLanguage("EN");
   }, []);
 
-  return !isMobile ? (
+  return !isMobile ? ( // Desktop
     <div className="lang-selector">
       <div>
         <a
           className={language === "EN" ? "lang-active" : ""}
           href="#"
-          onClick={() => handleLanguageChange("EN", pathname)}
+          onClick={() => handleLanguageChange("EN")}
         >
           English
         </a>
@@ -51,7 +45,7 @@ const LangSelector = () => {
         <a
           className={language === "FR" ? "lang-active" : ""}
           href="#"
-          onClick={() => handleLanguageChange("FR", pathname)}
+          onClick={() => handleLanguageChange("FR")}
         >
           Français
         </a>

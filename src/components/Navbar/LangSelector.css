@@ -1,5 +1,7 @@
 .lang-selector {
-  width: 92vw;
+  margin: 0 auto;
+  padding-right: 20px;
+  max-width: 1300px;
   height: 40px;
   display: flex;
   justify-content: flex-end;
