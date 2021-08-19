@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import apple from "../../images/1 25.png";
-import google from "../../images/1 26.png";
+
+import apple_en from "../../images/apple_en.png";
+import google_en from "../../images/google_en.png";
+import apple_fr from "../../images/apple_fr.png";
+import google_fr from "../../images/google_fr.png";
+
 import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
 import privacy from "../../terms/iContribute Privacy Policy 2021.pdf";
@@ -11,10 +15,12 @@ import "./FooterBlock.css";
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../constants/MediaQueries";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const FooterBlock = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const { t } = useTranslation();
+  const isFrench = i18next.language === "FR" ? true : false;
   if (isMobile) {
     return (
       <div className="FooterBlock">
@@ -44,7 +50,10 @@ const FooterBlock = () => {
             rel="noopener noreferrer"
             className="footer-appstore"
           >
-            <img src={apple} alt="App Store download" />
+            <img
+              src={isFrench ? apple_fr : apple_en}
+              alt="App Store download"
+            />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.icontribute"
@@ -52,7 +61,10 @@ const FooterBlock = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={google} alt="Google Play download" />
+            <img
+              src={isFrench ? google_fr : google_en}
+              alt="Google Play download"
+            />
           </a>
         </div>
         <footer>
@@ -75,7 +87,10 @@ const FooterBlock = () => {
               rel="noopener noreferrer"
               className="footer-appstore"
             >
-              <img src={apple} alt="App Store download" />
+              <img
+                src={isFrench ? apple_fr : apple_en}
+                alt="App Store download"
+              />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.icontribute"
@@ -83,7 +98,10 @@ const FooterBlock = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={google} alt="Google Play download" />
+              <img
+                src={isFrench ? google_fr : google_en}
+                alt="Google Play download"
+              />
             </a>
           </div>
         </div>

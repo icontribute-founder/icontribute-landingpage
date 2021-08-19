@@ -2,8 +2,12 @@ import React from "react";
 import iphone1 from "../../../images/iphone/iphone1.png";
 import iphone2 from "../../../images/iphone/iphone2.png";
 import notification from "../../../images/Frame 213.png";
-import apple from "../../../images/1 25.png";
-import google from "../../../images/1 26.png";
+
+import apple_en from "../../../images/apple_en.png";
+import google_en from "../../../images/google_en.png";
+import apple_fr from "../../../images/apple_fr.png";
+import google_fr from "../../../images/google_fr.png";
+
 import SmallPhotoBlock from "../SmallPhotoBlock/SmallPhotoBlock";
 import test2 from "../../../images/cristi-tohatan-XIBIC21QeZQ-unsplash 1.png";
 import test3 from "../../../images/Frame 205.png";
@@ -12,10 +16,11 @@ import "./HowItWorksContainer.css";
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const HowItWorksContainer = () => {
   const { t } = useTranslation();
-
+  const isFrench = i18next.language === "FR" ? true : false;
   const photos = [
     {
       photo: test2,
@@ -58,7 +63,10 @@ const HowItWorksContainer = () => {
             rel="noopener noreferrer"
             className="appstore"
           >
-            <img src={apple} alt="App Store download" />
+            <img
+              src={isFrench ? apple_fr : apple_en}
+              alt="App Store download"
+            />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.icontribute"
@@ -66,7 +74,10 @@ const HowItWorksContainer = () => {
             rel="noopener noreferrer"
             className="appstore"
           >
-            <img src={google} alt="Google Play download" />
+            <img
+              src={isFrench ? google_fr : google_en}
+              alt="Google Play download"
+            />
           </a>
         </div>
         <div className="howitworks-iphone">

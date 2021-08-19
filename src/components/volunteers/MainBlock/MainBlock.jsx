@@ -1,12 +1,15 @@
+import i18next from "i18next";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import apple from "../../../images/1 25.png";
-import google from "../../../images/1 26.png";
+import apple_en from "../../../images/apple_en.png";
+import google_en from "../../../images/google_en.png";
+import apple_fr from "../../../images/apple_fr.png";
+import google_fr from "../../../images/google_fr.png";
 import "./MainBlock.css";
 
 const MainBlock = () => {
   const { t } = useTranslation();
-
+  const isFrench = i18next.language === "FR" ? true : false;
   return (
     <div data-aos="fade-up" className="Volunteers-MainBlock">
       <div className="Volunteers-MainBlock-Info">
@@ -23,7 +26,10 @@ const MainBlock = () => {
             rel="noopener noreferrer"
             className="Volunteers-MainBlock-AppstoreLink"
           >
-            <img src={apple} alt="App Store download" />
+            <img
+              src={isFrench ? apple_fr : apple_en}
+              alt="App Store download"
+            />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.icontribute"
@@ -31,7 +37,10 @@ const MainBlock = () => {
             rel="noopener noreferrer"
             className="Volunteers-MainBlock-AppstoreLink"
           >
-            <img src={google} alt="Google Play download" />
+            <img
+              src={isFrench ? google_fr : google_en}
+              alt="Google Play download"
+            />
           </a>
         </div>
       </div>
