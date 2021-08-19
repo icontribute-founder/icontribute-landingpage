@@ -99,7 +99,7 @@ const HowItWorksContainer = () => {
           <h1>{t("Create and Post your Events")}</h1>
           <h2>
             {t(
-              " Fill in the details about your event and the time slots you would like volunteers to work."
+              "Fill in the details about your event and the time slots you would like volunteers to work."
             )}
           </h2>
         </div>

@@ -68,7 +68,7 @@ export const TRANSLATIONS_FR = {
   "Download iContribute app for your mobile device. It works with iOS and Android.":
     "Téléchargez l'application iContribute sur votre appareil mobile. Il fonctionne avec iOS et Android",
   "Sign Up as an Organization": "Inscrivez-vous en tant qu'organisation",
-  "Fill in the required fields to make an account with us. It only takes a few minutes.":
+  "Fill in the required fields to make an account with us. It only takes a few fields.":
     "Remplissez les champs obligatoires pour créer un compte chez nous. Cela ne prend que quelques minutes.",
   "Create and Post your Events": "Créez et publiez vos activités",
   "Fill in the details about your event and the time slots you would like volunteers to work.":
@@ -76,6 +76,7 @@ export const TRANSLATIONS_FR = {
   "Confirm Your Volunteers": "Confirmez la demande de vos bénévoles",
   "Volunteers will apply to your event and all you have to do is confirm if they will be attending via email.":
     "Les bénévoles postuleront à votre activité et tout ce que vous aurez à faire est de confirmer votre accord avec elles ou avec eux par courriel.",
+  "Student Volunteer": "Étudiant bénévole",
 
   // VOLUNTEERS PAGE
   "Volunteers-MainBlock-Header":
