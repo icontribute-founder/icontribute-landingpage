@@ -67,7 +67,7 @@ const FooterBlock = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <NavBarLogo />
-          <SocialMediaBar />
+          {isMobile ? <SocialMediaBar /> : null}
           <div className="footer-appstore-container">
             <a
               href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
@@ -106,7 +106,7 @@ const FooterBlock = () => {
           </ul>
           <ul className="footer-list">
             <li>
-              <Link to="/ourteam">{t("OUR TEAM")}</Link>
+              <Link to="/our-team">{t("OUR TEAM")}</Link>
             </li>
             <li>
               <a href={TOS} download>
