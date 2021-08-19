@@ -1,12 +1,16 @@
 import React from "react";
 import StripedTip from "../../StripedTip/StripedTip";
 import main from "../../../images/Iphone_Macbook together.png";
-import apple from "../../../images/1 25.png";
-import google from "../../../images/1 26.png";
 import EventCardCarousel from "../../EventCardCarousel/EventCardCarousel";
 import { useTranslation } from "react-i18next";
 import "../../../translations/i18n";
 import "./MainBlock.css";
+import i18next from "i18next";
+
+import apple_en from "../../../images/apple_en.png";
+import google_en from "../../../images/google_en.png";
+import apple_fr from "../../../images/apple_fr.png";
+import google_fr from "../../../images/google_fr.png";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
@@ -14,6 +18,7 @@ import { MOBILE_SCREEN_SIZE } from "../../../constants/MediaQueries";
 const MainBlock = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   const { t } = useTranslation();
+  const isFrench = i18next.language === "FR" ? true : false;
 
   return (
     <div data-aos={isMobile ? "" : "fade-up"} className="Home-MainBlock">
@@ -26,7 +31,7 @@ const MainBlock = () => {
           rel="noopener noreferrer"
           className="Home-MainBlock-AppstoreLink"
         >
-          <img src={apple} alt="App Store download" />
+          <img src={isFrench ? apple_fr : apple_en} alt="App Store download" />
         </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.icontribute"
@@ -34,7 +39,10 @@ const MainBlock = () => {
           rel="noopener noreferrer"
           className="Home-MainBlock-AppstoreLink"
         >
-          <img src={google} alt="Google Play download" />
+          <img
+            src={isFrench ? google_fr : google_en}
+            alt="Google Play download"
+          />
         </a>
         {isMobile ? (
           <div>
