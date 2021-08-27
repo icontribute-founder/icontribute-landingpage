@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c764130c2a400bf307fc569d8cd2de7a",
+    "revision": "2d8109cbcdda3e1faac9bc9e59321575",
     "url": "/index.html"
   },
   {
-    "revision": "ce852eb779efde10af8e",
-    "url": "/static/css/2.c90e42fa.chunk.css"
+    "revision": "715b30b2449be0eb6faa",
+    "url": "/static/css/2.21e1c7f3.chunk.css"
   },
   {
-    "revision": "18450129647797da9dcf",
-    "url": "/static/css/main.9e7d0283.chunk.css"
+    "revision": "4720701fded5191c02fe",
+    "url": "/static/css/main.a76a89b2.chunk.css"
   },
   {
-    "revision": "ce852eb779efde10af8e",
-    "url": "/static/js/2.ab9509d5.chunk.js"
+    "revision": "715b30b2449be0eb6faa",
+    "url": "/static/js/2.67f17de8.chunk.js"
   },
   {
-    "revision": "56d69253fb75d220d0563b95a758c3fa",
-    "url": "/static/js/2.ab9509d5.chunk.js.LICENSE.txt"
+    "revision": "cc39b12d3d3c908738e2e53815dd4bd4",
+    "url": "/static/js/2.67f17de8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "18450129647797da9dcf",
-    "url": "/static/js/main.921a7991.chunk.js"
+    "revision": "4720701fded5191c02fe",
+    "url": "/static/js/main.f42b34ee.chunk.js"
   },
   {
-    "revision": "1272131f3da382bdb130",
-    "url": "/static/js/runtime-main.adca023d.js"
+    "revision": "bc481c82a0c4689aa809",
+    "url": "/static/js/runtime-main.d2afbe32.js"
   },
   {
     "revision": "adce061d5668e246a25c44e00c97f97f",
@@ -88,6 +88,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Stripe 3.af23f745.svg"
   },
   {
+    "revision": "efbd25bb35bbb6516bfbc78d14e02ba6",
+    "url": "/static/media/apple_en.efbd25bb.png"
+  },
+  {
+    "revision": "1f896854fc1413de483aac43e941a862",
+    "url": "/static/media/apple_fr.1f896854.png"
+  },
+  {
     "revision": "9acfe78b8e1cfbf4c1b1d1f31745b96b",
     "url": "/static/media/blank_profile.9acfe78b.png"
   },
@@ -98,6 +106,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "17d35171b54b57929eac0414cdcf140e",
     "url": "/static/media/email.17d35171.png"
+  },
+  {
+    "revision": "24b5e63f02de5751100c61557752d393",
+    "url": "/static/media/google_en.24b5e63f.png"
+  },
+  {
+    "revision": "9822ddcc6416a25a61fa1cc1092967e0",
+    "url": "/static/media/google_fr.9822ddcc.png"
   },
   {
     "revision": "9a7ffabba8c580fe59ab2f4e287d4e78",
