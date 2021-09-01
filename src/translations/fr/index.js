@@ -16,9 +16,10 @@ export const TRANSLATIONS_FR = {
   "Home-MainBlock-Header": "Le bénévolat devenu plus facile.",
   "Home-MainBlock-Details":
     "Nous facilitons la recherche, la gestion et le jumelage des participantes et des participants aux occasions de bénévolat pour les élèves, ou les étudiantes et étudiants et les organisations.",
-  "StripedTip-1": "Easy to sign up with a few steps",
-  "StripedTip-2": "Free for both organizations and students",
-  "StripedTip-3": "Make new connections and grow your network",
+  "StripedTip-1": "Facile à inscrire en quelques étapes",
+  "StripedTip-2": "Gratuit pour les organisations bénévoles et les étudiants",
+  "StripedTip-3":
+    "Établissez de nouvelles connexions et développez votre réseau",
   Fundraiser: "Campagne de financement",
   "Ottawa Community": "Communauté de la capitale nationale",
   "Sat Jun 12, 2020": "Samedi 12 Juin 2020",

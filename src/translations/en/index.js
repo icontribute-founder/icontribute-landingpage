@@ -48,7 +48,7 @@ export const TRANSLATIONS_EN = {
   "FAQBlock-link": "here",
   "GetInTouchBlock-Header": "GET IN TOUCH WITH US",
   "GetInTouchBlock-Subheader":
-    "Feel free to reach out to us. We are happy to help.",
+    "N’hésitez pas à communiquer avec nous. Nous sommes heureux de vous aider.",
   CONTACT: "CONTACT US",
 
   // ORGANIZATION PAGE
