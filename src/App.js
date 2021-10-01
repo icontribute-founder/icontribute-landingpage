@@ -13,6 +13,7 @@ import OurTeamScreen from "./screens/OurTeamScreen";
 import GetInTouchBlock from "./components/GetInTouchBlock/GetInTouchBlock";
 import ScrollToTop from "./components/ScrollToTop";
 import LangSelector from "./components/Navbar/LangSelector";
+import EmergencyBanner from "./components/Navbar/EmergencyBanner";
 import i18n from "i18next";
 
 import { useMediaQuery } from "react-responsive";
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <Router basename="/">
       <ScrollToTop />
+      {!isMobile ? <EmergencyBanner isMobile={false} /> : ""}
       <div
         className="site-container"
         style={{ width: isMobile ? "" : "1300px" }}
@@ -33,6 +35,7 @@ const App = () => {
         <NavBar />
         <StickySocials />
         <div className="site-margin">
+          {isMobile ? <EmergencyBanner isMobile={false} /> : ""}
           <Switch>
             <Route path="/" exact component={HomeScreen} />
             <Route path="/volunteers" exact component={VolunteersScreen} />
