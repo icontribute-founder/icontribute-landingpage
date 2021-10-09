@@ -23,10 +23,20 @@ import StickySocials from "./components/StickySocials/StickySocials";
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   i18n.changeLanguage("EN");
+
+  let showEmergencyBanner = false;
   return (
     <Router basename="/">
       <ScrollToTop />
-      {/* {!isMobile ? <EmergencyBanner isMobile={false} /> : ""} */}
+      {showEmergencyBanner ? (
+        !isMobile ? (
+          <EmergencyBanner isMobile={false} />
+        ) : (
+          ""
+        )
+      ) : (
+        ""
+      )}
       <div
         className="site-container"
         style={{ width: isMobile ? "" : "1300px" }}
@@ -35,7 +45,15 @@ const App = () => {
         <NavBar />
         <StickySocials />
         <div className="site-margin">
-          {/* {isMobile ? <EmergencyBanner isMobile={false} /> : ""} */}
+          {showEmergencyBanner ? (
+            isMobile ? (
+              <EmergencyBanner isMobile={false} />
+            ) : (
+              ""
+            )
+          ) : (
+            ""
+          )}
           <Switch>
             <Route path="/" exact component={HomeScreen} />
             <Route path="/volunteers" exact component={VolunteersScreen} />
