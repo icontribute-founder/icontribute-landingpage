@@ -26,7 +26,7 @@ const App = () => {
   return (
     <Router basename="/">
       <ScrollToTop />
-      {!isMobile ? <EmergencyBanner isMobile={false} /> : ""}
+      {/* {!isMobile ? <EmergencyBanner isMobile={false} /> : ""} */}
       <div
         className="site-container"
         style={{ width: isMobile ? "" : "1300px" }}
@@ -35,7 +35,7 @@ const App = () => {
         <NavBar />
         <StickySocials />
         <div className="site-margin">
-          {isMobile ? <EmergencyBanner isMobile={false} /> : ""}
+          {/* {isMobile ? <EmergencyBanner isMobile={false} /> : ""} */}
           <Switch>
             <Route path="/" exact component={HomeScreen} />
             <Route path="/volunteers" exact component={VolunteersScreen} />
