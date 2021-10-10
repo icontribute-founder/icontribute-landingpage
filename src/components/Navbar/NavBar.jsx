@@ -119,7 +119,7 @@ const NavBar = () => {
   }*/
 
   return (
-    <nav>
+    <nav style={{ boxShadow: isMobile ? "2px 0px 10px black" : "" }}>
       <div className="logo">
         <NavLink className="navbar-logo" to="/">
           <NavBarLogo />
