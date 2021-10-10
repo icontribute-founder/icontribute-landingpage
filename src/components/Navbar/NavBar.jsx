@@ -161,18 +161,22 @@ const NavBar = () => {
             {t("ORGANIZATIONS")}
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            onClick={() => {
-              setLinkClicked((click) => !click);
-            }}
-            className="nav-link"
-            to="/our-team"
-            activeClassName="selected"
-          >
-            {t("OUR TEAM")}
-          </NavLink>
-        </li>
+        {!isMobile ? (
+          <li>
+            <NavLink
+              onClick={() => {
+                setLinkClicked((click) => !click);
+              }}
+              className="nav-link"
+              to="/our-team"
+              activeClassName="selected"
+            >
+              {t("OUR TEAM")}
+            </NavLink>
+          </li>
+        ) : (
+          ""
+        )}
         {isMobile ? (
           <li>
             <LangSelector />

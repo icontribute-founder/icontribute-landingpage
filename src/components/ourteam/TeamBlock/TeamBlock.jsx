@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import ProfileModal from "../../ProfileModal/ProfileModal";
@@ -29,6 +29,7 @@ const TeamBlock = ({ teamMembers }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentTeamMember, setCurrentTeamMember] = useState({});
   const { t } = useTranslation();
+
   return (
     <div className="TeamBlock">
       <div data-aos="fade-up" className="TeamBlock-Header">
