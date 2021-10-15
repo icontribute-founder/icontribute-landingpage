@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./ContactUs.css";
 import ContactUsIcon from "../../images/ContactUsIcon.png";
 import * as emailjs from "emailjs-com";

@@ -10,7 +10,6 @@ import VolunteersScreen from "./screens/VolunteersScreen";
 import OrganizationScreen from "./screens/OrganizationScreen";
 import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
 import OurTeamScreen from "./screens/OurTeamScreen";
-import GetInTouchBlock from "./components/GetInTouchBlock/GetInTouchBlock";
 import ScrollToTop from "./components/ScrollToTop";
 import LangSelector from "./components/Navbar/LangSelector";
 import EmergencyBanner from "./components/Navbar/EmergencyBanner";

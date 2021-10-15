@@ -7,7 +7,6 @@ import PhotoBlockContainer from "../components/home/PhotoBlockContainer/PhotoBlo
 import PartnerBlock from "../components/home/PartnerBlock/PartnersBlock";
 import VideoBlock from "../components/home/VideoBlock/VideoBlock";
 import FAQBlock from "../components/home/FAQBlock/FAQBlock";
-import ContactUs from "../components/ContactUs/ContactUs";
 
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "../constants/MediaQueries";
