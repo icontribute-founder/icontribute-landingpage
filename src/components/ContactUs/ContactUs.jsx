@@ -19,26 +19,17 @@ const ContactUs = () => {
       if (re.test(String(email).toLowerCase())) {
         setButtonText("Sent!");
         document.getElementById("errorMessageC").innerHTML = "";
-        // Logic goes here
-        console.log(name + " - " + subject, message, name, email);
-        emailjs
-          .send(
-            "service_ns1tlzd",
-            "template_iuest3i",
-            {
-              subject: name + " - " + subject,
-              message: message,
-              name: name,
-              email: email,
-            },
-            "user_sezjNKeAo3Iqife7tGsUG"
-          )
-          .then((response) => {
-            console.log("SUCCESS!", response.status, response.text);
-          })
-          .catch((err) => {
-            console.log("FAILED...", err);
-          });
+        emailjs.send(
+          "service_ns1tlzd",
+          "template_iuest3i",
+          {
+            subject: name + " - " + subject,
+            message: message,
+            name: name,
+            email: email,
+          },
+          "user_sezjNKeAo3Iqife7tGsUG"
+        );
       } else {
         document.getElementById("errorMessageC").innerHTML = "*Email not valid";
       }
