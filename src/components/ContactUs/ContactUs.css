@@ -1,0 +1,214 @@
+.contact-us-container {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  flex-direction: row;
+}
+
+.left-contact {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.left-contact img {
+  margin: auto;
+}
+
+.right-contact {
+  height: auto;
+}
+
+.right-contact form h1 {
+  font-size: 50px;
+}
+
+.right-contact form > p:not(.fieldTag) {
+  font-size: 21px;
+  margin: 20px 0px;
+}
+
+.right-contact form > p.fieldTag {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.right-contact form input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
+  border: 2px solid #026896;
+}
+
+.right-contact form select {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  padding: 0 20px;
+  font-size: 16px;
+  border: 2px solid #026896;
+}
+
+.right-contact form input::placeholder {
+  font-family: "Montserrat";
+}
+
+.right-contact form .message {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  width: 100%;
+  height: 200px;
+  padding: 10px 20px;
+  border: 2px solid #026896;
+}
+
+.right-contact form button {
+  background-color: #ffbc03;
+  border: 2px solid #ffbc03;
+  font-family: "Montserrat";
+  height: 40px;
+  width: 250px;
+  margin: 10px 0px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.right-contact form button:hover {
+  background-color: #fff;
+  border: 2px solid #ffbc03;
+  color: #000;
+}
+
+.right-contact form button:disabled {
+  background-color: #fff;
+  border: 2px solid #ffbc03;
+  color: #000;
+}
+
+#errorMessageC {
+  font-size: 16px;
+  color: red;
+  font-weight: 400;
+  margin: 5px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-us-container {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .left-contact {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  .left-contact img {
+    margin: auto;
+  }
+
+  .right-contact {
+    height: auto;
+  }
+
+  .right-contact form h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .right-contact form > p:not(.fieldTag) {
+    font-size: 21px;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .right-contact form > p.fieldTag {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0px;
+  }
+
+  .right-contact form input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 2px solid #026896;
+  }
+
+  .right-contact form select {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: 2px solid #026896;
+  }
+
+  .right-contact form input::placeholder {
+    font-family: "Montserrat";
+  }
+
+  .right-contact form .message {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    width: 100%;
+    height: 200px;
+    padding: 10px 20px;
+    border: 2px solid #026896;
+  }
+
+  .right-contact form button {
+    background-color: #ffbc03;
+    border: 2px solid #ffbc03;
+    font-family: "Montserrat";
+    height: 40px;
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.2s;
+  }
+
+  .right-contact form button:hover {
+    background-color: #fff;
+    border: 2px solid #ffbc03;
+    color: #000;
+  }
+
+  .right-contact form button:disabled {
+    background-color: #fff;
+    border: 2px solid #ffbc03;
+    color: #000;
+  }
+
+  #errorMessageC {
+    font-size: 16px;
+    color: red;
+    font-weight: 400;
+    margin: 5px 0px;
+  }
+}
