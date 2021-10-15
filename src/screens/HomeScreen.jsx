@@ -26,7 +26,6 @@ const HomeScreen = () => {
       <DemoBlock />
       <PartnerBlock />
       {isMobile ? <VideoBlock /> : null}
-      <ContactUs />
       <FAQBlock />
     </div>
   );

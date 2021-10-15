@@ -19,6 +19,7 @@ import i18n from "i18next";
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "./constants/MediaQueries";
 import StickySocials from "./components/StickySocials/StickySocials";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
@@ -63,7 +64,8 @@ const App = () => {
             <Route path="/TOS" exact component={PrivacyPolicyScreen} />
           </Switch>
         </div>
-        <GetInTouchBlock />
+        {/*<GetInTouchBlock />*/}
+        <ContactUs />
         <FooterBlock />
       </div>
     </Router>
