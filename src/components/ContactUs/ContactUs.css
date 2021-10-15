@@ -1,0 +1,81 @@
+.contact-us-container {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  flex-direction: row;
+}
+
+.left-contact {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.left-contact img {
+  margin: auto;
+}
+
+.right-contact {
+  height: auto;
+}
+
+.right-contact h1 {
+  font-size: 50px;
+}
+
+.right-contact > p:not(.fieldTag) {
+  font-size: 21px;
+  margin: 20px 0px;
+}
+
+.right-contact > p.fieldTag {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.right-contact input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
+  border: 2px solid #026896;
+}
+
+.right-contact input::placeholder {
+  font-family: "Montserrat";
+}
+
+.right-contact .message {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  width: 100%;
+  height: 200px;
+  padding: 10px 20px;
+  border: 2px solid #026896;
+}
+
+.right-contact button {
+  background-color: #ffbc03;
+  border: 2px solid #ffbc03;
+  font-family: "Montserrat";
+  height: 40px;
+  width: 250px;
+  margin: 10px 0px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.right-contact button:hover {
+  background-color: #fff;
+  border: 2px solid #ffbc03;
+  color: #000;
+}
