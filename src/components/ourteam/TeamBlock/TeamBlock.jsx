@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import ProfileModal from "../../ProfileModal/ProfileModal";

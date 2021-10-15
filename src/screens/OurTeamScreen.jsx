@@ -7,7 +7,6 @@ import TeamBlock from "../components/ourteam/TeamBlock/TeamBlock";
 import TeamCallBlock from "../components/ourteam/TeamCallBlock/TeamCallBlock";
 
 import fetchTeam from "../queries/TeamMembers";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 
 const OurTeamScreen = () => {
   const [teamMembers, setTeamMembers] = useState([]);
