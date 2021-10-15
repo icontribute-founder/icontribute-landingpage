@@ -3,7 +3,8 @@ export const TRANSLATIONS_FR = {
   HOME: "ACCUEIL",
   VOLUNTEERS: "BÉNÉVOLES",
   ORGANIZATIONS: "ORGANISATIONS",
-  "OUR TEAM": "NOTRE ÉQUIP",
+  "OUR TEAM": "NOTRE ÉQUIPE",
+  SubLogo: "Nous nous élévons en élevant les autres",
 
   // FOOTER
   "CONTACT US": "CONTACTEZ-NOUS",

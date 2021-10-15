@@ -125,6 +125,9 @@ nav {
     transform: translateY(0px);
     transition: 0.2s;
   }
+  a.nav-bar-logo {
+    padding-left: 0 !important;
+  }
 }
 
 .nav-active {
