@@ -21,7 +21,7 @@
 }
 
 .right-contact form h1 {
-  font-size: 45px;
+  font-size: 36px;
 }
 
 .right-contact form > p:not(.fieldTag) {
@@ -30,7 +30,7 @@
 }
 
 .right-contact form > p.fieldTag {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin: 5px 0px;
 }
@@ -41,7 +41,7 @@
   width: 100%;
   height: 45px;
   padding-left: 20px;
-  font-size: 15px;
+  font-size: 14px;
   border: 2px solid #026896;
 }
 
@@ -52,7 +52,7 @@
   height: 45px;
   padding-left: 20px;
   padding: 0 20px;
-  font-size: 15px;
+  font-size: 14px;
   border: 2px solid #026896;
 }
 
@@ -64,7 +64,7 @@
   margin-bottom: 10px;
   border-radius: 5px;
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 14px;
   width: 100%;
   height: 200px;
   padding: 10px 20px;
@@ -80,7 +80,7 @@
   margin: 10px 0px;
   font-weight: 600;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 50px;
   transition: 0.2s;
 }
