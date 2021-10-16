@@ -4,6 +4,7 @@ export const TRANSLATIONS_EN = {
   VOLUNTEERS: "VOLUNTEERS",
   ORGANIZATIONS: "ORGANIZATIONS",
   "OUR TEAM": "OUR TEAM",
+  SubLogo: "We rise by lifting others",
 
   // FOOTER
   "CONTACT US": "CONTACT US",
