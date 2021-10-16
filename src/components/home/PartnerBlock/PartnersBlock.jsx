@@ -7,6 +7,8 @@ const PartnersBlock = () => {
   const [backers, setBackers] = useState([]);
   const [partners, setPartners] = useState([]);
 
+  const [viewMore, setViewMore] = useState(false);
+
   useEffect(() => {
     fetchBackers(setBackers);
     fetchPartners(setPartners);
@@ -26,8 +28,20 @@ const PartnersBlock = () => {
             return null;
           })}
         </div>
-
-        <div data-aos="fade-up" className="small-logos">
+        <div
+          onClick={() => setViewMore((c) => !c)}
+          className="viewMoreLess"
+          style={{
+            display: viewMore ? "none" : "flex",
+          }}
+        >
+          View More
+        </div>
+        <div
+          style={{ display: !viewMore ? "none" : "" }}
+          data-aos="fade-up"
+          className="small-logos"
+        >
           {partners.map((partner, i) => {
             if (!partner.isLongBanner) {
               return (
@@ -38,6 +52,15 @@ const PartnersBlock = () => {
             }
             return null;
           })}
+        </div>
+        <div
+          onClick={() => setViewMore((c) => !c)}
+          className="viewMoreLess"
+          style={{
+            display: !viewMore ? "none" : "flex",
+          }}
+        >
+          View Less
         </div>
       </div>
       <h2 className="fade-up partners-header backed-by-header">

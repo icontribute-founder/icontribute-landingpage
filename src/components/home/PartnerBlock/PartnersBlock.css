@@ -80,3 +80,21 @@
   width: 30%;
   height: auto;
 }
+
+.viewMoreLess {
+  width: 150px;
+  margin: 50px auto;
+  height: 50px;
+  border: 3px solid #ffc80a;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  transition: 0.2s;
+  border-radius: 50px;
+}
+
+.viewMoreLess:hover {
+  border: 3px solid #ffc80a;
+  background-color: #ffc80a;
+  color: #fff;
+}
