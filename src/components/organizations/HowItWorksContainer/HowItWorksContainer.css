@@ -144,7 +144,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 28px;
     color: #133a4b;
     text-align: center;
     margin-top: 0px;
@@ -153,7 +153,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 28px;
     color: #133a4b;
     text-align: center;
   }
@@ -181,7 +181,7 @@
     font-style: normal;
     font-weight: bold;
     text-align: center;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 30px;
     color: #ffbc03;
   }
@@ -205,9 +205,9 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 28px;
     color: #133a4b;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     text-align: center;
   }
   .howitworks-step-text-left h2,
@@ -217,7 +217,7 @@
     margin-bottom: 0px;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -241,7 +241,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 27px;
     text-align: center;
   }
 
@@ -249,7 +249,7 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 10px;
     color: #133a4b;
   }
 
