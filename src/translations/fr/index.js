@@ -28,7 +28,7 @@ export const TRANSLATIONS_FR = {
   "Sat Jun 17, 2020": "Samedi 17 Juin 2020",
   "photoblock-container-header":
     "Apportez une contribution significative à votre communauté.",
-  "GET STARTED": "COMMENCER",
+  "BookDemo": "RÉSERVER UNE DÉMO",
   "demoblock-header-0": "Une plateforme",
   "demoblock-header-1":
     "Une plateforme unique pour les élèves, les étudiantes ou les étudiants et les organisations.",

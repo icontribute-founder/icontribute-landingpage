@@ -39,7 +39,7 @@ const ContactUs = () => {
     }
   };
   return (
-    <div className="contact-us-container">
+    <div id="contact-us" className="contact-us-container">
       <div className="left-contact">
         <img alt="" src={ContactUsIcon} />
       </div>

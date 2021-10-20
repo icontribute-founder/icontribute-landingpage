@@ -37,8 +37,8 @@ const PhotoBlockContainer = () => {
         <h2 className="photoblock-container-header">
           {t("photoblock-container-header")}
         </h2>
-        <a href="mailto:icontribute.founder@gmail.com" className="solid-yellow">
-          {t("GET STARTED")}
+        <a href="#contact-us" className="solid-yellow">
+          {t("BookDemo")}
         </a>
       </div>
     </div>

@@ -19,7 +19,7 @@ export const TRANSLATIONS_EN = {
     "We are making it easy to find, manage, and connect to volunteer opportunities for both students and organizations.",
   "photoblock-container-header":
     "Make a meaningful contribution to your community",
-  "GET STARTED": "GET STARTED",
+  "BookDemo": "BOOK A DEMO",
   "StripedTip-1": "Easy to sign up with a few steps",
   "StripedTip-2": "Free for both organizations and students",
   "StripedTip-3": "Make new connections and grow your network",
