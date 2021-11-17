@@ -9,6 +9,7 @@ import google_fr from "../../images/google_fr.png";
 import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
 import privacy from "../../terms/iContribute Privacy Policy 2021.pdf";
+import privacyfr from "../../terms/iContribute - Politique de confidentialité.pdf";
 import TOS from "../../terms/iContribute Terms and Conditions 2021.pdf";
 import "./FooterBlock.css";
 
@@ -36,7 +37,7 @@ const FooterBlock = () => {
               </a>
             </li>
             <li>
-              <a href={privacy} download>
+              <a href={isFrench ? privacyfr : privacy} download>
                 {t("PRIVACY POLICY")}
               </a>
             </li>
@@ -132,7 +133,7 @@ const FooterBlock = () => {
               </a>
             </li>
             <li>
-              <a href={privacy} download>
+              <a href={isFrench ? privacyfr : privacy} download>
                 {t("PRIVACY POLICY")}
               </a>
             </li>
