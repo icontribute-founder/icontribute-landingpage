@@ -50,7 +50,10 @@ export const TRANSLATIONS_EN = {
   "GetInTouchBlock-Header": "GET IN TOUCH WITH US",
   "GetInTouchBlock-Subheader":
     "Feel free to reach out to us. We are happy to help.",
-  CONTACT: "CONTACT US",
+  "Contact Us": "Contact Us",
+  "Contact Us Blurb": "Do you have a question or want to get involved? Send us a message, we’d love to hear from you!",
+  "Message": "Message",
+  MessageText: "Hello, I am a high school student/ school board representative/ organizational representative. I am contacting you because …",
 
   // ORGANIZATION PAGE
   "Organizations-MainBlock-Header": "Reach a bigger audience.",

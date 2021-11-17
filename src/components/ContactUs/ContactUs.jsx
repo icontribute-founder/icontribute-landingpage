@@ -3,9 +3,16 @@ import "./ContactUs.css";
 import ContactUsIcon from "../../images/ContactUsIcon.png";
 import * as emailjs from "emailjs-com";
 import { init } from "emailjs-com";
+
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
 init("user_sezjNKeAo3Iqife7tGsUG");
 
 const ContactUs = () => {
+  const { t } = useTranslation();
+  const isFrench = i18next.language === "FR" ? true : false;
+
   const [buttonText, setButtonText] = useState("Send Message");
   const submitForm = (e) => {
     e.preventDefault();
@@ -45,16 +52,13 @@ const ContactUs = () => {
       </div>
       <div className="right-contact">
         <form onSubmit={submitForm}>
-          <h1>Contact Us</h1>
-          <p>
-            Do you have a question or want to get involved? Send us a message,
-            we’d love to hear from you!
-          </p>
-          <p className="fieldTag">Full Name</p>
-          <input name="name" placeholder="Full Name" type="text" />
-          <p className="fieldTag">Email Address</p>
-          <input name="email" placeholder="Email Address" type="email" />
-          <p className="fieldTag">Subject</p>
+          <h1>{t("Contact Us")}</h1>
+          <p>{t("Contact Us Blurb")}</p>
+          <p className="fieldTag">{t("Full Name")}</p>
+          <input name="name" placeholder={t("Full Name")} type="text" />
+          <p className="fieldTag">{t("Email Address")}</p>
+          <input name="email" placeholder={t("Email Address")} type="email" />
+          <p className="fieldTag">{t("Subject")}</p>
           <select id="subject" name="subject">
             <option selected disabled>
               Select one
@@ -69,12 +73,12 @@ const ContactUs = () => {
             <option>General Questions</option>
           </select>
           <p name="message" className="fieldTag">
-            Message
+            {t("Message")}
           </p>
           <textarea
             id="message"
             className="message"
-            placeholder="Hello, I am a high school student/ school board representative/ organizational representative. I am contacting you because … "
+            placeholder={t("MessageText")}
             type="text"
           ></textarea>
           <br />

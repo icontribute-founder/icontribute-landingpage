@@ -56,7 +56,13 @@ export const TRANSLATIONS_FR = {
   "GetInTouchBlock-Header": "COMMUNIQUEZ AVEC NOUS",
   "GetInTouchBlock-Subheader":
     "N'hésitez pas à nous contacter. Nous sommes heureux de vous aider.",
-  CONTACT: "CONTACTEZ-NOUS",
+  "Contact Us": "Contactez-nous",
+  "Contact Us Blurb": "As-tu une question? Envoyez-nous un message, nous aimerions avoir de vos nouvelles!",
+  "Full Name": "Nom et prénom",
+  "Email Address": "Adresse E-mail",
+  "Subject": "Sujet",
+  "Message": "Méssage",
+  MessageText: "Bonjour, ...",
 
   // ORGANIZATION PAGE
   "Organizations-MainBlock-Header": "Touchez un public plus large.",
