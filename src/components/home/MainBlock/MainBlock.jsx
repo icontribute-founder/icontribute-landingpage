@@ -89,7 +89,7 @@ const MainBlock = () => {
         </div>
         <div className="counter">
           <p className="counter-num">
-            <CountUp end={12} duration={5} />
+            <CountUp end={33} duration={5} />
           </p>{" "}
           <p className="counter-title">Volunteers Matched</p>
         </div>
