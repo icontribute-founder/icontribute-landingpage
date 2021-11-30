@@ -79,19 +79,19 @@ const MainBlock = () => {
           <p className="counter-num">
             <CountUp end={796} duration={5} />
           </p>{" "}
-          <p className="counter-title">Active Users</p>
+          <p className="counter-title">{t("Active Users")}</p>
         </div>
         <div className="counter">
           <p className="counter-num">
             <CountUp end={58} duration={5} />
           </p>{" "}
-          <p className="counter-title">Current Partners</p>
+          <p className="counter-title">{t("Current Partners")}</p>
         </div>
         <div className="counter">
           <p className="counter-num">
             <CountUp end={33} duration={5} />
           </p>{" "}
-          <p className="counter-title">Volunteers Matched</p>
+          <p className="counter-title">{t("Volunteers Matched")}</p>
         </div>
       </div>
     </>

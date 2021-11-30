@@ -63,6 +63,18 @@ export const TRANSLATIONS_FR = {
   "Subject": "Sujet",
   "Message": "Méssage",
   MessageText: "Bonjour, ...",
+  "Active Users": "Utilisateurs Actifs",
+  "Current Partners": "Partenaires Actuels",
+  "Volunteers Matched": "Bénévoles Jumelés",
+  "Select one": "Choisissez-en un",
+  "Product Questions": "Questions sur les produits",
+  "Product Support": "Support produit",
+  "Client Inquiries": "Demandes des renseignements des clients",
+  "Business Inquiries": "Demandes des renseignements commerciaux",
+  "Careers @ iContribute": "Carrières à iContribute",
+  "Marketing / Press Inquiries": "Marketing - Demandes de presse",
+  "Incoming Sponsorships": "Demandes entrantes",
+  "General Questions": "Questions générales",
 
   // ORGANIZATION PAGE
   "Organizations-MainBlock-Header": "Touchez un public plus large.",

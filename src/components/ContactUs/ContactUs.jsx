@@ -61,16 +61,16 @@ const ContactUs = () => {
           <p className="fieldTag">{t("Subject")}</p>
           <select id="subject" name="subject">
             <option selected disabled>
-              Select one
+              {t("Select one")}
             </option>
-            <option>Product Questions</option>
-            <option>Product Support</option>
-            <option>Client Inquiries</option>
-            <option>Business Inquiries</option>
-            <option>Careers @ iContribute</option>
-            <option>Marketing / Press Inquiries</option>
-            <option>Incoming Sponsorships</option>
-            <option>General Questions</option>
+            <option>{t("Product Questions")}</option>
+            <option>{t("Product Support")}</option>
+            <option>{t("Client Inquiries")}</option>
+            <option>{t("Business Inquiries")}</option>
+            <option>{t("Careers @ iContribute")}</option>
+            <option>{t("Marketing / Press Inquiries")}</option>
+            <option>{t("Incoming Sponsorships")}</option>
+            <option>{t("General Questions")}</option>
           </select>
           <p name="message" className="fieldTag">
             {t("Message")}
