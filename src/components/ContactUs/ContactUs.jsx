@@ -5,13 +5,13 @@ import * as emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+// import i18next from "i18next";
 
 init("user_sezjNKeAo3Iqife7tGsUG");
 
 const ContactUs = () => {
   const { t } = useTranslation();
-  const isFrench = i18next.language === "FR" ? true : false;
+  // const isFrench = i18next.language === "FR" ? true : false;
 
   const [buttonText, setButtonText] = useState("Send Message");
   const submitForm = (e) => {

@@ -7,7 +7,6 @@ import "./NavBar.css";
 import { useMediaQuery } from "react-responsive";
 import { MOBILE_SCREEN_SIZE } from "./../../constants/MediaQueries";
 import { useTranslation } from "react-i18next";
-import i18n from "react-i18next";
 import i18next from "i18next";
 
 const NavBar = () => {
