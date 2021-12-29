@@ -24,7 +24,8 @@ const App = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   i18n.changeLanguage("EN");
 
-  let showEmergencyBanner = false;
+  let showEmergencyBanner = true;
+
   return (
     <Router basename="/">
       <ScrollToTop />
