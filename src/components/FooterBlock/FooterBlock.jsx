@@ -25,7 +25,7 @@ const FooterBlock = () => {
   if (isMobile) {
     return (
       <div className="FooterBlock">
-        <NavBarLogo />
+        <NavBarLogo full/>
         <div className="FooterBlock-Links">
           <ul className="FooterBlock-Links-List">
             <li>
