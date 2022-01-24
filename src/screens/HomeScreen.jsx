@@ -15,7 +15,7 @@ const HomeScreen = () => {
   const isMobile = useMediaQuery({ maxWidth: MOBILE_SCREEN_SIZE });
   useEffect(() => {
     document.title = "iContribute - Home";
-    ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
+    ReactGA.pageview(window.location.hash.substring(1)); //  substring excludes the hash "#"
   }, []);
 
   return (
