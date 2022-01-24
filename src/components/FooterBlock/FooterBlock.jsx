@@ -79,10 +79,10 @@ const FooterBlock = () => {
     <div className="FooterBlock">
       <div className="footer-container">
         <div className="footer-logo">
-          <NavBarLogo />
+          <NavBarLogo full/>
           {isMobile ? <SocialMediaBar /> : null}
           <div className="footer-appstore-container">
-            <a
+            <a 
               href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
               target="_blank"
               rel="noopener noreferrer"
