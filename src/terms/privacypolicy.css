@@ -3,13 +3,24 @@ body {
   margin-left: 0px;
 }
 
+.privacy-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #133a4b;
+}
+
+#links { 
+  text-transform: none;
+}
+
 #page_1 {
   position: relative;
   overflow: hidden;
-  margin: 50px 0px 50px 96px;
+  margin: 0px 0px 0px 96px;
   padding: 0px;
   border: none;
-  width: 720px;
+  /* width: 720px; */
 }
 
 #page_2 {
@@ -18,7 +29,7 @@ body {
   margin: 50px 0px 50px 96px;
   padding: 0px;
   border: none;
-  width: 720px;
+  /* width: 720px; */
 }
 
 #page_3 {
@@ -27,7 +38,7 @@ body {
   margin: 50px 0px 50px 96px;
   padding: 0px;
   border: none;
-  width: 720px;
+  /* width: 720px; */
 }
 
 #page_4 {
@@ -36,7 +47,7 @@ body {
   margin: 50px 0px 50px 96px;
   padding: 0px;
   border: none;
-  width: 720px;
+  /* width: 720px; */
 }
 
 #page_5 {
@@ -45,99 +56,101 @@ body {
   margin: 50px 0px 50px 96px;
   padding: 0px;
   border: none;
-  width: 720px;
+  /* width: 720px; */
 }
-
+ 
 #page_5 #p5dimg1 {
   position: absolute;
   top: 468px;
   left: 4px;
   z-index: -1;
-  width: 616px;
+  /* width: 616px; */
   height: 1px;
   font-size: 1px;
   line-height: nHeight;
 }
 #page_5 #p5dimg1 #p5img1 {
-  width: 616px;
+  /* width: 616px; */
   height: 1px;
 }
-
 .ft0 {
-  font: bold 15px "Arial";
+  font: bold 15px "Montserrat";
   line-height: 18px;
+  margin-top: 20px;
 }
 .ft1 {
-  font: 15px "Arial";
-  line-height: 21px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    width: 90%;
+    margin: 20px 0;
 }
 .ft2 {
-  font: 15px "Gautami";
+  font: 15px "Montserrat";
   line-height: 29px;
 }
 .ft3 {
-  font: 15px "Arial";
-  line-height: 17px;
+  font: 15px "Montserrat";
+  width: 80%;
 }
 .ft4 {
-  font: 15px "Arial";
+  font: 15px "Montserrat";
   line-height: 20px;
 }
 .ft5 {
-  font: 15px "Gautami";
+  font: 15px "Montserrat";
   line-height: 30px;
 }
 .ft6 {
-  font: italic 15px "Arial";
+  font: italic 15px "Montserrat";
   line-height: 18px;
 }
 .ft7 {
-  font: italic 15px "Gautami";
+  font: italic 15px "Montserrat";
   line-height: 30px;
 }
 .ft8 {
-  font: 15px "Arial";
+  font: 15px "Montserrat";
   line-height: 18px;
 }
 .ft9 {
-  font: 15px "Arial";
+  font: 15px "Montserrat";
   margin-left: 4px;
   line-height: 20px;
 }
 .ft10 {
-  font: bold 16px "Arial";
+  font: bold 16px "Montserrat";
   line-height: 19px;
 }
 .ft11 {
-  font: 16px "Arial";
+  font: 16px "Montserrat";
   line-height: 18px;
 }
 .ft12 {
-  font: 16px "Arial";
+  font: 16px "Montserrat";
   line-height: 22px;
 }
 .ft13 {
-  font: 11px "Arial";
+  font: 11px "Montserrat";
   line-height: 17px;
 }
 .ft14 {
-  font: 11px "Gautami";
+  font: 11px "Montserrat";
   line-height: 26px;
 }
 .ft15 {
-  font: 16px "Arial";
+  font: 16px "Montserrat";
   line-height: 21px;
 }
 .ft16 {
-  font: 11px "Arial";
+  font: 11px "Montserrat";
   line-height: 14px;
 }
 .ft17 {
-  font: 11px "Gautami";
+  font: 11px "Montserrat";
   line-height: 23px;
 }
 .ft18 {
-  font: 16px "Arial";
+  font: 16px "Montserrat";
   line-height: 23px;
 }
 .ft19 {
@@ -145,20 +158,19 @@ body {
   line-height: 14px;
 }
 .ft20 {
-  font: 16px "Arial";
+  font: 16px "Montserrat";
   margin-left: 8px;
-  line-height: 18px;
 }
 .ft21 {
-  font: bold 16px "Arial";
+  font: bold 16px "Montserrat";
   line-height: 23px;
 }
 .ft22 {
-  font: 13px "Arial";
+  font: 13px "Montserrat";
   line-height: 16px;
 }
 .ft23 {
-  font: 13px "Gautami";
+  font: 13px "Montserrat";
   line-height: 26px;
 }
 

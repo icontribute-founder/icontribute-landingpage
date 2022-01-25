@@ -60,8 +60,8 @@ const App = () => {
             <Route path="/volunteers" exact component={VolunteersScreen} />
             <Route path="/organizations" exact component={OrganizationScreen} />
             <Route path="/our-team" exact component={OurTeamScreen} />
-            <Route path="/privacy" exact component={PrivacyPolicyScreen} />
-            <Route path="/TOS" exact component={PrivacyPolicyScreen} />
+            <Route path="/privacy-policy" exact component={PrivacyPolicyScreen} />
+            {/* <Route path="/TOS" exact component={PrivacyPolicyScreen} /> */}
           </Switch>
         </div>
         {/*<GetInTouchBlock />*/}
