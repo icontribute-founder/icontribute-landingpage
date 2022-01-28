@@ -82,8 +82,10 @@
 }
 .icontrib-gif {
   position: absolute;
-  left: 536px;
-  top: 550px;
+  left: 523px;
+  top: 542px;
+  width: 96px;
+  height: 96px;
   z-index: 2;
 }
 .icontrib-filler {
