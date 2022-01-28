@@ -25,7 +25,7 @@ const FooterBlock = () => {
   if (isMobile) {
     return (
       <div className="FooterBlock">
-        <NavBarLogo full/>
+        <NavBarLogo full />
         <div className="FooterBlock-Links">
           <ul className="FooterBlock-Links-List">
             <li>
@@ -79,10 +79,10 @@ const FooterBlock = () => {
     <div className="FooterBlock">
       <div className="footer-container">
         <div className="footer-logo">
-          <NavBarLogo full/>
+          <NavBarLogo full />
           {isMobile ? <SocialMediaBar /> : null}
           <div className="footer-appstore-container">
-            <a 
+            <a
               href="https://apps.apple.com/ca/app/icontribute/id1524895764?ign-mpt=uo%3D4"
               target="_blank"
               rel="noopener noreferrer"
@@ -128,14 +128,12 @@ const FooterBlock = () => {
               <Link to="/our-team">{t("OUR TEAM")}</Link>
             </li>
             <li>
-              <a href={TOS} download>
-                {t("TERMS & CONDITIONS")}
-              </a>
+              <Link to="/privacy"> {t("TERMS & CONDITIONS")}</Link>
             </li>
             <li>
-              <a href={isFrench ? privacyfr : privacy} download>
+              <Link to="/privacy">
                 {t("PRIVACY POLICY")}
-              </a>
+              </Link>
             </li>
             <li>
               <a
