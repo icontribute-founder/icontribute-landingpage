@@ -3,7 +3,7 @@ import iPhone from "../../../images/iphone/Component 1.png";
 import pencil from "../../../images/icons/pencil.png";
 import phone from "../../../images/icons/phoneIcon.png";
 import mouse from "../../../images/icons/mouse.png";
-import gif from "../../../images/sponsors/iContributeGif.gif";
+import gif from "../../../images/logo/logo_only_animated.svg";
 import blueFiller from "../../../images/iphone/Screen Shot 2020-09-28 at 8.55.57 AM.png";
 import "./DemoBlock.css";
 

@@ -1,15 +1,14 @@
 import React from "react";
 import "./NavBarLogo.css";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import Logo from "../../images/logo/logo_text_256.png";
+import LogoFull from "../../images/logo/logo_full_64.png";
 
-const NavBarLogo = ({ isMobile = false }) => {
-  const { t } = useTranslation();
+const NavBarLogo = ({ isMobile = false, full = false }) => {
   return (
     <Link className={isMobile ? "nav-bar-logo-m" : "nav-bar-logo"} to="/">
       <div className={isMobile ? "NavBarLogoMobile" : "NavBarLogo"}>
-        <h1 className="NavBarLogo-Company">iContribute</h1>
-        <h2 className="NavBarLogo-Slogan">{t("SubLogo")}</h2>
+       {full ? <img alt="logo full" src={LogoFull} /> : <img alt="logo only" src={Logo} />}
       </div>
     </Link>
   );

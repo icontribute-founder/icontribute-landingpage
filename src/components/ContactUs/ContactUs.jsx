@@ -49,7 +49,7 @@ const ContactUs = () => {
     <div id="contact-us" className="contact-us-container">
       <div className="left-contact">
         <img alt="" src={ContactUsIcon} />
-      </div>
+      </div> 
       <div className="right-contact">
         <form onSubmit={submitForm}>
           <h1>{t("Contact Us")}</h1>
