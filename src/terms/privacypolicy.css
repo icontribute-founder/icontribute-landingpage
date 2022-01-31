@@ -17,7 +17,7 @@ body {
 #page_1 {
   position: relative;
   overflow: hidden;
-  margin: 0px 0px 0px 96px;
+  margin-right: 16px;
   padding: 0px;
   border: none;
   /* width: 720px; */
