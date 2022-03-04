@@ -17,25 +17,25 @@ const HomeScreen = () => {
         </p>
         <p className="ft1">
           Using the Internet poses threats to the security and privacy of everyone 
-          involved. iContribute (“iContribute”, “we”, “our”, “us”) is committed to 
+          involved. iContribute (“<b>iContribute</b>”, “<b>we</b>”, “<b>our</b>”, “<b>us</b>”) is committed to 
           protecting personal information by following responsible information-handling 
           practices in line with privacy laws. iContribute uses modern information and 
           communication technologies to support our activities. Please take a few moments
           to review this privacy policy (herein referred to as the “Privacy Policy”), 
-          which applies to our website, https://icontribute.community (the “Website”), 
-          our mobile app (the “iContribute Mobile App” or the “App”), and related products 
+          which applies to our website, https://icontribute.community (the “<b>Website</b>”), 
+          our mobile app (the “<b>iContribute Mobile App</b>” or the “<b>App</b>”), and related products 
           (collectively, with the Website and the iContribute Mobile App, referred to as
-          the “Services”). The Services are designed to connect youth with local and 
+          the “<b>Services</b>”). The Services are designed to connect youth with local and 
           virtual volunteer engagement opportunities.
 
           In this Privacy Policy, those who create an account on the iContribute Mobile 
-          App are called “Members”. In this Privacy Policy, users of the Services, 
-          whether they are Members or casual browsers of the Website, are called “Users” 
-          or “you”.
+          App are called “<b>Members</b>”. In this Privacy Policy, users of the Services, 
+          whether they are Members or casual browsers of the Website, are called “<b>Users</b>” 
+          or “<b>you</b>”.
         </p>
         <p className="ft0">2. Personal Information</p>
         <p className="ft1">
-          “Personal Information” means information that: (a) can identify an 
+          “<b>Personal Information</b>” means information that: (a) can identify an 
           individual directly; or (b) is information about an identifiable individual, 
           whether that information or opinion is true or not or recorded in a 
           material form or not, but does not include business contact information 
@@ -54,7 +54,7 @@ const HomeScreen = () => {
           with anyone except as described in this Privacy Policy.
            
           This Privacy Policy is incorporated into and subject to our Terms and 
-          Conditions (the “Terms and Conditions”) (https://icontribute.community/#/privacy). 
+          Conditions (the “<b>Terms and Conditions</b>”) (https://icontribute.community/#/privacy). 
           The terms used in this Privacy Policy have the same definitions as our Terms 
           and Conditions found below.
         </p>
@@ -71,21 +71,21 @@ const HomeScreen = () => {
 
           <ol type="a">
             <li>
-              Contact information: this information allows us to identify you 
+              <b>Contact information</b>: this information allows us to identify you 
               as well as send you materials. It lets us communicate with you regarding 
               instructions and requests. Typical contact information we may collect 
               includes name, email address, postal code, and school; 
             </li>
             <li>
-              Marketing and communications information includes communication preferences
+              <b>Marketing and communications information</b> includes communication preferences
               and your preferences in receiving marketing from us and third parties;
             </li>
             <li>
-              Profile information: includes your username and password, your 
+              <b>Profile information</b>: includes your username and password, your 
               interests, preferences, feedback, and survey responses;
             </li>
             <li>
-              Device information: this includes information like device type, 
+              <b>Device information</b>: this includes information like device type, 
               device identifier, IP address, MAC address, location, operating system, 
               duration of use, user behaviour, length of time spent on the services, 
               frequency of use, and information that you allow us to receive through 
@@ -108,6 +108,8 @@ const HomeScreen = () => {
           
           We automatically gather information about your navigational behaviour and your mobile device, such as your device operating system. We only use this information for internal research to better understand the needs and interests of our Users, assess our growth, get insight on demographics, and improve the overall quality and integrity of our community. We do not collect cookies through our Services. 
           
+          {/* use text underline CSS styling  */}
+          
           We use third-party metric and analytic services on certain pages or features of the Services to help us understand and analyse visitor traffic, measure the promotional effectiveness and efficacy of our features, offerings, and marketing campaigns. We also use these tools to identify pitfalls, shortcomings, and areas of our operations in need of improvement, and to view the overall performance and ranking of our online presence. These tools might store Cookies on your device at their discretion. We sometimes use surveys or other forms provided by a third party. It is possible that when engaged, the third-party provider might collect information or store a cookie. We never explicitly provide information that we have collected about you to any third-parties. We recognize your right to employ the use of programs that may block our use of any third-party tools.
         </p>
         <p className="ft0">6.	How Do We Use Your Personal Information?</p>
@@ -116,28 +118,28 @@ const HomeScreen = () => {
 
           <ul>
             <li>
-              Fulfillment of direct volunteer registration: to fulfill registrations you have completed through us;
+              <b>Fulfillment of direct volunteer registration</b>: to fulfill registrations you have completed through us;
             </li>
             <li>
-              Members: in general, information you enter on the iContribute Mobile App is available to other persons (whether they are staff members or others), to whom you give access to your account, or to whom you give access to the information through the normal operation of the Services;
+              <b>Members</b>: in general, information you enter on the iContribute Mobile App is available to other persons (whether they are staff members or others), to whom you give access to your account, or to whom you give access to the information through the normal operation of the Services;
             </li>
             <li>
-              Business and website operations: to administer and protect our business and the Services, including troubleshooting, data analysis, testing, system maintenance, support, reporting, and hosting of data;
+              <b>Business and website operations</b>: to administer and protect our business and the Services, including troubleshooting, data analysis, testing, system maintenance, support, reporting, and hosting of data;
             </li>
             <li>
-              Marketing and advertising: to improve our marketing and promotional efforts, to analyze Service usage, to improve our content and product offerings, and to customize the iContribute Mobile App’s content, layout, and Services. Doing so helps us improve the Services and better tailor the Services to meet your needs, in order to provide you with a smooth, efficient, safe, and customized experience while using the Services. We may also administer surveys, contests, draws, raffles, offer tailored content, and other promotional materials to you based on your interests;
+              <b>Marketing and advertising</b>: to improve our marketing and promotional efforts, to analyze Service usage, to improve our content and product offerings, and to customize the iContribute Mobile App’s content, layout, and Services. Doing so helps us improve the Services and better tailor the Services to meet your needs, in order to provide you with a smooth, efficient, safe, and customized experience while using the Services. We may also administer surveys, contests, draws, raffles, offer tailored content, and other promotional materials to you based on your interests;
             </li>
             <li>
-              Regulatory requirements: complying generally with all laws and applicable regulatory requirements;
+              <b>Regulatory requirements</b>: complying generally with all laws and applicable regulatory requirements;
             </li>
             <li>
-              Subsidiaries, affiliates, and service providers: we may from time to time use the services of affiliates, subsidiaries, and unrelated service providers in the operation of the iContribute Mobile App, and may disclose personal information to them in the course of our use of their services. For example, we may use the services of third-party hosting companies to host the operation of the iContribute Mobile App. This may involve the hosting of data, including Personal Information, on servers operated by those hosting companies. We take care to use only service providers that we believe are reputable and able to live up to our and your expectations, including about the handling of confidential information;
+              <b>Subsidiaries, affiliates, and service providers</b>: we may from time to time use the services of affiliates, subsidiaries, and unrelated service providers in the operation of the iContribute Mobile App, and may disclose personal information to them in the course of our use of their services. For example, we may use the services of third-party hosting companies to host the operation of the iContribute Mobile App. This may involve the hosting of data, including Personal Information, on servers operated by those hosting companies. We take care to use only service providers that we believe are reputable and able to live up to our and your expectations, including about the handling of confidential information;
             </li>
             <li>
-              Feedback and outreach: on occasion we use email addresses or other contact information to contact our Members to ask them for their input on our Services, to forward to them media opportunities, and provide them with updates on their activity with the Services; and
+              <b>Feedback and outreach</b>: on occasion we use email addresses or other contact information to contact our Members to ask them for their input on our Services, to forward to them media opportunities, and provide them with updates on their activity with the Services; and
             </li>
             <li>
-              Business development and market research: we use data to understand demographics, interests, usage patterns, and other characteristics of Members and to track and analyze trends and patterns.
+              <b>Business development and market research</b>: we use data to understand demographics, interests, usage patterns, and other characteristics of Members and to track and analyze trends and patterns.
             </li>
           </ul>
 
