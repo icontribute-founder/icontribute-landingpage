@@ -4,7 +4,7 @@ import "../terms/privacypolicy.css";
 
 const HomeScreen = () => {
   useEffect(() => {
-    document.title = "iContribute - Privacy Policy";
+    document.title = "iContribute - Privacy Policy V2 (February 2022)";
     ReactGA.pageview(window.location.hash.substring(1)); // substring excludes the hash "#"
   }, []);
 
@@ -12,242 +12,199 @@ const HomeScreen = () => {
     <div>
       <div id="page_1">
         <div className="privacy-title">Privacy Policy</div>
-        <p className="ft1">
-          iContribute is committed to protecting personal information by
-          following responsible <nobr>information-handling</nobr> practices in
-          line with privacy laws. iContribute uses modern information and
-          communication technologies to support our activities. This policy
-          (herein referred to as the “Privacy Policy”) applies to the
-          iContribute Mobile App. which is designed to connect youth with local
-          engagement opportunities (herein referred to as “the Service”).
-        </p>
-        <p className="ft1">
-          If you choose to use the Service, then you agree to the collection and
-          use of information in this Privacy Policy. The Personal Information
-          collected is used for providing and improving the Service. The Service
-          will not use or share your information with anyone except as described
-          in this Privacy Policy.
-        </p>
-        <p className="ft1">
-          The terms used in this Privacy Policy have the same definitions as our
-          Terms and Conditions found below.
-        </p>
         <p className="ft0">
-          Information Collection and Use <span className="ft0">​</span>
+          1. Our Policy <span className="ft0">​</span>
         </p>
         <p className="ft1">
-          For a better experience, our Service may require you to provide us
-          with a username, email and postal code (herein referred to as
-          “Personal Information”). The Service uses <nobr>third-party</nobr>{" "}
-          services that may collect information used to identify you. The
-          Service cannot be held liable for any damages or harm that may come to
-          you if you choose to use this app. If a user decides to terminate
-          their service, this service will take up to 48 hours to process.
-          Thereafter, all user data will be erased and their account will be
-          closed.
-        </p>
-        <p className="ft0">Confidentiality , Security , and User Privacy</p>
-        <p className="ft1">
-          The Service team members who have access to personal data will respect
-          the confidentiality of Personal Information. We value your trust in
-          providing your Personal Information, thus we are striving to use
-          commercially acceptable means of protecting it. Login information is
-          encrypted on account creation and is guarded by Firebase providers.
-          However, no method of transmission over
-          the internet, or method of electronic storage is 100% secure and
-          reliable, and we cannot guarantee its absolute security.
-        </p>
-        <p className="ft1">
-          Information we obtain from your device include: i) data from device
-          settings; and ii) information that you allow us to receive through
-          device settings that you turn on (access to your GPS location, camera,
-          or photo libraries). This information will only be used to better our
-          services.
-        </p>
-        <p className="ft0">Information Sharing</p>
-        <p className="ft1">
-          The Service team will not sell any information collected. Information
-          that is collected will only be used to provide the Service. In the
-          event that the Service is acquired, all collected information will be
-          transferred to the acquirer.
-        </p>
-        <p className="ft0">Inappropriate Content and Abusive Users</p>
-        <p className="ft1">
-          Within the iContribute platform, there is a no tolerance policy for
-          objectionable content or abusive users. Objectionable content
-          includes, but is not limited to: <br />
-        </p>
-        <p className="ft1">(i)
-          sexually explicit materials;
-          obscene, defamatory, libelous, slanderous, violent and/or unlawful
-          content or profanity (iii) content that infringes on the rights of
-          any third party, including copyright, trademark, privacy, publicity,
-          or other personal or proprietary right. Any user can flag content
-          that they deem objectionable for review. Content will be moderated
-          by iContribute to ensure the timely removal of any or all
-          objectionable content. Objectionable content will be removed within
-          24 hours of reporting and review. User accounts which have been
-          confirmed responsible for posting objectionable content will be
-          ejected and will not have access to the iContribute app.
-        </p>
-        <p className="ft0">Links to Other Sites</p>
-        <p className="ft1">
-          This Service may contain links to external sites. If you click on a
-          <nobr>third-party</nobr> link, you will be directed to that site. Note
-          that these external sites are not operated by the Service. Therefore,
-          we strongly advise you to review the Privacy Policy of these websites.
-          We do not control or assume responsibility of the content, Privacy
-          Policies, or practices of any <nobr>third-party</nobr> sites or
-          services.
-        </p>
-        <p className="ft0">Children’s Privacy</p>
-        <p className="ft1">
-          The Service is not meant for anyone under the age of 13. We do not
-          knowingly collect personally identifiable information from children
-          under the age of 13. In the case that we discover that a child under
-          13 has provided us with Personal Information, we will immediately
-          delete this from our servers. If you are a parent or guardian who
-          discovers that your child has provided us with their Personal
-          Information, please contact the iContribute team so that we can take
-          the necessary steps to remove the Personal Information.
-        </p>
-        <p className="ft0">Changes to This Privacy Policy</p>
-        <p className="ft1">
-          iContribute may update our Privacy Policy from time to time. Thus, you
-          are advised to review this page periodically for any changes. We will
-          notify users of any changes by posting the latest Privacy Policy on
-          this page.
-        </p>
-        <p className="ft3">
-          This policy is effective as of <nobr>2022-01-24.</nobr>
-        </p>
-        <p className="ft1">
-          If you have any questions or concerns about this Privacy Policy,
-          please contact our team at: icontribute.founder@gmail.com.
-        </p>
+          Using the Internet poses threats to the security and privacy of everyone 
+          involved. iContribute (“iContribute”, “we”, “our”, “us”) is committed to 
+          protecting personal information by following responsible information-handling 
+          practices in line with privacy laws. iContribute uses modern information and 
+          communication technologies to support our activities. Please take a few moments
+          to review this privacy policy (herein referred to as the “Privacy Policy”), 
+          which applies to our website, https://icontribute.community (the “Website”), 
+          our mobile app (the “iContribute Mobile App” or the “App”), and related products 
+          (collectively, with the Website and the iContribute Mobile App, referred to as
+          the “Services”). The Services are designed to connect youth with local and 
+          virtual volunteer engagement opportunities.
 
+          In this Privacy Policy, those who create an account on the iContribute Mobile 
+          App are called “Members”. In this Privacy Policy, users of the Services, 
+          whether they are Members or casual browsers of the Website, are called “Users” 
+          or “you”.
+        </p>
+        <p className="ft0">2. Personal Information</p>
+        <p className="ft1">
+          “Personal Information” means information that: (a) can identify an 
+          individual directly; or (b) is information about an identifiable individual, 
+          whether that information or opinion is true or not or recorded in a 
+          material form or not, but does not include business contact information 
+          that is used solely for the purpose of communicating or facilitating 
+          communication with an individual in relation to their employment, business, 
+          or profession.
+        </p>
+        <p className="ft0">3.	Agreeing to the Terms of our Privacy Policy</p>
+        <p className="ft1">
+          Our Privacy Policy outlines our collection and processing of your Personal 
+          Information. The Personal Information collected is used for providing and 
+          improving the Service. By accessing and or using the Services, or by registering
+          as a Member, you agree to the terms in this Privacy Policy, meaning you 
+          expressly consent to our information handling practices in accordance with 
+          this Privacy Policy. The Services will not use or share your information 
+          with anyone except as described in this Privacy Policy.
+           
+          This Privacy Policy is incorporated into and subject to our Terms and 
+          Conditions (the “Terms and Conditions”) (https://icontribute.community/#/privacy). 
+          The terms used in this Privacy Policy have the same definitions as our Terms 
+          and Conditions found below.
+        </p>
+        <p className="ft0">4. What Personal Information is Collected?</p>
+        <p className="ft1">
+          The primary purpose for our collection of Personal Information is to 
+          provide the Services and features expected from us by our Users. We 
+          only collect Personal Information about you that we consider necessary 
+          for achieving the normal operation of our Services. iContribute will 
+          not sell any Personal Information collected. 
+
+          The type of Personal Information that may be collected includes, but is 
+          not limited to:
+
+          <ol type="a">
+            <li>
+              Contact information: this information allows us to identify you 
+              as well as send you materials. It lets us communicate with you regarding 
+              instructions and requests. Typical contact information we may collect 
+              includes name, email address, postal code, and school; 
+            </li>
+            <li>
+              Marketing and communications information includes communication preferences
+              and your preferences in receiving marketing from us and third parties;
+            </li>
+            <li>
+              Profile information: includes your username and password, your 
+              interests, preferences, feedback, and survey responses;
+            </li>
+            <li>
+              Device information: this includes information like device type, 
+              device identifier, IP address, MAC address, location, operating system, 
+              duration of use, user behaviour, length of time spent on the services, 
+              frequency of use, and information that you allow us to receive through 
+              device settings that you turn on (access to your GPS location, camera, 
+              or photo libraries); and
+            </li>
+            <li>
+              Other information you voluntarily provide to us, our volunteers, our 
+              employees, or our contractors. 
+            </li>
+          </ol>
+        </p>
+        <p className="ft0">5.	How Do We Collect Personal Information? </p>
+        <p className="ft1">
+          Personal Information may be collected in a number of ways, including through our Services, in person, by mail, and by email. We collect your information when you create an account with us or when you contact us. 
+          
+          In general, you can browse the Website without telling us who you are or revealing any Personal Information about yourself. Once you become a Member, we require certain Personal Information from you in order to fulfill Service features and functionality, verify your identity, and provide a safe experience. Personal Information collected includes, but is not limited to, identifying information, contact information, preferences and settings, and other attributes that will be indicated to you at the time of collection.
+          
+          You do not have to use the Services if you do not want to disclose your Personal Information. You have the right to refuse providing us with Personal Information by disengaging from the feature or offering that is making the request. By choosing not to become a Member, and by not engaging with any offerings wherein information is specifically requested, we consider you an anonymous User.
+          
+          We automatically gather information about your navigational behaviour and your mobile device, such as your device operating system. We only use this information for internal research to better understand the needs and interests of our Users, assess our growth, get insight on demographics, and improve the overall quality and integrity of our community. We do not collect cookies through our Services. 
+          
+          We use third-party metric and analytic services on certain pages or features of the Services to help us understand and analyse visitor traffic, measure the promotional effectiveness and efficacy of our features, offerings, and marketing campaigns. We also use these tools to identify pitfalls, shortcomings, and areas of our operations in need of improvement, and to view the overall performance and ranking of our online presence. These tools might store Cookies on your device at their discretion. We sometimes use surveys or other forms provided by a third party. It is possible that when engaged, the third-party provider might collect information or store a cookie. We never explicitly provide information that we have collected about you to any third-parties. We recognize your right to employ the use of programs that may block our use of any third-party tools.
+        </p>
+        <p className="ft0">6.	How Do We Use Your Personal Information?</p>
+        <p className="ft1">
+          We collect and use personal information for reasons like:
+
+          <ul>
+            <li>
+              Fulfillment of direct volunteer registration: to fulfill registrations you have completed through us;
+            </li>
+            <li>
+              Members: in general, information you enter on the iContribute Mobile App is available to other persons (whether they are staff members or others), to whom you give access to your account, or to whom you give access to the information through the normal operation of the Services;
+            </li>
+            <li>
+              Business and website operations: to administer and protect our business and the Services, including troubleshooting, data analysis, testing, system maintenance, support, reporting, and hosting of data;
+            </li>
+            <li>
+              Marketing and advertising: to improve our marketing and promotional efforts, to analyze Service usage, to improve our content and product offerings, and to customize the iContribute Mobile App’s content, layout, and Services. Doing so helps us improve the Services and better tailor the Services to meet your needs, in order to provide you with a smooth, efficient, safe, and customized experience while using the Services. We may also administer surveys, contests, draws, raffles, offer tailored content, and other promotional materials to you based on your interests;
+            </li>
+            <li>
+              Regulatory requirements: complying generally with all laws and applicable regulatory requirements;
+            </li>
+            <li>
+              Subsidiaries, affiliates, and service providers: we may from time to time use the services of affiliates, subsidiaries, and unrelated service providers in the operation of the iContribute Mobile App, and may disclose personal information to them in the course of our use of their services. For example, we may use the services of third-party hosting companies to host the operation of the iContribute Mobile App. This may involve the hosting of data, including Personal Information, on servers operated by those hosting companies. We take care to use only service providers that we believe are reputable and able to live up to our and your expectations, including about the handling of confidential information;
+            </li>
+            <li>
+              Feedback and outreach: on occasion we use email addresses or other contact information to contact our Members to ask them for their input on our Services, to forward to them media opportunities, and provide them with updates on their activity with the Services; and
+            </li>
+            <li>
+              Business development and market research: we use data to understand demographics, interests, usage patterns, and other characteristics of Members and to track and analyze trends and patterns.
+            </li>
+          </ul>
+
+          We will obtain your consent before proceeding with any other purpose not identified in this Privacy Policy.
+          
+          iContribute may disclose your Personal Information (a) to any governmental authority as part of an investigation to determine our compliance with any applicable law, rule, or regulation (including privacy laws, rules, and regulations); (b) in response to a court order, subpoena, discovery request, or other lawful judicial or administrative proceeding; (c) as otherwise required under any applicable law, rule, or regulation; and (d) in good faith, to protect or defend the rights or property of iContribute and other Members.
+          
+          In the instances described above, we may be required to share your Personal Information with or without your consent. In limited circumstances, we may be legally prohibited from advising you that your information was shared in this way.
+          
+          Except as otherwise expressly included in this Privacy Policy, this document only addresses the use and disclosure of Personal Information we collect from you. Since we do not control the information use, collection or disclosure policies of third parties, you are subject to their privacy policies. We encourage you to ask questions before you disclose your Personal Information to others. 
+        </p>
+        <p className="ft0">7.	Consent for Marketing Purposes</p>
+        <p className="ft1">
+          By subscribing to the Services, you consent to receive news and offers related to the Services and your selected preferences. iContribute newsletters, updates, and reports are sent electronically. If you no longer wish to receive these services, you may cancel your subscription at any time. 
+          
+          Our email marketing is permission based. If you received mail from iContribute, it is because you have selected it as an option through the Services and have consented to the terms of this Privacy Policy. You may unsubscribe at any time by clicking the unsubscribe link at the bottom of each email. 
+        </p>
+        <p className="ft0">8.	Making Changes to Your Account </p>
+        <p className="ft1">
+          Members can review and change their Personal Information on the iContribute Mobile App. To review and update your Personal Information to ensure it is accurate, you may log in to your account to make the changes, or you may contact us at icontribute.founder@gmail.com.
+        </p>
+        <p className="ft0">9.	Account Deletion</p>
+        <p className="ft1">
+          When a Member chooses to close an account, we will remove your information from our systems. This will ensure that there are no further mailings directed towards the cancelled Member. Furthermore, if you wish to have us delete all your data held on our servers, please contact us at icontribute.founder@gmail.com. We will strive to delete all data within 48 hours of processing.
+        </p>
+        <p className="ft0">10.	Personal Information and Data Security</p>
+        <p className="ft1">
+          The iContribute team members who have access to personal data will respect the confidentiality of Personal Information. We value your trust and strive to use commercially reasonable means to ensure all data collected, including Personal Information, is protected and secure against unauthorised access, alteration, or deletion. Login information is encrypted on account creation and is guarded by Google Firebase providers. However, no method of transmission over the Internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
+          
+          We encourage all individuals to keep watch for communications that are suspicious and report any suspicious activity to us as soon as possible. More information about security is available in our Terms and Conditions.
+          
+          The Services may contain links to external websites. If you click on a third-party link, you will be directed to that website. Note that these external sites are not operated by the Service. Therefore, we strongly advise you to review the privacy policy of these websites. We do not control or assume responsibility of the content, terms, privacy policies, or practices of any third-party sites or services.
+          
+          The terms and conditions of third-party service providers used by the iContribute Mobile App include, but are not limited to:
+          <ol>
+            <li>GOOGLE PLAY SERVICES</li>
+            <li>GOOGLE ANALYTICS FOR FIREBASE</li>
+          </ol>
+        </p>
+        <p className="ft0">11.	Governing Law</p>
+        <p className="ft1">
+          This Privacy Policy and all related matters shall be interpreted and construed in accordance with the laws of the Province of Ontario and the applicable federal laws of Canada. 
+        </p>
+        <p className="ft0">12.	Intended Use</p>
+        <p className="ft1">
+          iContribute’s Services are hosted in Canada and are intended for individuals located within Canada. If you choose to use the Services from other regions of the world with laws governing data collection and use that may differ from Canadian law, please note that you are transferring your Personal Information outside of those regions to Canada for storage and processing.
+        </p>
+        <p className="ft0">13.	Children’s Privacy</p>
+        <p className="ft1">
+        In order to use the Services, Members must be either i) at least 13 years of age; or ii) enrolled in grade 9. We do not knowingly collect Personal Information from individuals under the age of 13. In the case we discover a child under 13 has provided us with Personal Information, we will immediately delete this from our servers. If you are a parent or guardian who discovers that your child has provided us with their Personal Information, please contact the iContribute team so that we can take the necessary steps to remove the Personal Information and delete the account.
+        </p>
+        <p className="ft0">14.	Changes to This Privacy Policy</p>
+        <p className="ft1">
+        iContribute may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. We will notify users of any changes by posting the latest Privacy Policy on this page.
+        
+        This policy is effective as of 2022-02-10.
+        
+        If you have any questions or concerns about this Privacy Policy, please contact our team at:
+        icontribute.founder@gmail.com.
+        </p>
       </div>
+
+
       <div id="page_1">
         <div className="privacy-title">Terms & Conditions</div>
-        <p className="ft1">
-          By downloading or using the Service, these terms will automatically apply to
-          you. Please read them carefully before using the app.
-        </p>
-        <p className="ft1">
-          You are not allowed to copy or modify the app, any part of the app, or
-          our trademarks in any way. You are not allowed to attempt to extract
-          the source code of the app, and you also should not translate the app
-          into other languages or make derivative versions. The app and all
-          trademarks, copyright, database rights, and other intellectual
-          property rights related to it still belong to the Service.
-        </p>
-        <p className="ft1">
-          The iContribute team is committed to ensuring that the app is as
-          useful and efficient as possible. For that reason, we reserve the
-          right to make changes to the app or to charge for its services. We
-          will not charge you for the app or its services without making it very
-          clear to you exactly what you’re paying for.{" "}
-          <span className="ft13">[NB1]</span>​ We
-          <span className="ft14">​ </span>will not charge you without your
-          consent.
-        </p>
-        <p className="ft1">
-          The iContribute app stores and processes personal data that you have
-          provided to us, in
-          order to provide the <span className="ft16">[NB2]</span>​ Service
-          <span className="ft17">​ </span>. It is your responsibility to keep
-          your phone and access
-        </p>
-      
-      <p className="ft1">
-        to the app secure. We therefore recommend that you do not jailbreak or
-        root your phone, which is the process of removing software
-        restrictions and limitations imposed by the official operating system
-        of your device. It could make your phone vulnerable to
-        malware/viruses/malicious programs, compromise your phone’s security
-        features and it could mean that the iContribute app won’t work
-        properly or at all.
-      </p>
-      <p className="ft1">
-        The iContribute App uses <nobr>third-party</nobr> services that
-        declare their own Terms and Conditions.
-      </p>
-      <p className="ft1">
-        Link to Terms and Conditions of <nobr>third-party</nobr> service
-        providers used by the app:
-      </p>
-      <p className="p25 ft11">
-        <a href="https://policies.google.com/terms" className="links">
-          <span className="ft20">Google Play Services</span>
-        </a>
-      </p>
-      <p className="p26 ft11">
-        <a href="https://firebase.google.com/terms/analytics" className="links">
-          <span className="ft20">Google Analytics for Firebase</span>
-        </a>
-      </p>
-      <p className="ft1">
-        iContribute will not take responsibility for user-side technical
-        limitations. Certain functions of the app will require the app to have
-        an active internet connection. The connection can be{" "}
-        <nobr>Wi-Fi,</nobr> or provided by your mobile network provider, but
-        iContribute cannot take responsibility for the app not working at full
-        functionality if you don’t have access to <nobr>Wi-Fi</nobr> or
-        cellular data.
-      </p>
-      <p className="ft1">
-        If you are using the app outside of an area with <nobr>Wi-Fi,</nobr>{" "}
-        you should remember that your terms of the agreement with your mobile
-        network provider will still apply when using cellular data. As a
-        result, you may be charged by your mobile provider for the cost of
-        data for the duration of your connection while accessing the app, or
-        other
-        <nobr>third-party</nobr> charges. In using the app, you are accepting
-        responsibility for any such charges, including roaming data charges if
-        you use the app outside of your home territory (i.e. region or
-        country) without turning off data roaming. If you are not the bill
-        payer for the device on which you are using the app, please be aware
-        that we assume that you have received permission from the bill payer
-        for using the app.
-      </p>
-      <p className="ft1">
-        When you are using the app, it is important to bear in mind that
-        although we aim to ensure that information displayed on the app is
-        updated and correct at all times, we do rely on
-        <nobr>third-parties</nobr> to provide information to us so that we can
-        make it available to you. iContribute accepts no liability for any
-        direct or indirect loss that you experience as a result of relying on
-        the functionality of the app.
-      </p>
-      <p className="ft1">
-        We may periodically update the app. The app is currently available on
-        Android & iOS; the requirements for both systems (and for any
-        additional systems we decide to extend the availability of the app to)
-        may change, and you will need to download the updates if you want to
-        keep using the app. iContribute does not promise that it will always
-        update the app so that it is relevant to you and/or works with the
-        Android & iOS version that you have installed on your device. We may
-        also wish to stop providing the app and may terminate use of it at any time without giving notice of termination
-        to you. Unless we tell you otherwise, upon any termination, (a) the
-        rights and licenses granted to you in these terms will end; (b) you
-        must stop using the app, and (if needed) delete it from your device.
-      </p>
-      <p className="p32 ft10">Changes to This Terms and Conditions</p>
-      <p className="ft1">
-        iContribute may update our Terms and Conditions from time to time.
-        Thus, you are advised to review this page periodically for any
-        changes. iContribute will notify you of any changes by posting the new
-        Terms and Conditions on this page.
-      </p>
-      <p className="ft1">
-        These terms and conditions are effective as of <nobr>2022-01-24</nobr>
-      </p>
-      <p className="ft1">
-        If you have any questions or suggestions about these Terms and
-        Conditions, please contact us at: icontribute.founder@gmail.com.
-      </p>
       </div>
-    </div>
+      </div>
   );
 };
 
