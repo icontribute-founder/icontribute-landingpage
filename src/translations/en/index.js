@@ -11,7 +11,7 @@ export const TRANSLATIONS_EN = {
   "TERMS & CONDITIONS": "TERMS & CONDITIONS",
   "PRIVACY POLICY": "PRIVACY POLICY",
   "FOLLOW US": "FOLLOW US",
-  "Rights Text": "© 2021 iContribute. All rights reserved.",
+  "Rights Text": "iContribute. All rights reserved.",
 
   // HOMEPAGE
   "Home-MainBlock-Header": "Volunteering just got easier.",
