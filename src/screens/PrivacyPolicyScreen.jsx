@@ -115,7 +115,7 @@ const HomeScreen = () => {
         </p>
           
         <p className="ft1">
-        We automatically gather information about your navigational behaviour and your mobile device, such as your device operating system. We only use this information for internal research to better understand the needs and interests of our Users, assess our growth, get insight on demographics, and improve the overall quality and integrity of our community. We do not collect cookies through our Services.
+        We automatically gather information about your navigational behaviour and your mobile device, such as your device operating system. We only use this information for internal research to better understand the needs and interests of our Users, assess our growth, get insight on demographics, and improve the overall quality and integrity of our community. <u>We do not collect cookies through our Services.</u>
         </p>
           
           {/* use text underline CSS styling  */}
@@ -215,6 +215,9 @@ const HomeScreen = () => {
 
       <div id="page_1">
         <div className="privacy-title">Terms & Conditions</div>
+        <p className="ft1">
+          Updated Terms & Conditions will be posted soon.
+        </p>
       </div>
       </div>
   );
