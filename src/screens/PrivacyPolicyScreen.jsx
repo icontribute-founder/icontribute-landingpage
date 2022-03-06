@@ -22,7 +22,7 @@ const HomeScreen = () => {
           practices in line with privacy laws. iContribute uses modern information and 
           communication technologies to support our activities. Please take a few moments
           to review this privacy policy (herein referred to as the “Privacy Policy”),
-          which applies to our website,<a id="links" href="https://icontribute.community" target="_blank"> https://icontribute.community </a>
+          which applies to our website,<a id="links" href="https://icontribute.community" target="_blank" rel="noopener noreferrer"> https://icontribute.community </a>
           (the “<b>Website</b>”), 
           our mobile app (the “<b>iContribute Mobile App</b>” or the “<b>App</b>”), and related products 
           (collectively, with the Website and the iContribute Mobile App, referred to as
@@ -183,8 +183,8 @@ const HomeScreen = () => {
         </p>
         <p className="ft1">
           <ol type="i">
-            <li><a id="links" href="https://policies.google.com/terms" target="_blank">GOOGLE PLAY SERVICES</a></li>
-            <li><a id="links" href="https://firebase.google.com/terms/analytics" target="_blank">GOOGLE ANALYTICS FOR FIREBASE</a></li>
+            <li><a id="links" href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">GOOGLE PLAY SERVICES</a></li>
+            <li><a id="links" href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener noreferrer">GOOGLE ANALYTICS FOR FIREBASE</a></li>
           </ol>
         </p>
         <p className="ft0">11.	Governing Law</p>
