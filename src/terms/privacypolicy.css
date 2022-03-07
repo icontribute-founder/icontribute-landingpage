@@ -12,6 +12,13 @@ body {
 
 #links { 
   text-transform: none;
+  padding: 0px;
+  white-space: pre;
+  /* margin: 0px; */
+}
+
+#disclaimer {
+  text-decoration: underline;
 }
 
 #page_1 {

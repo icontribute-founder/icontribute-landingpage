@@ -8,7 +8,8 @@ import google_fr from "../../images/google_fr.png";
 
 import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
 import NavBarLogo from "../NavBarLogo/NavBarLogo";
-import privacy from "../../terms/iContribute Privacy Policy 2021.pdf";
+import privacy from "../../terms/iContribute Privacy Policy V2 - 2022_02_10.pdf";
+//TODO: must add a French translation of newest policy here:
 import privacyfr from "../../terms/iContribute - Politique de confidentialité.pdf";
 import TOS from "../../terms/iContribute Terms and Conditions 2021.pdf";
 import "./FooterBlock.css";
