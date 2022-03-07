@@ -42,6 +42,10 @@ const fetchBackers = (setBackers) => {
     )
     .then((response) => response.json())
     .then(({ data, errors }) => {
+      console.log("env var: "+ process.env.REACT_APP_CONTENTFUL_CONTENT_DELIVERY_ACCESS_TOKEN);
+      console.log("env var 2: " + process.env.REACT_APP_CONTENTFUL_CONTENT_PREVIEW_ACCESS_TOKEN);
+      console.log("env var 3: " + process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
+      console.log("env var 4: " + process.env.REACT_APP_CONTENTFUL_SPACE_ID);
       if (errors) {
         console.error(errors);
       } else {
