@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d30f7f8c7b84743b03327e94476ef1d0",
+    "revision": "49cfaf775cde0fb2650ea2d5e651807f",
     "url": "/index.html"
   },
   {
-    "revision": "2e648a69d52c230eba39",
+    "revision": "c0be43c8ebbdbefa7a44",
     "url": "/static/css/2.21e1c7f3.chunk.css"
   },
   {
-    "revision": "304416251575cae26f0d",
-    "url": "/static/css/main.e9414016.chunk.css"
+    "revision": "81fe9fd406747efdb05f",
+    "url": "/static/css/main.f691efaf.chunk.css"
   },
   {
-    "revision": "2e648a69d52c230eba39",
-    "url": "/static/js/2.a039aa5c.chunk.js"
+    "revision": "c0be43c8ebbdbefa7a44",
+    "url": "/static/js/2.e99453aa.chunk.js"
   },
   {
     "revision": "cc39b12d3d3c908738e2e53815dd4bd4",
-    "url": "/static/js/2.a039aa5c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e99453aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "304416251575cae26f0d",
-    "url": "/static/js/main.80bfdb84.chunk.js"
+    "revision": "81fe9fd406747efdb05f",
+    "url": "/static/js/main.f03dac8a.chunk.js"
   },
   {
     "revision": "bc481c82a0c4689aa809",
@@ -76,16 +76,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Iphone_Macbook together.5762128a.png"
   },
   {
-    "revision": "5ace971aeb621cc0f648ce4ff8229566",
-    "url": "/static/media/Stripe 1.5ace971a.svg"
+    "revision": "cd0308eb65469a0530d60646b4b52211",
+    "url": "/static/media/Stripe 1.cd0308eb.svg"
   },
   {
-    "revision": "c19ac45027126885e751976b33c03f30",
-    "url": "/static/media/Stripe 2.c19ac450.svg"
+    "revision": "8c7439626625824a4cf96c68bd6ab813",
+    "url": "/static/media/Stripe 2.8c743962.svg"
   },
   {
-    "revision": "36c9263da41824d9d3ec65734f1d0897",
-    "url": "/static/media/Stripe 3.36c9263d.svg"
+    "revision": "af23f7459ed90a1ced65f6284c23563c",
+    "url": "/static/media/Stripe 3.af23f745.svg"
   },
   {
     "revision": "efbd25bb35bbb6516bfbc78d14e02ba6",
@@ -144,8 +144,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/iContribute - Politique de confidentialité.76950ce1.pdf"
   },
   {
-    "revision": "3a40f6b4436510127593c8dd72c225a0",
-    "url": "/static/media/iContribute Privacy Policy 2021.3a40f6b4.pdf"
+    "revision": "f90afd952682feee8414a3cd51c9a28f",
+    "url": "/static/media/iContribute Privacy Policy V2 - 2022_02_10.f90afd95.pdf"
   },
   {
     "revision": "b2a9ab3e27f37d27303b9cce2f96aca0",
@@ -168,8 +168,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/linkedin-brands.d9049f46.svg"
   },
   {
-    "revision": "b95911f26bfb4047da344764f204f87a",
-    "url": "/static/media/logo_only_animated.b95911f2.svg"
+    "revision": "dc215d7a3cec5948658a1a87faa0c225",
+    "url": "/static/media/logo_only_animated.dc215d7a.svg"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
