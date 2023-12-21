@@ -30,7 +30,7 @@ const StickySocials = () => {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.facebook.com/icontribute.community"
+        href="https://www.facebook.com/icontribute.site"
       >
         <img
           onMouseEnter={() => {
@@ -62,7 +62,7 @@ const StickySocials = () => {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.instagram.com/icontribute.community/"
+        href="https://www.instagram.com/icontribute.site/"
       >
         <img
           onMouseEnter={() => {
