@@ -22,7 +22,7 @@ const HomeScreen = () => {
           practices in line with privacy laws. iContribute uses modern information and 
           communication technologies to support our activities. Please take a few moments
           to review this privacy policy (herein referred to as the “Privacy Policy”),
-          which applies to our website,<a id="links" href="https://icontribute.community" target="_blank" rel="noopener noreferrer"> https://icontribute.community </a>
+          which applies to our website,<a id="links" href="https://icontribute.site" target="_blank" rel="noopener noreferrer"> https://icontribute.site </a>
           (the “<b>Website</b>”), 
           our mobile app (the “<b>iContribute Mobile App</b>” or the “<b>App</b>”), and related products 
           (collectively, with the Website and the iContribute Mobile App, referred to as
@@ -58,7 +58,7 @@ const HomeScreen = () => {
         <p className="ft1">
           This Privacy Policy is incorporated into and subject to our Terms and 
           Conditions (the “<b>Terms and Conditions</b>”) 
-          <a id="links" href="https://icontribute.community/#/privacy"> (https://icontribute.community/#/privacy)</a>. 
+          <a id="links" href="https://icontribute.site/#/privacy"> (https://icontribute.site/#/privacy)</a>. 
           The terms used in this Privacy Policy have the same definitions as our Terms 
           and Conditions found below.
         </p>

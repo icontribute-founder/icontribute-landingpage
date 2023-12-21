@@ -24,7 +24,7 @@ function SocialMediaBar() {
         <img src={tiktok} alt="tiktok" className="SocialMediaBar-Icon" />
       </a>
       <a
-        href="https://www.instagram.com/icontribute.community/"
+        href="https://www.instagram.com/icontribute.site/"
         target="_blank"
         rel="noopener noreferrer"
         className="SocialMediaBar-Link"
